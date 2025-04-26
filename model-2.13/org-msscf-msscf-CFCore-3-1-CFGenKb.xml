@@ -54,9 +54,9 @@
 		Revision="3.1"
 		Description="MSS Code Factory CFGenKb - Code Factory Core"
 		ProjectRoot="com.github.msobkow.CFCore.3.1" >
-	<Tld Name="com" >
-		<TopDomain Name="github" >
-			<TopProject Name="msobkow" >
+	<Tld Name="org" >
+		<TopDomain Name="msscf" >
+			<TopProject Name="msscf" >
 				<SubProject Name="CFCore" >
 					<MajorVersion Name="3" >
 						<MinorVersion Name="1" >

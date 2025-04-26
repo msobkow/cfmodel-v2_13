@@ -37,10 +37,10 @@
 		Name="CFDbTst"
 		Revision="3.1"
 		Description="MSS Code Factory CFDbTst - Database Test Suite"
-		ProjectRoot="com.github.msobkow.CFDbTst.3.1" >
-	<Tld Name="com" >
-		<TopDomain Name="github" >
-			<TopProject Name="msobkow" >
+		ProjectRoot="org.msscf.msscf.CFDbTst.3.1" >
+	<Tld Name="org" >
+		<TopDomain Name="msscf" >
+			<TopProject Name="msscf" >
 				<SubProject Name="CFDbTst" >
 					<MajorVersion Name="3" >
 						<MinorVersion Name="1" >
@@ -52,7 +52,7 @@
 		CopyrightPeriod="2020"
 		AuthorEMail="mark.sobkow@gmail.com"
 		ProjectURL="http://msobkow.github.com/"
-		PublishURI="https://msscf.sourceforge.io/com-github-msobkow-CFDbTst-3-1-CFDbTst.xml"
+		PublishURI="https://msscf.sourceforge.io/org-msscf-msscf-CFDbTst-3-1-CFDbTst.xml"
 		CommonLicenseName="Mark Stephen Sobkow's GPLv3 or Commercial License" CommonLicenseCode="MSSGplV3" >
 			<CommonLicense>
 MSS Code Factory 3.1 CFDbTst - Database Test Suite
@@ -85,12 +85,12 @@ https://www.paypal.com/paypalme2/MarkSobkow
 Please contact Mark Stephen Sobkow at mark.sobkow@gmail.com for commercial licensing.</CommonLicense>
 
 	<SchemaRef Name="CFSec"
-			RefModelName="com-github-msobkow-CFSec-3-1-CFSec"
-			IncludeRoot="com.github.msobkow.CFSec.3.1.CFSec" />
+			RefModelName="org-msscf-msscf-CFSec-3-1-CFSec"
+			IncludeRoot="org.msscf.msscf.CFSec.3.1.CFSec" />
 
 	<SchemaRef Name="CFInt"
-			RefModelName="com-github-msobkow-CFInt-3-1-CFInt"
-			IncludeRoot="com.github.msobkow.CFInt.3.1.CFInt" />
+			RefModelName="org-msscf-msscf-CFInt-3-1-CFInt"
+			IncludeRoot="org.msscf.msscf.CFInt.3.1.CFInt" />
 
 	<StringType Name="DescriptionType"
 			IsNullable="false"

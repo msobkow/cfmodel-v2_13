@@ -53,10 +53,10 @@
 		Name="CFBam"
 		Revision="3.1"
 		Description="MSS Code Factory CFBam - Business Application Model"
-		ProjectRoot="com.github.msobkow.CFBam.3.1" >
-	<Tld Name="com" >
-		<TopDomain Name="github" >
-			<TopProject Name="msobkow" >
+		ProjectRoot="org.msscf.msscf.CFBam.3.1" >
+	<Tld Name="org" >
+		<TopDomain Name="msscf" >
+			<TopProject Name="msscf" >
 				<SubProject Name="CFBam" >
 					<MajorVersion Name="3" >
 						<MinorVersion Name="1" >
@@ -67,7 +67,7 @@
 		CopyrightPeriod="2020"
 		AuthorEMail="mark.sobkow@gmail.com"
 		ProjectURL="http://msobkow.github.com/"
-		PublishURI="https://msscf.sourceforge.io/com-github-msobkow-CFBam-3-1-CFBam.xml"
+		PublishURI="https://msscf.sourceforge.io/org-msscf-msscf-CFBam-3-1-CFBam.xml"
 		CommonLicenseName="Mark Stephen Sobkow's Proprietary BAM Server , Version 1.0" CommonLicenseCode="MSSBam10" >
 		ClientImplLicenseName="Mark Stephen Sobkow's Proprietary BAM Client License, Version 1.0" ClientImplLicenseCode="MSSBamClient10"
 		ClientXFaceLicenseName="Mark Stephen Sobkow's Proprietary BAM Client License, Version 1.0" ClientXFaceLicenseCode="MSSBamClient10"
@@ -314,12 +314,12 @@ https://www.paypal.com/paypalme2/MarkSobkow
 Please contact Mark Stephen Sobkow at mark.sobkow@gmail.com for commercial licensing.</ServerImplLicense>
 
 	<SchemaRef Name="CFSec"
-			RefModelName="com-github-msobkow-CFSec-3-1-CFSec"
-			IncludeRoot="com.github.msobkow.CFSec.3.1.CFSec" />
+			RefModelName="org-msscf-msscf-CFSec-3-1-CFSec"
+			IncludeRoot="org.msscf.msscf.CFSec.3.1.CFSec" />
 
 	<SchemaRef Name="CFInt"
-			RefModelName="com-github-msobkow-CFInt-3-1-CFInt"
-			IncludeRoot="com.github.msobkow.CFInt.3.1.CFInt" />
+			RefModelName="org-msscf-msscf-CFInt-3-1-CFInt"
+			IncludeRoot="org.msscf.msscf.CFInt.3.1.CFInt" />
 
 	<Id64Gen Name="ChainIdGen"
 			IsNullable="false"

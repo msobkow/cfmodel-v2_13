@@ -25,10 +25,10 @@
 		Name="CFSec"
 		Revision="3.1"
 		Description="MSS Code Factory CFSec - Security"
-		ProjectRoot="com.github.msobkow.CFSec.3.1" >
-	<Tld Name="com" >
-		<TopDomain Name="github" >
-			<TopProject Name="msobkow" >
+		ProjectRoot="org.msscf.msscf.CFSec.3.1" >
+	<Tld Name="org" >
+		<TopDomain Name="msscf" >
+			<TopProject Name="msscf" >
 				<SubProject Name="CFSec" >
 					<MajorVersion Name="3" >
 						<MinorVersion Name="1" >
@@ -39,7 +39,7 @@
 		CopyrightPeriod="2020"
 		AuthorEMail="mark.sobkow@gmail.com"
 		ProjectURL="http://msobkow.github.com/"
-		PublishURI="https://msscf.sourceforge.io/com-github-msobkow-CFSec-3-1-CFSec.xml"
+		PublishURI="https://msscf.sourceforge.io/org-msscf-msscf-CFSec-3-1-CFSec.xml"
 		CommonLicenseName="Apache Version 2 License" CommonLicenseCode="ApacheV2" >
 			<CommonLicense>
 MSS Code Factory 3.1 CFSec - Security

@@ -30,10 +30,10 @@
 		Name="CFCrm"
 		Revision="3.1"
 		Description="MSS Code Factory Contact Resource Management"
-		ProjectRoot="com.github.msobkow.CFCrm.3.1" >
-	<Tld Name="com" >
-		<TopDomain Name="github" >
-			<TopProject Name="msobkow" >
+		ProjectRoot="org.msscf.msscf.CFCrm.3.1" >
+	<Tld Name="org" >
+		<TopDomain Name="msscf" >
+			<TopProject Name="msscf" >
 				<SubProject Name="CFCrm" >
 					<MajorVersion Name="3" >
 						<MinorVersion Name="1" >
@@ -44,7 +44,7 @@
 		CopyrightPeriod="2020"
 		AuthorEMail="mark.sobkow@gmail.com"
 		ProjectURL="http://msobkow.github.com/"
-		PublishURI="https://msscf.sourceforge.io/com-github-msobkow-CFCrm-3-1-CFCrm.xml"
+		PublishURI="https://msscf.sourceforge.io/org-msscf-msscf-CFCrm-3-1-CFCrm.xml"
 		CommonLicenseName="Apache Version 2 License" CommonLicenseCode="ApacheV2" >
 			<CommonLicense>
 MSS Code Factory 3.1 CFCrm - Contact Resource Management
@@ -65,8 +65,8 @@ Donations to support MSS Code Factory can be made at
 https://www.paypal.com/paypalme2/MarkSobkow</CommonLicense>
 
 	<SchemaRef Name="CFSec"
-			RefModelName="com-github-msobkow-CFSec-3-1-CFSec"
-			IncludeRoot="com.github.msobkow.CFSec.3.1.CFSec" />
+			RefModelName="org-msscf-msscf-CFSec-3-1-CFSec"
+			IncludeRoot="org.msscf.msscf.CFSec.3.1.CFSec" />
 
 	<Id64Gen Name="AddressIdGen"
 			IsNullable="false"
