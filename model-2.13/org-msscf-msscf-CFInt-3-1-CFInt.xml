@@ -55,9 +55,7 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-
-Donations to support MSS Code Factory can be made at
-https://www.paypal.com/paypalme2/MarkSobkow</CommonLicense>
+</CommonLicense>
 
 	<SchemaRef Name="CFSec"
 			RefModelName="org-msscf-msscf-CFSec-3-1-CFSec"
