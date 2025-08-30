@@ -53,9 +53,9 @@
 		Name="CFBam"
 		Revision="3.1"
 		Description="MSS Code Factory CFBam - Business Application Model"
-		ProjectRoot="org.msscf.msscf.CFBam.3.1" >
-	<Tld Name="org" >
-		<TopDomain Name="msscf" >
+		ProjectRoot="server.markhome.msscf.CFBam.3.1" >
+	<Tld Name="server" >
+		<TopDomain Name="markhome" >
 			<TopProject Name="msscf" >
 				<SubProject Name="CFBam" >
 					<MajorVersion Name="3" >
@@ -64,10 +64,10 @@
 		DbName="CFBam31"
 		Description="Code Factory Business Application Model"
 		CopyrightHolder="Mark Stephen Sobkow"
-		CopyrightPeriod="2020"
+		CopyrightPeriod="2020-2025"
 		AuthorEMail="mark.sobkow@gmail.com"
-		ProjectURL="github.com/msobkow/"
-		PublishURI="https://msobkow.github.io/"
+		ProjectURL="http://msobkow.github.com/"
+		PublishURI="https://msobkow.github.io/index.html#cfbam"
 		CommonLicenseName="Apache Version 2 License" CommonLicenseCode="ApacheV2" >
 			<CommonLicense>
 MSS Code Factory 3.1 CFBam - Business Application Model
@@ -86,12 +86,12 @@ limitations under the License.
 </CommonLicense>
 
 	<SchemaRef Name="CFSec"
-			RefModelName="org-msscf-msscf-CFSec-3-1-CFSec"
-			IncludeRoot="org.msscf.msscf.CFSec.3.1.CFSec" />
+			RefModelName="server-markhome-msscf-CFSec-3-1-CFSec"
+			IncludeRoot="server.markhome.msscf.CFSec.3.1.CFSec" />
 
 	<SchemaRef Name="CFInt"
-			RefModelName="org-msscf-msscf-CFInt-3-1-CFInt"
-			IncludeRoot="org.msscf.msscf.CFInt.3.1.CFInt" />
+			RefModelName="server-markhome-msscf-CFInt-3-1-CFInt"
+			IncludeRoot="server.markhome.msscf.CFInt.3.1.CFInt" />
 
 	<Id64Gen Name="ChainIdGen"
 			IsNullable="false"

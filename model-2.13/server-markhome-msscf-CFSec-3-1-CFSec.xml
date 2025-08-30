@@ -25,9 +25,9 @@
 		Name="CFSec"
 		Revision="3.1"
 		Description="MSS Code Factory CFSec - Security"
-		ProjectRoot="org.msscf.msscf.CFSec.3.1" >
-	<Tld Name="org" >
-		<TopDomain Name="msscf" >
+		ProjectRoot="server.markhome.msscf.CFSec.3.1" >
+	<Tld Name="server" >
+		<TopDomain Name="markhome" >
 			<TopProject Name="msscf" >
 				<SubProject Name="CFSec" >
 					<MajorVersion Name="3" >
@@ -36,13 +36,13 @@
 		DbName="CFSec31"
 		Description="Code Factory Security"
 		CopyrightHolder="Mark Stephen Sobkow"
-		CopyrightPeriod="2020"
+		CopyrightPeriod="2020-2025"
 		AuthorEMail="mark.sobkow@gmail.com"
 		ProjectURL="http://msobkow.github.com/"
-		PublishURI="https://msscf.sourceforge.io/org-msscf-msscf-CFSec-3-1-CFSec.xml"
+		PublishURI="https://msobkow.github.io/index.html#cfsec"
 		CommonLicenseName="Apache Version 2 License" CommonLicenseCode="ApacheV2" >
 			<CommonLicense>
-MSS Code Factory 3.1 CFSec - Security
+MSS Code Factory 3.1 CFSec - Code Factory Security
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -55,9 +55,7 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-
-Donations to support MSS Code Factory can be made at
-https://www.paypal.com/paypalme2/MarkSobkow</CommonLicense>
+</CommonLicense>
 
 	<EnumType Name="AuditActionEnum"
 			IsNullable="false"

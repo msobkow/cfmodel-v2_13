@@ -25,9 +25,9 @@
 		Name="CFInt"
 		Revision="3.1"
 		Description="MSS Code Factory CFInt - Internet Essentials"
-		ProjectRoot="org.msscf.msscf.CFInt.3.1" >
-	<Tld Name="org" >
-		<TopDomain Name="msscf" >
+		ProjectRoot="server.markhome.msscf.CFInt.3.1" >
+	<Tld Name="server" >
+		<TopDomain Name="markhome" >
 			<TopProject Name="msscf" >
 				<SubProject Name="CFInt" >
 					<MajorVersion Name="3" >
@@ -36,13 +36,13 @@
 		DbName="CFINet31"
 		Description="Code Factory Internet Essentials"
 		CopyrightHolder="Mark Stephen Sobkow"
-		CopyrightPeriod="2020"
+		CopyrightPeriod="2020-2025"
 		AuthorEMail="mark.sobkow@gmail.com"
 		ProjectURL="http://msobkow.github.com/"
-		PublishURI="https://msscf.sourceforge.io/org-msscf-msscf-CFInt-3-1-CFInt.xml"
+		PublishURI="https://msobkow.github.io/index.html#cfint"
 		CommonLicenseName="Apache Version 2 License" CommonLicenseCode="ApacheV2" >
 			<CommonLicense>
-MSS Code Factory 3.1 CFInt - Internet Essentials
+MSS Code Factory 3.1 CFInt - Code Factory Internet Essentials
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -58,8 +58,8 @@ limitations under the License.
 </CommonLicense>
 
 	<SchemaRef Name="CFSec"
-			RefModelName="org-msscf-msscf-CFSec-3-1-CFSec"
-			IncludeRoot="org.msscf.msscf.CFSec.3.1.CFSec" />
+			RefModelName="server-markhome-msscf-CFSec-3-1-CFSec"
+			IncludeRoot="server.markhome.msscf.CFSec.3.1.CFSec" />
 
 	<StringType Name="DomNameType"
 			IsNullable="false"

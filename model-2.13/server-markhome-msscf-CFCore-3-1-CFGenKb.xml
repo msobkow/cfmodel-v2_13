@@ -53,9 +53,9 @@
 		Name="CFGenKb"
 		Revision="3.1"
 		Description="MSS Code Factory CFGenKb - Code Factory Core"
-		ProjectRoot="org.msscf.msscf.CFCore.3.1">
-	<Tld Name="org" >
-		<TopDomain Name="msscf" >
+		ProjectRoot="server.markhome.msscf.CFCore.3.1">
+	<Tld Name="server" >
+		<TopDomain Name="markhome" >
 			<TopProject Name="msscf" >
 				<SubProject Name="CFCore" >
 					<MajorVersion Name="3" >
@@ -64,13 +64,13 @@
 		DbName="GenKb31"
 		Description="Code Factory Core"
 		CopyrightHolder="Mark Stephen Sobkow"
-		CopyrightPeriod="2020"
+		CopyrightPeriod="2020-2025"
 		AuthorEMail="mark.sobkow@gmail.com"
 		ProjectURL="http://msobkow.github.com/"
-		PublishURI="https://msscf.sourceforge.io/com-github-msobkow-CFCore-3-1-CFGenKb.xml"
+		PublishURI="https://msobkow.github.io/index.html#cfgenkb"
 		CommonLicenseName="Apache Version 2 License" CommonLicenseCode="ApacheV2" >
 			<CommonLicense>
-MSS Code Factory 3.1 CFBam - Business Application Model
+MSS Code Factory 3.1 CFCore - Manufacturing Core Engine
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
