@@ -53,7 +53,7 @@
 		Name="CFGenKb"
 		Revision="3.1"
 		Description="MSS Code Factory CFGenKb - Code Factory Core"
-		ProjectRoot="com.github.msobkow.CFCore.3.1" >
+		ProjectRoot="org.msscf.msscf.CFCore.3.1">
 	<Tld Name="org" >
 		<TopDomain Name="msscf" >
 			<TopProject Name="msscf" >
@@ -68,52 +68,22 @@
 		AuthorEMail="mark.sobkow@gmail.com"
 		ProjectURL="http://msobkow.github.com/"
 		PublishURI="https://msscf.sourceforge.io/com-github-msobkow-CFCore-3-1-CFGenKb.xml"
-		CommonLicenseName="Mark Stephen Sobkow's Proprietary Core License, Version 1.0" CommonLicenseCode="MSSCore10" >
+		CommonLicenseName="Apache Version 2 License" CommonLicenseCode="ApacheV2" >
 			<CommonLicense>
-MSS Code Factory 3.1 CFCore - Code Factory Core
+MSS Code Factory 3.1 CFBam - Business Application Model
 
-Copyright (c) 2020 Mark Stephen Sobkow (mark.sobkow@gmail.com)
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-MSS Code Factory Code Factory Core is distributed under
-Mark Stephen Sobkow's Proprietary Core License, Version 1.0.
+    http://www.apache.org/licenses/LICENSE-2.0
 
-MSS Code Factory Code Factory Core is proprietary code
-which may not be modified in any way without a commercial license,
-not even if you are an educational institution.
-
-The binaries may be used by the public to execute the MSS Code
-Factory tool itself, but they may not link their own applications
-to those binaries without a commercial use license.  A commercial
-use license will allow you to link to the binaries, and to extend
-the unmodified binaries and interfaces in your own application code.
-
-MSS Code Factory Code Factory Core source is published so
-that you may study it for academic purposes, to perform security
-verification reviews, and for commercial use licensers to debug
-their applications.
-
-Registered .edu educational institutions are permitted to install
-and link the binaries as if they had a commercial use license
-for research and courseware projects.  Such projects may not be
-used to produce commercial or business code, and may not be deployed
-to commercial or business interests, including the educational
-institution's own departments outside that performing the research
-or teaching the course.
-
-Any use of MSS Code Factory Code Factory Core binaries or
-source in a production environment under any other circumstances
-without a commercial license from Mark Stephen Sobkow is strictly
-forbidden.
-
-MSS Code Factory Code Factory Core is distributed in the
-hope that it will be useful, but WITHOUT ANY WARRANTY; without
-even the implied warranty of MERCHANTABILITY or FITNESS FOR A
-PARTICULAR PURPOSE.
-
-Donations to support MSS Code Factory Code Factory Core
-can be made at https://www.paypal.com/paypalme2/MarkSobkow
-
-Please contact Mark Stephen Sobkow at mark.sobkow@gmail.com for commercial licensing.</CommonLicense>
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+</CommonLicense>
 
 	<EnumType Name="AuditActionEnum"
 			IsNullable="false"
