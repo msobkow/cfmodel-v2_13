@@ -1123,7 +1123,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="SchemaRef"
-			TableClassCode="a804"
+			TableClassCode="a803"
 			DbName="schema_ref"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -1248,7 +1248,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="ServerMethod"
-			TableClassCode="a805"
+			TableClassCode="a804"
 			DbName="srvmeth"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -1383,7 +1383,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="ServerObjFunc"
-			TableClassCode="a806"
+			TableClassCode="a805"
 			DbName="srvofunc"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -1439,7 +1439,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="ServerProc"
-			TableClassCode="a807"
+			TableClassCode="a806"
 			DbName="srvprc"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -1481,7 +1481,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="Table"
-			TableClassCode="a808"
+			TableClassCode="a807"
 			DbName="tbldef"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -4108,7 +4108,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="Value"
-			TableClassCode="a809"
+			TableClassCode="a808"
 			DbName="valdef"
 			IsInstantiable="false"
 			HasHistory="true"
@@ -5071,7 +5071,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="Atom"
-			TableClassCode="a80a"
+			TableClassCode="a809"
 			DbName="atomdef"
 			IsInstantiable="false"
 			HasHistory="true"
@@ -5112,7 +5112,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="BlobDef"
-			TableClassCode="a80b"
+			TableClassCode="a80a"
 			DbName="blbdef"
 			IsInstantiable="false"
 			HasHistory="true"
@@ -5161,7 +5161,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="BlobType"
-			TableClassCode="a80c"
+			TableClassCode="a80b"
 			DbName="blbtyp"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -5211,7 +5211,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="BoolDef"
-			TableClassCode="a80d"
+			TableClassCode="a80c"
 			DbName="booldef"
 			IsInstantiable="false"
 			HasHistory="true"
@@ -5261,7 +5261,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="BoolType"
-			TableClassCode="a80e"
+			TableClassCode="a80d"
 			DbName="booltyp"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -5311,7 +5311,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="Chain"
-			TableClassCode="a80f"
+			TableClassCode="a80e"
 			DbName="chain_def"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -6416,7 +6416,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="ClearDep"
-			TableClassCode="a810"
+			TableClassCode="a80f"
 			DbName="clr_dep"
 			ShortName="ClearDep"
 			IsInstantiable="false"
@@ -6485,7 +6485,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="ClearSubDep1"
-			TableClassCode="a811"
+			TableClassCode="a810"
 			DbName="clrsubdep1"
 			ShortName="SubDep1"
 			IsInstantiable="true"
@@ -6552,7 +6552,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="ClearSubDep2"
-			TableClassCode="a812"
+			TableClassCode="a811"
 			DbName="clrsubdep2"
 			ShortName="SubDep2"
 			IsInstantiable="true"
@@ -6619,7 +6619,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="ClearSubDep3"
-			TableClassCode="a813"
+			TableClassCode="a812"
 			DbName="clrsubdep3"
 			ShortName="SubDep3"
 			IsInstantiable="true"
@@ -6686,7 +6686,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="ClearTopDep"
-			TableClassCode="a814"
+			TableClassCode="a813"
 			DbName="clr_topdep"
 			ShortName="ClrTopDep"
 			IsInstantiable="true"
@@ -6781,7 +6781,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="DateDef"
-			TableClassCode="a815"
+			TableClassCode="a814"
 			DbName="dtdef"
 			IsInstantiable="false"
 			HasHistory="true"
@@ -6822,7 +6822,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="DateType"
-			TableClassCode="a816"
+			TableClassCode="a815"
 			DbName="dttyp"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -6872,7 +6872,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="DelDep"
-			TableClassCode="a817"
+			TableClassCode="a816"
 			DbName="del_dep"
 			ShortName="DelDep"
 			IsInstantiable="false"
@@ -6946,7 +6946,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="DelSubDep1"
-			TableClassCode="a818"
+			TableClassCode="a817"
 			DbName="delsubdep1"
 			ShortName="SubDep1"
 			IsInstantiable="true"
@@ -7012,7 +7012,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="DelSubDep2"
-			TableClassCode="a819"
+			TableClassCode="a818"
 			DbName="delsubdep2"
 			ShortName="SubDep2"
 			IsInstantiable="true"
@@ -7078,7 +7078,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="DelSubDep3"
-			TableClassCode="a81a"
+			TableClassCode="a819"
 			DbName="delsubdep3"
 			ShortName="SubDep3"
 			IsInstantiable="true"
@@ -7144,7 +7144,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="DelTopDep"
-			TableClassCode="a81b"
+			TableClassCode="a81a"
 			DbName="del_topdep"
 			ShortName="TopDep"
 			IsInstantiable="true"
@@ -7245,7 +7245,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="DoubleDef"
-			TableClassCode="a81c"
+			TableClassCode="a81b"
 			DbName="dbldef"
 			IsInstantiable="false"
 			HasHistory="true"
@@ -7300,7 +7300,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="DoubleType"
-			TableClassCode="a81d"
+			TableClassCode="a81c"
 			DbName="dbltyp"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -7350,7 +7350,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="EnumTag"
-			TableClassCode="a81e"
+			TableClassCode="a81d"
 			DbName="enum_tag"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -7468,7 +7468,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="FloatDef"
-			TableClassCode="a81f"
+			TableClassCode="a81e"
 			DbName="fltdef"
 			IsInstantiable="false"
 			HasHistory="true"
@@ -7523,7 +7523,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="FloatType"
-			TableClassCode="a820"
+			TableClassCode="a81f"
 			DbName="flttyp"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -7573,7 +7573,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="Index"
-			TableClassCode="a821"
+			TableClassCode="a820"
 			DbName="idxdef"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -7701,7 +7701,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="IndexCol"
-			TableClassCode="a822"
+			TableClassCode="a821"
 			DbName="idxcol"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -7870,7 +7870,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="Int16Def"
-			TableClassCode="a823"
+			TableClassCode="a822"
 			DbName="int16def"
 			IsInstantiable="false"
 			HasHistory="true"
@@ -7925,7 +7925,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="Int16Type"
-			TableClassCode="a824"
+			TableClassCode="a823"
 			DbName="int16typ"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -7975,7 +7975,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="Int32Def"
-			TableClassCode="a825"
+			TableClassCode="a824"
 			DbName="int32def"
 			IsInstantiable="false"
 			HasHistory="true"
@@ -8030,7 +8030,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="Int32Type"
-			TableClassCode="a826"
+			TableClassCode="a825"
 			DbName="int32typ"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -8080,7 +8080,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="Int64Def"
-			TableClassCode="a827"
+			TableClassCode="a826"
 			DbName="int64def"
 			IsInstantiable="false"
 			HasHistory="true"
@@ -8135,7 +8135,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="Int64Type"
-			TableClassCode="a828"
+			TableClassCode="a827"
 			DbName="int64typ"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -8185,7 +8185,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="NmTokenDef"
-			TableClassCode="a829"
+			TableClassCode="a828"
 			DbName="nmtkndef"
 			IsInstantiable="false"
 			HasHistory="true"
@@ -8234,7 +8234,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="NmTokenType"
-			TableClassCode="a82a"
+			TableClassCode="a829"
 			DbName="nmtkntyp"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -8284,7 +8284,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="NmTokensDef"
-			TableClassCode="a82b"
+			TableClassCode="a82a"
 			DbName="nmtknsdef"
 			IsInstantiable="false"
 			HasHistory="true"
@@ -8333,7 +8333,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="NmTokensType"
-			TableClassCode="a82c"
+			TableClassCode="a82b"
 			DbName="nmtknstyp"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -8383,7 +8383,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="NumberDef"
-			TableClassCode="a82d"
+			TableClassCode="a82c"
 			DbName="numdef"
 			IsInstantiable="false"
 			HasHistory="true"
@@ -8449,7 +8449,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="NumberType"
-			TableClassCode="a82e"
+			TableClassCode="a82d"
 			DbName="numtyp"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -8499,7 +8499,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="Param"
-			TableClassCode="a82f"
+			TableClassCode="a82e"
 			DbName="srvprm"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -8664,7 +8664,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="PopDep"
-			TableClassCode="a830"
+			TableClassCode="a82f"
 			DbName="pop_dep"
 			ShortName="PopDep"
 			IsInstantiable="false"
@@ -8736,7 +8736,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="PopSubDep1"
-			TableClassCode="a831"
+			TableClassCode="a830"
 			DbName="popsubdep1"
 			ShortName="SubDep1"
 			IsInstantiable="true"
@@ -8802,7 +8802,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="PopSubDep2"
-			TableClassCode="a832"
+			TableClassCode="a831"
 			DbName="popsubdep2"
 			ShortName="SubDep2"
 			IsInstantiable="true"
@@ -8868,7 +8868,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="PopSubDep3"
-			TableClassCode="a833"
+			TableClassCode="a832"
 			DbName="popsubdep3"
 			ShortName="SubDep3"
 			IsInstantiable="true"
@@ -8934,7 +8934,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="PopTopDep"
-			TableClassCode="a834"
+			TableClassCode="a833"
 			DbName="pop_topdep"
 			ShortName="TopDep"
 			IsInstantiable="true"
@@ -8999,7 +8999,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="Relation"
-			TableClassCode="a835"
+			TableClassCode="a834"
 			DbName="reldef"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -10161,7 +10161,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="RelationCol"
-			TableClassCode="a836"
+			TableClassCode="a835"
 			DbName="relcol"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -11307,7 +11307,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="ServerListFunc"
-			TableClassCode="a837"
+			TableClassCode="a836"
 			DbName="srvlfunc"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -11362,8 +11362,1112 @@ limitations under the License.
 		</SuperClassRelation>
 	</Table>
 
-	<Table Name="StringDef"
+	<Table Name="DbKeyHash128Def"
+			TableClassCode="a837"
+			DbName="dbk128def"
+			IsInstantiable="false"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<StringCol Name="InitValue"
+				Label="Init. Value"
+				IsNullable="true"
+				DbName="InitVal"
+				MaxLen="256" />
+		<PrimaryIndex Name="DbKeyHash128DefIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="dbk128def_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<SuperClassRelation Name="SuperClass"
+				DbName="dbk128def_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="DbKeyHash128DefIdIdx"
+				ToIndex="Atom.AtomIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="DbKeyHash128Col"
 			TableClassCode="a838"
+			DbName="dbk128col"
+			IsInstantiable="true"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<TableCol Name="TableId"
+				IsNullable="false"
+				DataType="ScopeIdGen" />
+		<PrimaryIndex Name="DbKeyHash128ColIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="dbk128col_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<Index Name="DbKeyHash128ColTableIdx"
+				IsDbMapped="true"
+				IsUnique="false"
+				DbName="dbk128col_xtable"
+				ShortName="TblIdx"
+				Suffix="TableIdx"
+				Label="Table Index" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="TableId" IsAscending="true" />
+		</Index>
+		<SuperClassRelation Name="SuperClass"
+				DbName="dbk128col_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="DbKeyHash128ColIdIdx"
+				ToIndex="DbKeyHash128Def.DbKeyHash128DefIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="DbKeyHash128Type"
+			TableClassCode="a839"
+			DbName="dbk128typ"
+			IsInstantiable="true"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<TableCol Name="SchemaDefId"
+				IsNullable="false"
+				DataType="ScopeIdGen" />
+		<PrimaryIndex Name="DbKeyHash128TypeIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="dbk128typ_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<Index Name="DbKeyHash128TypeSchemaDefIdx"
+				IsDbMapped="true"
+				IsUnique="false"
+				DbName="dbk128typ_xschemadef"
+				ShortName="SchIdx"
+				Suffix="SchemaIdx"
+				Label="Schema Index" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="SchemaDefId" IsAscending="true" />
+		</Index>
+		<SuperClassRelation Name="SuperClass"
+				DbName="dbk128typ_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="DbKeyHash128TypeIdIdx"
+				ToIndex="DbKeyHash128Def.DbKeyHash128DefIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="DbKeyHash128Gen"
+			TableClassCode="a83a"
+			DbName="idgdbk128"
+			IsInstantiable="true"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<Int32Col Name="BlockSize"
+				IsNullable="false"
+				MinValue="1"
+				MaxValue="2147483647"
+				InitValue="1" />
+		<PrimaryIndex Name="DbKeyHash128GenIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="idgdbk128_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<SuperClassRelation Name="SuperClass"
+				DbName="idgdbk128_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="DbKeyHash128GenIdIdx"
+				ToIndex="DbKeyHash128Type.DbKeyHash128TypeIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="DbKeyHash160Def"
+			TableClassCode="a83b"
+			DbName="dbk160def"
+			IsInstantiable="false"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<StringCol Name="InitValue"
+				Label="Init. Value"
+				IsNullable="true"
+				DbName="InitVal"
+				MaxLen="320" />
+		<PrimaryIndex Name="DbKeyHash160DefIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="dbk160def_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<SuperClassRelation Name="SuperClass"
+				DbName="dbk160def_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="DbKeyHash160DefIdIdx"
+				ToIndex="Atom.AtomIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="DbKeyHash160Col"
+			TableClassCode="a83c"
+			DbName="dbk160col"
+			IsInstantiable="true"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<TableCol Name="TableId"
+				IsNullable="false"
+				DataType="ScopeIdGen" />
+		<PrimaryIndex Name="DbKeyHash160ColIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="dbk160col_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<Index Name="DbKeyHash160ColTableIdx"
+				IsDbMapped="true"
+				IsUnique="false"
+				DbName="dbk160col_xtable"
+				ShortName="TblIdx"
+				Suffix="TableIdx"
+				Label="Table Index" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="TableId" IsAscending="true" />
+		</Index>
+		<SuperClassRelation Name="SuperClass"
+				DbName="dbk160col_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="DbKeyHash160ColIdIdx"
+				ToIndex="DbKeyHash160Def.DbKeyHash160DefIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="DbKeyHash160Type"
+			TableClassCode="a83d"
+			DbName="dbk160typ"
+			IsInstantiable="true"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<TableCol Name="SchemaDefId"
+				IsNullable="false"
+				DataType="ScopeIdGen" />
+		<PrimaryIndex Name="DbKeyHash160TypeIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="dbk160typ_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<Index Name="DbKeyHash160TypeSchemaDefIdx"
+				IsDbMapped="true"
+				IsUnique="false"
+				DbName="dbk160typ_xschemadef"
+				ShortName="SchIdx"
+				Suffix="SchemaIdx"
+				Label="Schema Index" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="SchemaDefId" IsAscending="true" />
+		</Index>
+		<SuperClassRelation Name="SuperClass"
+				DbName="dbk160typ_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="DbKeyHash160TypeIdIdx"
+				ToIndex="DbKeyHash160Def.DbKeyHash160DefIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="DbKeyHash160Gen"
+			TableClassCode="a83e"
+			DbName="idgdbk160"
+			IsInstantiable="true"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<Int32Col Name="BlockSize"
+				IsNullable="false"
+				MinValue="1"
+				MaxValue="2147483647"
+				InitValue="1" />
+		<PrimaryIndex Name="DbKeyHash160GenIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="idgdbk160_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<SuperClassRelation Name="SuperClass"
+				DbName="idgdbk160_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="DbKeyHash160GenIdIdx"
+				ToIndex="DbKeyHash160Type.DbKeyHash160TypeIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="DbKeyHash224Def"
+			TableClassCode="a83f"
+			DbName="dbk224def"
+			IsInstantiable="false"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<StringCol Name="InitValue"
+				Label="Init. Value"
+				IsNullable="true"
+				DbName="InitVal"
+				MaxLen="448" />
+		<PrimaryIndex Name="DbKeyHash224DefIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="dbk224def_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<SuperClassRelation Name="SuperClass"
+				DbName="dbk224def_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="DbKeyHash224DefIdIdx"
+				ToIndex="Atom.AtomIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="DbKeyHash224Col"
+			TableClassCode="a840"
+			DbName="dbk224col"
+			IsInstantiable="true"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<TableCol Name="TableId"
+				IsNullable="false"
+				DataType="ScopeIdGen" />
+		<PrimaryIndex Name="DbKeyHash224ColIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="dbk224col_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<Index Name="DbKeyHash224ColTableIdx"
+				IsDbMapped="true"
+				IsUnique="false"
+				DbName="dbk224col_xtable"
+				ShortName="TblIdx"
+				Suffix="TableIdx"
+				Label="Table Index" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="TableId" IsAscending="true" />
+		</Index>
+		<SuperClassRelation Name="SuperClass"
+				DbName="dbk224col_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="DbKeyHash224ColIdIdx"
+				ToIndex="DbKeyHash224Def.DbKeyHash224DefIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="DbKeyHash224Type"
+			TableClassCode="a841"
+			DbName="dbk224typ"
+			IsInstantiable="true"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<TableCol Name="SchemaDefId"
+				IsNullable="false"
+				DataType="ScopeIdGen" />
+		<PrimaryIndex Name="DbKeyHash224TypeIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="dbk224typ_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<Index Name="DbKeyHash224TypeSchemaDefIdx"
+				IsDbMapped="true"
+				IsUnique="false"
+				DbName="dbk224typ_xschemadef"
+				ShortName="SchIdx"
+				Suffix="SchemaIdx"
+				Label="Schema Index" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="SchemaDefId" IsAscending="true" />
+		</Index>
+		<SuperClassRelation Name="SuperClass"
+				DbName="dbk224typ_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="DbKeyHash224TypeIdIdx"
+				ToIndex="DbKeyHash224Def.DbKeyHash224DefIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="DbKeyHash224Gen"
+			TableClassCode="a842"
+			DbName="idgdbk224"
+			IsInstantiable="true"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<Int32Col Name="BlockSize"
+				IsNullable="false"
+				MinValue="1"
+				MaxValue="2147483647"
+				InitValue="1" />
+		<PrimaryIndex Name="DbKeyHash224GenIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="idgdbk224_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<SuperClassRelation Name="SuperClass"
+				DbName="idgdbk224_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="DbKeyHash224GenIdIdx"
+				ToIndex="DbKeyHash224Type.DbKeyHash224TypeIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="DbKeyHash256Def"
+			TableClassCode="a843"
+			DbName="dbk256def"
+			IsInstantiable="false"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<StringCol Name="InitValue"
+				Label="Init. Value"
+				IsNullable="true"
+				DbName="InitVal"
+				MaxLen="512" />
+		<PrimaryIndex Name="DbKeyHash256DefIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="dbk256def_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<SuperClassRelation Name="SuperClass"
+				DbName="dbk256def_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="DbKeyHash256DefIdIdx"
+				ToIndex="Atom.AtomIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="DbKeyHash256Col"
+			TableClassCode="a844"
+			DbName="dbk256col"
+			IsInstantiable="true"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<TableCol Name="TableId"
+				IsNullable="false"
+				DataType="ScopeIdGen" />
+		<PrimaryIndex Name="DbKeyHash256ColIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="dbk256col_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<Index Name="DbKeyHash256ColTableIdx"
+				IsDbMapped="true"
+				IsUnique="false"
+				DbName="dbk256col_xtable"
+				ShortName="TblIdx"
+				Suffix="TableIdx"
+				Label="Table Index" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="TableId" IsAscending="true" />
+		</Index>
+		<SuperClassRelation Name="SuperClass"
+				DbName="dbk256col_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="DbKeyHash256ColIdIdx"
+				ToIndex="DbKeyHash256Def.DbKeyHash256DefIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="DbKeyHash256Type"
+			TableClassCode="a845"
+			DbName="dbk256typ"
+			IsInstantiable="true"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<TableCol Name="SchemaDefId"
+				IsNullable="false"
+				DataType="ScopeIdGen" />
+		<PrimaryIndex Name="DbKeyHash256TypeIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="dbk256typ_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<Index Name="DbKeyHash256TypeSchemaDefIdx"
+				IsDbMapped="true"
+				IsUnique="false"
+				DbName="dbk256typ_xschemadef"
+				ShortName="SchIdx"
+				Suffix="SchemaIdx"
+				Label="Schema Index" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="SchemaDefId" IsAscending="true" />
+		</Index>
+		<SuperClassRelation Name="SuperClass"
+				DbName="dbk256typ_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="DbKeyHash256TypeIdIdx"
+				ToIndex="DbKeyHash256Def.DbKeyHash256DefIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="DbKeyHash256Gen"
+			TableClassCode="a846"
+			DbName="idgdbk256"
+			IsInstantiable="true"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<Int32Col Name="BlockSize"
+				IsNullable="false"
+				MinValue="1"
+				MaxValue="2147483647"
+				InitValue="1" />
+		<PrimaryIndex Name="DbKeyHash256GenIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="idgdbk256_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<SuperClassRelation Name="SuperClass"
+				DbName="idgdbk256_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="DbKeyHash256GenIdIdx"
+				ToIndex="DbKeyHash256Type.DbKeyHash256TypeIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="DbKeyHash384Def"
+			TableClassCode="a847"
+			DbName="dbk384def"
+			IsInstantiable="false"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<StringCol Name="InitValue"
+				Label="Init. Value"
+				IsNullable="true"
+				DbName="InitVal"
+				MaxLen="768" />
+		<PrimaryIndex Name="DbKeyHash384DefIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="dbk384def_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<SuperClassRelation Name="SuperClass"
+				DbName="dbk384def_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="DbKeyHash384DefIdIdx"
+				ToIndex="Atom.AtomIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="DbKeyHash384Col"
+			TableClassCode="a848"
+			DbName="dbk384col"
+			IsInstantiable="true"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<TableCol Name="TableId"
+				IsNullable="false"
+				DataType="ScopeIdGen" />
+		<PrimaryIndex Name="DbKeyHash384ColIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="dbk384col_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<Index Name="DbKeyHash384ColTableIdx"
+				IsDbMapped="true"
+				IsUnique="false"
+				DbName="dbk384col_xtable"
+				ShortName="TblIdx"
+				Suffix="TableIdx"
+				Label="Table Index" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="TableId" IsAscending="true" />
+		</Index>
+		<SuperClassRelation Name="SuperClass"
+				DbName="dbk384col_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="DbKeyHash384ColIdIdx"
+				ToIndex="DbKeyHash384Def.DbKeyHash384DefIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="DbKeyHash384Type"
+			TableClassCode="a849"
+			DbName="dbk384typ"
+			IsInstantiable="true"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<TableCol Name="SchemaDefId"
+				IsNullable="false"
+				DataType="ScopeIdGen" />
+		<PrimaryIndex Name="DbKeyHash384TypeIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="dbk384typ_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<Index Name="DbKeyHash384TypeSchemaDefIdx"
+				IsDbMapped="true"
+				IsUnique="false"
+				DbName="dbk384typ_xschemadef"
+				ShortName="SchIdx"
+				Suffix="SchemaIdx"
+				Label="Schema Index" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="SchemaDefId" IsAscending="true" />
+		</Index>
+		<SuperClassRelation Name="SuperClass"
+				DbName="dbk384typ_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="DbKeyHash384TypeIdIdx"
+				ToIndex="DbKeyHash384Def.DbKeyHash384DefIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="DbKeyHash384Gen"
+			TableClassCode="a84a"
+			DbName="idgdbk384"
+			IsInstantiable="true"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<Int32Col Name="BlockSize"
+				IsNullable="false"
+				MinValue="1"
+				MaxValue="2147483647"
+				InitValue="1" />
+		<PrimaryIndex Name="DbKeyHash384GenIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="idgdbk384_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<SuperClassRelation Name="SuperClass"
+				DbName="idgdbk384_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="DbKeyHash384GenIdIdx"
+				ToIndex="DbKeyHash384Type.DbKeyHash384TypeIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="DbKeyHash512Def"
+			TableClassCode="a84b"
+			DbName="dbk512def"
+			IsInstantiable="false"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<StringCol Name="InitValue"
+				Label="Init. Value"
+				IsNullable="true"
+				DbName="InitVal"
+				MaxLen="1024" />
+		<PrimaryIndex Name="DbKeyHash512DefIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="dbk512def_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<SuperClassRelation Name="SuperClass"
+				DbName="dbk512def_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="DbKeyHash512DefIdIdx"
+				ToIndex="Atom.AtomIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="DbKeyHash512Col"
+			TableClassCode="a84c"
+			DbName="dbk512col"
+			IsInstantiable="true"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<TableCol Name="TableId"
+				IsNullable="false"
+				DataType="ScopeIdGen" />
+		<PrimaryIndex Name="DbKeyHash512ColIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="dbk512col_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<Index Name="DbKeyHash512ColTableIdx"
+				IsDbMapped="true"
+				IsUnique="false"
+				DbName="dbk512col_xtable"
+				ShortName="TblIdx"
+				Suffix="TableIdx"
+				Label="Table Index" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="TableId" IsAscending="true" />
+		</Index>
+		<SuperClassRelation Name="SuperClass"
+				DbName="dbk512col_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="DbKeyHash512ColIdIdx"
+				ToIndex="DbKeyHash512Def.DbKeyHash512DefIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="DbKeyHash512Type"
+			TableClassCode="a84d"
+			DbName="dbk512typ"
+			IsInstantiable="true"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<TableCol Name="SchemaDefId"
+				IsNullable="false"
+				DataType="ScopeIdGen" />
+		<PrimaryIndex Name="DbKeyHash512TypeIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="dbk512typ_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<Index Name="DbKeyHash512TypeSchemaDefIdx"
+				IsDbMapped="true"
+				IsUnique="false"
+				DbName="dbk512typ_xschemadef"
+				ShortName="SchIdx"
+				Suffix="SchemaIdx"
+				Label="Schema Index" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="SchemaDefId" IsAscending="true" />
+		</Index>
+		<SuperClassRelation Name="SuperClass"
+				DbName="dbk512typ_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="DbKeyHash512TypeIdIdx"
+				ToIndex="DbKeyHash512Def.DbKeyHash512DefIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="DbKeyHash512Gen"
+			TableClassCode="a84e"
+			DbName="idgdbk512"
+			IsInstantiable="true"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<Int32Col Name="BlockSize"
+				IsNullable="false"
+				MinValue="1"
+				MaxValue="2147483647"
+				InitValue="1" />
+		<PrimaryIndex Name="DbKeyHash512GenIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="idgdbk512_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<SuperClassRelation Name="SuperClass"
+				DbName="idgdbk512_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="DbKeyHash512GenIdIdx"
+				ToIndex="DbKeyHash512Type.DbKeyHash512TypeIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="StringDef"
+			TableClassCode="a84f"
 			DbName="strdef"
 			IsInstantiable="false"
 			HasHistory="true"
@@ -11417,7 +12521,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="StringType"
-			TableClassCode="a839"
+			TableClassCode="a850"
 			DbName="strtyp"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -11467,7 +12571,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="TZDateDef"
-			TableClassCode="a83a"
+			TableClassCode="a851"
 			DbName="dzdef"
 			IsInstantiable="false"
 			HasHistory="true"
@@ -11508,7 +12612,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="TZDateType"
-			TableClassCode="a83b"
+			TableClassCode="a852"
 			DbName="dztyp"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -11558,7 +12662,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="TZTimeDef"
-			TableClassCode="a83c"
+			TableClassCode="a853"
 			DbName="tmzdef"
 			IsInstantiable="false"
 			HasHistory="true"
@@ -11599,7 +12703,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="TZTimeType"
-			TableClassCode="a83d"
+			TableClassCode="a854"
 			DbName="tmztyp"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -11649,7 +12753,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="TZTimestampDef"
-			TableClassCode="a83e"
+			TableClassCode="a855"
 			DbName="zsdef"
 			IsInstantiable="false"
 			HasHistory="true"
@@ -11690,7 +12794,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="TZTimestampType"
-			TableClassCode="a83f"
+			TableClassCode="a856"
 			DbName="zstyp"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -11740,7 +12844,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="TableCol"
-			TableClassCode="a840"
+			TableClassCode="a857"
 			DbName="tblcol"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -11813,7 +12917,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="TextDef"
-			TableClassCode="a841"
+			TableClassCode="a858"
 			DbName="txtdef"
 			IsInstantiable="false"
 			HasHistory="true"
@@ -11866,7 +12970,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="TextType"
-			TableClassCode="a842"
+			TableClassCode="a859"
 			DbName="txttyp"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -11916,7 +13020,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="TimeDef"
-			TableClassCode="a843"
+			TableClassCode="a85a"
 			DbName="tmdef"
 			IsInstantiable="false"
 			HasHistory="true"
@@ -11957,7 +13061,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="TimeType"
-			TableClassCode="a845"
+			TableClassCode="a85b"
 			DbName="tmtyp"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -12007,7 +13111,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="TimestampDef"
-			TableClassCode="a846"
+			TableClassCode="a85c"
 			DbName="tsdef"
 			IsInstantiable="false"
 			HasHistory="true"
@@ -12048,7 +13152,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="TimestampType"
-			TableClassCode="a847"
+			TableClassCode="a85d"
 			DbName="tstyp"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -12098,7 +13202,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="TokenDef"
-			TableClassCode="a848"
+			TableClassCode="a85e"
 			DbName="tkndef"
 			IsInstantiable="false"
 			HasHistory="true"
@@ -12147,7 +13251,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="TokenType"
-			TableClassCode="a849"
+			TableClassCode="a85f"
 			DbName="tkntyp"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -12197,7 +13301,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="UInt16Def"
-			TableClassCode="a84a"
+			TableClassCode="a860"
 			DbName="u16def"
 			IsInstantiable="false"
 			HasHistory="true"
@@ -12249,7 +13353,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="UInt16Type"
-			TableClassCode="a84b"
+			TableClassCode="a861"
 			DbName="uint16typ"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -12299,7 +13403,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="UInt32Def"
-			TableClassCode="a84c"
+			TableClassCode="a862"
 			DbName="u32def"
 			IsInstantiable="false"
 			HasHistory="true"
@@ -12351,7 +13455,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="UInt32Type"
-			TableClassCode="a84d"
+			TableClassCode="a863"
 			DbName="uint32typ"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -12401,7 +13505,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="UInt64Def"
-			TableClassCode="a84e"
+			TableClassCode="a864"
 			DbName="u64def"
 			IsInstantiable="false"
 			HasHistory="true"
@@ -12453,7 +13557,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="UInt64Type"
-			TableClassCode="a84f"
+			TableClassCode="a865"
 			DbName="uint64typ"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -12503,7 +13607,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="UuidDef"
-			TableClassCode="a850"
+			TableClassCode="a866"
 			DbName="uuiddef"
 			IsInstantiable="false"
 			HasHistory="true"
@@ -12544,7 +13648,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="UuidType"
-			TableClassCode="a851"
+			TableClassCode="a867"
 			DbName="uuidtyp"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -12594,7 +13698,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="BlobCol"
-			TableClassCode="a852"
+			TableClassCode="a868"
 			DbName="blbcol"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -12644,7 +13748,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="BoolCol"
-			TableClassCode="a853"
+			TableClassCode="a869"
 			DbName="boolcol"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -12694,7 +13798,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="DateCol"
-			TableClassCode="a854"
+			TableClassCode="a86a"
 			DbName="dtcol"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -12744,7 +13848,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="DoubleCol"
-			TableClassCode="a855"
+			TableClassCode="a86b"
 			DbName="dblcol"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -12794,7 +13898,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="EnumDef"
-			TableClassCode="a856"
+			TableClassCode="a86c"
 			DbName="enumdef"
 			IsInstantiable="false"
 			HasHistory="true"
@@ -12831,7 +13935,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="EnumType"
-			TableClassCode="a857"
+			TableClassCode="a86d"
 			DbName="enumtyp"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -12881,7 +13985,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="FloatCol"
-			TableClassCode="a858"
+			TableClassCode="a86e"
 			DbName="fltcol"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -12931,7 +14035,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="Id16Gen"
-			TableClassCode="a859"
+			TableClassCode="a86f"
 			DbName="idg16"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -12993,7 +14097,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="Id32Gen"
-			TableClassCode="a85a"
+			TableClassCode="a870"
 			DbName="idg32"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -13055,7 +14159,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="Id64Gen"
-			TableClassCode="a85b"
+			TableClassCode="a871"
 			DbName="idg64"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -13117,7 +14221,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="Int16Col"
-			TableClassCode="a85c"
+			TableClassCode="a872"
 			DbName="int16col"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -13167,7 +14271,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="Int32Col"
-			TableClassCode="a85d"
+			TableClassCode="a873"
 			DbName="int32col"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -13217,7 +14321,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="Int64Col"
-			TableClassCode="a85e"
+			TableClassCode="a874"
 			DbName="int64col"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -13267,7 +14371,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="NmTokenCol"
-			TableClassCode="a85f"
+			TableClassCode="a875"
 			DbName="nmtkncol"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -13317,7 +14421,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="NmTokensCol"
-			TableClassCode="a860"
+			TableClassCode="a876"
 			DbName="nmtknscol"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -13367,7 +14471,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="NumberCol"
-			TableClassCode="a861"
+			TableClassCode="a877"
 			DbName="numcol"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -13417,7 +14521,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="StringCol"
-			TableClassCode="a862"
+			TableClassCode="a878"
 			DbName="strcol"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -13467,7 +14571,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="TZDateCol"
-			TableClassCode="a863"
+			TableClassCode="a879"
 			DbName="dzcol"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -13517,7 +14621,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="TZTimeCol"
-			TableClassCode="a864"
+			TableClassCode="a87a"
 			DbName="tmzcol"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -13567,7 +14671,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="TZTimestampCol"
-			TableClassCode="a865"
+			TableClassCode="a87b"
 			DbName="zscol"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -13617,7 +14721,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="TextCol"
-			TableClassCode="a866"
+			TableClassCode="a87c"
 			DbName="txtcol"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -13667,7 +14771,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="TimeCol"
-			TableClassCode="a867"
+			TableClassCode="a87d"
 			DbName="tmcol"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -13717,7 +14821,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="TimestampCol"
-			TableClassCode="a868"
+			TableClassCode="a87e"
 			DbName="tscol"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -13767,7 +14871,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="TokenCol"
-			TableClassCode="a869"
+			TableClassCode="a87f"
 			DbName="tkncol"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -13817,7 +14921,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="UInt16Col"
-			TableClassCode="a86a"
+			TableClassCode="a880"
 			DbName="uint16col"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -13867,7 +14971,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="UInt32Col"
-			TableClassCode="a86b"
+			TableClassCode="a881"
 			DbName="uint32col"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -13917,7 +15021,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="UInt64Col"
-			TableClassCode="a86c"
+			TableClassCode="a882"
 			DbName="uint64col"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -13967,7 +15071,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="UuidCol"
-			TableClassCode="a86d"
+			TableClassCode="a883"
 			DbName="uuidcol"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -14017,7 +15121,7 @@ limitations under the License.
 	</Table>
 
 	<Table Name="UuidGen"
-			TableClassCode="a86e"
+			TableClassCode="a884"
 			DbName="idguuid"
 			IsInstantiable="true"
 			HasHistory="true"
@@ -16172,6 +17276,186 @@ limitations under the License.
 				Label="Containing Schema Definition"
 				Suffix="SchemaDef"
 				FromIndex="UInt16TypeSchemaDefIdx"
+				ToIndex="SchemaDef.SchemaDefIdIdx"
+				IsRequired="true"
+				Narrowed="Value.Scope" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="SchemaDefId" ToCol="Id" />
+		</Relation>
+	</TableAddendum>
+
+	<TableAddendum FromTable="DbKeyHash128Col">
+		<Relation Name="Table"
+				RelationType="Container"
+				DbName="dbk128col_tbl"
+				Label="Containing Table"
+				Suffix="Table"
+				FromIndex="DbKeyHash128ColTableIdx"
+				ToIndex="Table.TableIdIdx"
+				IsRequired="true"
+				Narrowed="Value.Scope" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="TableId" ToCol="Id" />
+		</Relation>
+	</TableAddendum>
+
+	<TableAddendum FromTable="DbKeyHash128Type">
+		<Relation Name="SchemaDef"
+				RelationType="Container"
+				DbName="dbk128typ_sch"
+				Label="Containing Schema Definition"
+				Suffix="SchemaDef"
+				FromIndex="DbKeyHash128TypeSchemaDefIdx"
+				ToIndex="SchemaDef.SchemaDefIdIdx"
+				IsRequired="true"
+				Narrowed="Value.Scope" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="SchemaDefId" ToCol="Id" />
+		</Relation>
+	</TableAddendum>
+
+	<TableAddendum FromTable="DbKeyHash160Col">
+		<Relation Name="Table"
+				RelationType="Container"
+				DbName="dbk160col_tbl"
+				Label="Containing Table"
+				Suffix="Table"
+				FromIndex="DbKeyHash160ColTableIdx"
+				ToIndex="Table.TableIdIdx"
+				IsRequired="true"
+				Narrowed="Value.Scope" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="TableId" ToCol="Id" />
+		</Relation>
+	</TableAddendum>
+
+	<TableAddendum FromTable="DbKeyHash160Type">
+		<Relation Name="SchemaDef"
+				RelationType="Container"
+				DbName="dbk160typ_sch"
+				Label="Containing Schema Definition"
+				Suffix="SchemaDef"
+				FromIndex="DbKeyHash160TypeSchemaDefIdx"
+				ToIndex="SchemaDef.SchemaDefIdIdx"
+				IsRequired="true"
+				Narrowed="Value.Scope" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="SchemaDefId" ToCol="Id" />
+		</Relation>
+	</TableAddendum>
+
+	<TableAddendum FromTable="DbKeyHash224Col">
+		<Relation Name="Table"
+				RelationType="Container"
+				DbName="dbk224col_tbl"
+				Label="Containing Table"
+				Suffix="Table"
+				FromIndex="DbKeyHash224ColTableIdx"
+				ToIndex="Table.TableIdIdx"
+				IsRequired="true"
+				Narrowed="Value.Scope" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="TableId" ToCol="Id" />
+		</Relation>
+	</TableAddendum>
+
+	<TableAddendum FromTable="DbKeyHash224Type">
+		<Relation Name="SchemaDef"
+				RelationType="Container"
+				DbName="dbk224typ_sch"
+				Label="Containing Schema Definition"
+				Suffix="SchemaDef"
+				FromIndex="DbKeyHash224TypeSchemaDefIdx"
+				ToIndex="SchemaDef.SchemaDefIdIdx"
+				IsRequired="true"
+				Narrowed="Value.Scope" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="SchemaDefId" ToCol="Id" />
+		</Relation>
+	</TableAddendum>
+
+	<TableAddendum FromTable="DbKeyHash256Col">
+		<Relation Name="Table"
+				RelationType="Container"
+				DbName="dbk256col_tbl"
+				Label="Containing Table"
+				Suffix="Table"
+				FromIndex="DbKeyHash256ColTableIdx"
+				ToIndex="Table.TableIdIdx"
+				IsRequired="true"
+				Narrowed="Value.Scope" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="TableId" ToCol="Id" />
+		</Relation>
+	</TableAddendum>
+
+	<TableAddendum FromTable="DbKeyHash256Type">
+		<Relation Name="SchemaDef"
+				RelationType="Container"
+				DbName="dbk256typ_sch"
+				Label="Containing Schema Definition"
+				Suffix="SchemaDef"
+				FromIndex="DbKeyHash256TypeSchemaDefIdx"
+				ToIndex="SchemaDef.SchemaDefIdIdx"
+				IsRequired="true"
+				Narrowed="Value.Scope" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="SchemaDefId" ToCol="Id" />
+		</Relation>
+	</TableAddendum>
+
+	<TableAddendum FromTable="DbKeyHash384Col">
+		<Relation Name="Table"
+				RelationType="Container"
+				DbName="dbk384col_tbl"
+				Label="Containing Table"
+				Suffix="Table"
+				FromIndex="DbKeyHash384ColTableIdx"
+				ToIndex="Table.TableIdIdx"
+				IsRequired="true"
+				Narrowed="Value.Scope" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="TableId" ToCol="Id" />
+		</Relation>
+	</TableAddendum>
+
+	<TableAddendum FromTable="DbKeyHash384Type">
+		<Relation Name="SchemaDef"
+				RelationType="Container"
+				DbName="dbk384typ_sch"
+				Label="Containing Schema Definition"
+				Suffix="SchemaDef"
+				FromIndex="DbKeyHash384TypeSchemaDefIdx"
+				ToIndex="SchemaDef.SchemaDefIdIdx"
+				IsRequired="true"
+				Narrowed="Value.Scope" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="SchemaDefId" ToCol="Id" />
+		</Relation>
+	</TableAddendum>
+
+	<TableAddendum FromTable="DbKeyHash512Col">
+		<Relation Name="Table"
+				RelationType="Container"
+				DbName="dbk512col_tbl"
+				Label="Containing Table"
+				Suffix="Table"
+				FromIndex="DbKeyHash512ColTableIdx"
+				ToIndex="Table.TableIdIdx"
+				IsRequired="true"
+				Narrowed="Value.Scope" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="TableId" ToCol="Id" />
+		</Relation>
+	</TableAddendum>
+
+	<TableAddendum FromTable="DbKeyHash512Type">
+		<Relation Name="SchemaDef"
+				RelationType="Container"
+				DbName="dbk512typ_sch"
+				Label="Containing Schema Definition"
+				Suffix="SchemaDef"
+				FromIndex="DbKeyHash512TypeSchemaDefIdx"
 				ToIndex="SchemaDef.SchemaDefIdIdx"
 				IsRequired="true"
 				Narrowed="Value.Scope" >
