@@ -11378,11 +11378,10 @@ limitations under the License.
 		<TableCol Name="Id"
 				IsNullable="false"
 				DataType="ValueIdGen" />
-		<StringCol Name="InitValue"
+		<DbKeyHash128Col Name="InitValue"
 				Label="Init. Value"
 				IsNullable="true"
-				DbName="InitVal"
-				MaxLen="256" />
+				DbName="InitVal" />
 		<PrimaryIndex Name="DbKeyHash128DefIdIdx"
 				IsDbMapped="true"
 				IsUnique="true"
@@ -11562,11 +11561,10 @@ limitations under the License.
 		<TableCol Name="Id"
 				IsNullable="false"
 				DataType="ValueIdGen" />
-		<StringCol Name="InitValue"
+		<DbKeyHash160Col Name="InitValue"
 				Label="Init. Value"
 				IsNullable="true"
-				DbName="InitVal"
-				MaxLen="320" />
+				DbName="InitVal" />
 		<PrimaryIndex Name="DbKeyHash160DefIdIdx"
 				IsDbMapped="true"
 				IsUnique="true"
@@ -11746,11 +11744,10 @@ limitations under the License.
 		<TableCol Name="Id"
 				IsNullable="false"
 				DataType="ValueIdGen" />
-		<StringCol Name="InitValue"
+		<DbKeyHash224Col Name="InitValue"
 				Label="Init. Value"
 				IsNullable="true"
-				DbName="InitVal"
-				MaxLen="448" />
+				DbName="InitVal" />
 		<PrimaryIndex Name="DbKeyHash224DefIdIdx"
 				IsDbMapped="true"
 				IsUnique="true"
@@ -11930,11 +11927,10 @@ limitations under the License.
 		<TableCol Name="Id"
 				IsNullable="false"
 				DataType="ValueIdGen" />
-		<StringCol Name="InitValue"
+		<DbKeyHash256Col Name="InitValue"
 				Label="Init. Value"
 				IsNullable="true"
-				DbName="InitVal"
-				MaxLen="512" />
+				DbName="InitVal" />
 		<PrimaryIndex Name="DbKeyHash256DefIdIdx"
 				IsDbMapped="true"
 				IsUnique="true"
@@ -12114,11 +12110,10 @@ limitations under the License.
 		<TableCol Name="Id"
 				IsNullable="false"
 				DataType="ValueIdGen" />
-		<StringCol Name="InitValue"
+		<DbKeyHash384Col Name="InitValue"
 				Label="Init. Value"
 				IsNullable="true"
-				DbName="InitVal"
-				MaxLen="768" />
+				DbName="InitVal" />
 		<PrimaryIndex Name="DbKeyHash384DefIdIdx"
 				IsDbMapped="true"
 				IsUnique="true"
@@ -12298,11 +12293,10 @@ limitations under the License.
 		<TableCol Name="Id"
 				IsNullable="false"
 				DataType="ValueIdGen" />
-		<StringCol Name="InitValue"
+		<DbKeyHash512Col Name="InitValue"
 				Label="Init. Value"
 				IsNullable="true"
-				DbName="InitVal"
-				MaxLen="1024" />
+				DbName="InitVal" />
 		<PrimaryIndex Name="DbKeyHash512DefIdIdx"
 				IsDbMapped="true"
 				IsUnique="true"
@@ -12461,6 +12455,189 @@ limitations under the License.
 				Suffix="SuperClass"
 				FromIndex="DbKeyHash512GenIdIdx"
 				ToIndex="DbKeyHash512Type.DbKeyHash512TypeIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="Uuid6Def"
+			TableClassCode="a84b"
+			DbName="dbk512def"
+			IsInstantiable="false"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<Uuid6Col Name="InitValue"
+				Label="Init. Value"
+				IsNullable="true"
+				DbName="InitVal" />
+		<PrimaryIndex Name="Uuid6DefIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="dbk512def_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<SuperClassRelation Name="SuperClass"
+				DbName="dbk512def_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="Uuid6DefIdIdx"
+				ToIndex="Atom.AtomIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="Uuid6Col"
+			TableClassCode="a84c"
+			DbName="dbk512col"
+			IsInstantiable="true"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<TableCol Name="TableId"
+				IsNullable="false"
+				DataType="ScopeIdGen" />
+		<PrimaryIndex Name="Uuid6ColIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="dbk512col_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<Index Name="Uuid6ColTableIdx"
+				IsDbMapped="true"
+				IsUnique="false"
+				DbName="dbk512col_xtable"
+				ShortName="TblIdx"
+				Suffix="TableIdx"
+				Label="Table Index" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="TableId" IsAscending="true" />
+		</Index>
+		<SuperClassRelation Name="SuperClass"
+				DbName="dbk512col_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="Uuid6ColIdIdx"
+				ToIndex="Uuid6Def.Uuid6DefIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="Uuid6Type"
+			TableClassCode="a84d"
+			DbName="dbk512typ"
+			IsInstantiable="true"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<TableCol Name="SchemaDefId"
+				IsNullable="false"
+				DataType="ScopeIdGen" />
+		<PrimaryIndex Name="Uuid6TypeIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="dbk512typ_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<Index Name="Uuid6TypeSchemaDefIdx"
+				IsDbMapped="true"
+				IsUnique="false"
+				DbName="dbk512typ_xschemadef"
+				ShortName="SchIdx"
+				Suffix="SchemaIdx"
+				Label="Schema Index" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="SchemaDefId" IsAscending="true" />
+		</Index>
+		<SuperClassRelation Name="SuperClass"
+				DbName="dbk512typ_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="Uuid6TypeIdIdx"
+				ToIndex="Uuid6Def.Uuid6DefIdIdx" >
+			<RelationCol Name="TenantId" ToCol="TenantId" />
+			<RelationCol Name="Id" ToCol="Id" />
+		</SuperClassRelation>
+	</Table>
+
+	<Table Name="Uuid6Gen"
+			TableClassCode="a84e"
+			DbName="idgdbk512"
+			IsInstantiable="true"
+			HasHistory="true"
+			HasAuditColumns="true"
+			QualTable="SchemaDef"
+			LoaderBehaviour="Update"
+			SecScope="Tenant" >
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
+		<TableCol Name="Id"
+				IsNullable="false"
+				DataType="ValueIdGen" />
+		<Int32Col Name="BlockSize"
+				IsNullable="false"
+				MinValue="1"
+				MaxValue="2147483647"
+				InitValue="1" />
+		<PrimaryIndex Name="Uuid6GenIdIdx"
+				IsDbMapped="true"
+				IsUnique="true"
+				DbName="idgdbk512_pk"
+				ShortName="PIdx"
+				Suffix="IdIdx"
+				Label="IdIdx" >
+			<IndexCol Name="TenantId" IsAscending="true" />
+			<IndexCol Name="Id" IsAscending="true" />
+		</PrimaryIndex>
+		<SuperClassRelation Name="SuperClass"
+				DbName="idgdbk512_super"
+				Label="SuperClass"
+				Suffix="SuperClass"
+				FromIndex="Uuid6GenIdIdx"
+				ToIndex="Uuid6Type.Uuid6TypeIdIdx" >
 			<RelationCol Name="TenantId" ToCol="TenantId" />
 			<RelationCol Name="Id" ToCol="Id" />
 		</SuperClassRelation>
