@@ -30,10 +30,10 @@
  *	Please contact Mark Stephen Sobkow at mark.sobkow@gmail.com for commercial licensing.
  *-->
 <MSSBam
-		xmlns="http://msscf.org/msscf/2.0.13/xsd/mssbam-2.13"
+		xmlns="http://msscf.org:8088/msscf/2.0.13/xsd/mssbam-2.13.xsd"
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		xmlns:xs="http://www.w3.org/2001/XMLSchema"
-		xsi:schemaLocation="http://msscf.org/msscf/2.0.13/xsd/mssbam-2.13 http://msscf.org:8088/msscf/2.0.13/xsd/mssbam-2.13.xsd"
+		xsi:schemaLocation="http://msscf.org:8088/msscf/2.0.13/xsd/mssbam-2.13.xsd http://msscf.org:8088/msscf/2.0.13/xsd/mssbam-2.13.xsd"
 		Name="CFDbTst"
 		Revision="3.1"
 		Description="MSS Code Factory CFDbTst - Database Test Suite"

@@ -18,10 +18,10 @@
  *	https://www.paypal.com/paypalme2/MarkSobkow</CommonLicense>
  *-->
 <MSSBam
-		xmlns="http://msscf.org/msscf/2.0.13/xsd/mssbam-2.13"
+		xmlns="http://msscf.org:8088/msscf/2.0.13/xsd/mssbam-2.13.xsd"
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		xmlns:xs="http://www.w3.org/2001/XMLSchema"
-		xsi:schemaLocation="http://msscf.org/msscf/2.0.13/xsd/mssbam-2.13 http://msscf.org:8088/msscf/2.0.13/xsd/mssbam-2.13.xsd"
+		xsi:schemaLocation="http://msscf.org:8088/msscf/2.0.13/xsd/mssbam-2.13.xsd http://msscf.org:8088/msscf/2.0.13/xsd/mssbam-2.13.xsd"
 		Name="CFSec"
 		Revision="3.1"
 		Description="MSS Code Factory CFSec - Security"
