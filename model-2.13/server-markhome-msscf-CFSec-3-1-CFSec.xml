@@ -66,11 +66,9 @@ limitations under the License.
 		<EnumTag Name="Delete" EnumCode="2" />
 	</EnumType>
 
-	<Id64Gen Name="ClusterIdGen"
+	<DbKeyHash256Gen Name="ClusterIdGen"
 			IsNullable="false"
 			DbName="ClusterIdGenSeq"
-			MinValue="0"
-			InitValue="0"
 			Slice="105"
 			BlockSize="1" />
 
@@ -143,31 +141,29 @@ limitations under the License.
 			MaxLen="256"
 			InitValue="" />
 
-	<UuidGen Name="SecSessionIdGen"
+	<DbKeyHash256Gen Name="SecSessionIdGen"
 			IsNullable="false"
-			InitValue="654dbba0-eda7-11e1-aff1-0800200c9a66"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Slice="113"
 			BlockSize="1" />
 
-	<UuidGen Name="SecUserIdGen"
+	<DbKeyHash256Gen Name="SecUserIdGen"
 			IsNullable="false"
-			InitValue="654dbba0-eda7-11e1-aff1-0800200c9a66"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Slice="114"
 			BlockSize="1" />
 
-	<Id32Gen Name="ServiceTypeIdGen"
+	<DbKeyHash256Gen Name="ServiceTypeIdGen"
 			IsNullable="false"
 			DbName="ServiceTypeIdGenSeq"
-			MinValue="0"
-			InitValue="0"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Slice="104"
 			BlockSize="1" />
 
-	<Id64Gen Name="TenantIdGen"
+	<DbKeyHash256Gen Name="TenantIdGen"
 			IsNullable="false"
 			DbName="TenantIdGenSeq"
-			MinValue="0"
-			InitValue="0"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Slice="106"
 			BlockSize="1" />
 
@@ -344,66 +340,58 @@ limitations under the License.
 </CSharpTableObjImplementation>
 	</Table>
 
-	<Id64Gen Name="HostNodeIdGen"
+	<DbKeyHash256Gen Name="HostNodeIdGen"
 			IsNullable="false"
-			MinValue="0"
-			InitValue="0"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Dispenser="Cluster"
 			Slice="116"
 			BlockSize="1" />
 
-	<Id32Gen Name="SecAppIdGen"
+	<DbKeyHash256Gen Name="SecAppIdGen"
 			IsNullable="false"
-			MinValue="0"
-			InitValue="0"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Dispenser="Cluster"
 			Slice="107"
 			BlockSize="1" />
 
-	<Id32Gen Name="SecFormIdGen"
+	<DbKeyHash256Gen Name="SecFormIdGen"
 			IsNullable="false"
-			MinValue="0"
-			InitValue="0"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Dispenser="Cluster"
 			Slice="108"
 			BlockSize="1" />
 
-	<Id64Gen Name="SecGroupFormIdGen"
+	<DbKeyHash256Gen Name="SecGroupFormIdGen"
 			IsNullable="false"
-			MinValue="0"
-			InitValue="0"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Dispenser="Cluster"
 			Slice="112"
 			BlockSize="1" />
 
-	<Id32Gen Name="SecGroupIdGen"
+	<DbKeyHash256Gen Name="SecGroupIdGen"
 			IsNullable="false"
-			MinValue="0"
-			InitValue="0"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Dispenser="Cluster"
 			Slice="109"
 			BlockSize="1" />
 
-	<Id64Gen Name="SecGrpIncIdGen"
+	<DbKeyHash256Gen Name="SecGrpIncIdGen"
 			IsNullable="false"
-			MinValue="0"
-			InitValue="0"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Dispenser="Cluster"
 			Slice="111"
 			BlockSize="1" />
 
-	<Id64Gen Name="SecGrpMembIdGen"
+	<DbKeyHash256Gen Name="SecGrpMembIdGen"
 			IsNullable="false"
-			MinValue="0"
-			InitValue="0"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Dispenser="Cluster"
 			Slice="110"
 			BlockSize="1" />
 
-	<Id64Gen Name="ServiceIdGen"
+	<DbKeyHash256Gen Name="ServiceIdGen"
 			IsNullable="false"
-			MinValue="0"
-			InitValue="0"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Dispenser="Cluster"
 			Slice="115"
 			BlockSize="1" />
@@ -2109,26 +2097,23 @@ limitations under the License.
 </CSharpTableObjImplementation>
 	</Table>
 
-	<Id32Gen Name="TSecGroupIdGen"
+	<DbKeyHash256Gen Name="TSecGroupIdGen"
 			IsNullable="false"
-			MinValue="0"
-			InitValue="0"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Dispenser="Tenant"
 			Slice="117"
 			BlockSize="1" />
 
-	<Id64Gen Name="TSecGrpIncIdGen"
+	<DbKeyHash256Gen Name="TSecGrpIncIdGen"
 			IsNullable="false"
-			MinValue="0"
-			InitValue="0"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Dispenser="Tenant"
 			Slice="119"
 			BlockSize="1" />
 
-	<Id64Gen Name="TSecGrpMembIdGen"
+	<DbKeyHash256Gen Name="TSecGrpMembIdGen"
 			IsNullable="false"
-			MinValue="0"
-			InitValue="0"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Dispenser="Tenant"
 			Slice="118"
 			BlockSize="1" />

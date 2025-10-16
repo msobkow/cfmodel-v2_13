@@ -71,10 +71,9 @@ limitations under the License.
 			MaxLen="1024"
 			InitValue="" />
 
-	<Id64Gen Name="MajorVersionIdGen"
+	<DbKeyHash256Gen Name="MajorVersionIdGen"
 			IsNullable="false"
-			MinValue="0"
-			InitValue="0"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Dispenser="Tenant"
 			Slice="205"
 			BlockSize="1" />
@@ -87,42 +86,37 @@ limitations under the License.
 			Slice="208"
 			BlockSize="1" />
 
-	<Id64Gen Name="MinorVersionIdGen"
+	<DbKeyHash256Gen Name="MinorVersionIdGen"
 			IsNullable="false"
-			MinValue="0"
-			InitValue="0"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Dispenser="Tenant"
 			Slice="206"
 			BlockSize="1" />
 
-	<Id64Gen Name="SubProjectIdGen"
+	<DbKeyHash256Gen Name="SubProjectIdGen"
 			IsNullable="false"
-			MinValue="0"
-			InitValue="0"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Dispenser="Tenant"
 			Slice="204"
 			BlockSize="1" />
 
-	<Id64Gen Name="TldIdGen"
+	<DbKeyHash256Gen Name="TldIdGen"
 			IsNullable="false"
-			MinValue="0"
-			InitValue="0"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Dispenser="Tenant"
 			Slice="200"
 			BlockSize="1" />
 
-	<Id64Gen Name="TopDomainIdGen"
+	<DbKeyHash256Gen Name="TopDomainIdGen"
 			IsNullable="false"
-			MinValue="0"
-			InitValue="0"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Dispenser="Tenant"
 			Slice="201"
 			BlockSize="1" />
 
-	<Id64Gen Name="TopProjectIdGen"
+	<DbKeyHash256Gen Name="TopProjectIdGen"
 			IsNullable="false"
-			MinValue="0"
-			InitValue="0"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Dispenser="Tenant"
 			Slice="203"
 			BlockSize="1" />

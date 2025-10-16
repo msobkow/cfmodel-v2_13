@@ -76,10 +76,9 @@ limitations under the License.
 			RefModelName="server-markhome-msscf-CFInt-3-1-CFInt"
 			IncludeRoot="server.markhome.msscf.CFInt.3.1.CFInt" />
 
-	<Id64Gen Name="ChainIdGen"
+	<DbKeyHash256Gen Name="ChainIdGen"
 			IsNullable="false"
-			MinValue="0"
-			InitValue="0"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Dispenser="Tenant"
 			Slice="1006"
 			BlockSize="1" />
@@ -89,18 +88,16 @@ limitations under the License.
 			MaxLen="127"
 			InitValue="" />
 
-	<Id64Gen Name="EnumTagIdGen"
+	<DbKeyHash256Gen Name="EnumTagIdGen"
 			IsNullable="false"
-			MinValue="0"
-			InitValue="0"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Dispenser="Tenant"
 			Slice="1005"
 			BlockSize="1" />
 
-	<Id64Gen Name="IndexColIdGen"
+	<DbKeyHash256Gen Name="IndexColIdGen"
 			IsNullable="false"
-			MinValue="0"
-			InitValue="0"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Dispenser="Tenant"
 			Slice="1002"
 			BlockSize="1" />
@@ -119,18 +116,16 @@ limitations under the License.
 			MaxLen="192"
 			InitValue="" />
 
-	<Id64Gen Name="ParamIdGen"
+	<DbKeyHash256Gen Name="ParamIdGen"
 			IsNullable="false"
-			MinValue="0"
-			InitValue="0"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Dispenser="Tenant"
 			Slice="1007"
 			BlockSize="1" />
 
-	<Id64Gen Name="RelationColIdGen"
+	<DbKeyHash256Gen Name="RelationColIdGen"
 			IsNullable="false"
-			MinValue="0"
-			InitValue="0"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Dispenser="Tenant"
 			Slice="1003"
 			BlockSize="1" />
@@ -149,10 +144,9 @@ limitations under the License.
 		<EnumTag Name="Children" />
 	</EnumType>
 
-	<Id64Gen Name="ScopeIdGen"
+	<DbKeyHash256Gen Name="ScopeIdGen"
 			IsNullable="false"
-			MinValue="0"
-			InitValue="0"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Dispenser="Tenant"
 			Slice="1001"
 			BlockSize="1" />
@@ -167,10 +161,9 @@ limitations under the License.
 		<EnumTag Name="Tenant" />
 	</EnumType>
 
-	<Id64Gen Name="ValueIdGen"
+	<DbKeyHash256Gen Name="ValueIdGen"
 			IsNullable="false"
-			MinValue="0"
-			InitValue="0"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Dispenser="Tenant"
 			Slice="1004"
 			BlockSize="1" />
