@@ -79,7 +79,6 @@ limitations under the License.
 	<DbKeyHash256Gen Name="ChainIdGen"
 			IsNullable="false"
 			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
-			Dispenser="Tenant"
 			Slice="1006"
 			BlockSize="1" />
 
@@ -91,14 +90,12 @@ limitations under the License.
 	<DbKeyHash256Gen Name="EnumTagIdGen"
 			IsNullable="false"
 			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
-			Dispenser="Tenant"
 			Slice="1005"
 			BlockSize="1" />
 
 	<DbKeyHash256Gen Name="IndexColIdGen"
 			IsNullable="false"
 			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
-			Dispenser="Tenant"
 			Slice="1002"
 			BlockSize="1" />
 
@@ -119,14 +116,12 @@ limitations under the License.
 	<DbKeyHash256Gen Name="ParamIdGen"
 			IsNullable="false"
 			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
-			Dispenser="Tenant"
 			Slice="1007"
 			BlockSize="1" />
 
 	<DbKeyHash256Gen Name="RelationColIdGen"
 			IsNullable="false"
 			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
-			Dispenser="Tenant"
 			Slice="1003"
 			BlockSize="1" />
 
@@ -147,7 +142,6 @@ limitations under the License.
 	<DbKeyHash256Gen Name="ScopeIdGen"
 			IsNullable="false"
 			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
-			Dispenser="Tenant"
 			Slice="1001"
 			BlockSize="1" />
 
@@ -164,7 +158,6 @@ limitations under the License.
 	<DbKeyHash256Gen Name="ValueIdGen"
 			IsNullable="false"
 			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
-			Dispenser="Tenant"
 			Slice="1004"
 			BlockSize="1" />
 
@@ -11878,12 +11871,6 @@ limitations under the License.
 		<TableCol Name="Id"
 				IsNullable="false"
 				DataType="ValueIdGen" />
-		<TableCol Name="DispenserTenantId"
-				IsNullable="true"
-				DataType="TenantIdGen" />
-		<TableCol Name="DispenserId"
-				IsNullable="true"
-				DataType="ScopeIdGen" />
 		<Int16Col Name="Slice"
 				IsNullable="false"
 				MinValue="0"
@@ -11904,15 +11891,6 @@ limitations under the License.
 			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="Id" IsAscending="true" />
 		</PrimaryIndex>
-		<Index Name="DbKeyHash128GenDispIdx"
-				IsDbMapped="true"
-				IsUnique="false"
-				DbName="idgdbk128_xdisp"
-				Suffix="DispIdx"
-				Label="DispIdx" >
-			<IndexCol Name="DispenserTenantId" IsAscending="true" />
-			<IndexCol Name="DispenserId" IsAscending="true" />
-		</Index>
 		<SuperClassRelation Name="SuperClass"
 				DbName="idgdbk128_super"
 				Label="SuperClass"
@@ -12082,12 +12060,6 @@ limitations under the License.
 		<TableCol Name="Id"
 				IsNullable="false"
 				DataType="ValueIdGen" />
-		<TableCol Name="DispenserTenantId"
-				IsNullable="true"
-				DataType="TenantIdGen" />
-		<TableCol Name="DispenserId"
-				IsNullable="true"
-				DataType="ScopeIdGen" />
 		<Int16Col Name="Slice"
 				IsNullable="false"
 				MinValue="0"
@@ -12108,15 +12080,6 @@ limitations under the License.
 			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="Id" IsAscending="true" />
 		</PrimaryIndex>
-		<Index Name="DbKeyHash160GenDispIdx"
-				IsDbMapped="true"
-				IsUnique="false"
-				DbName="idgdbk160_xdisp"
-				Suffix="DispIdx"
-				Label="DispIdx" >
-			<IndexCol Name="DispenserTenantId" IsAscending="true" />
-			<IndexCol Name="DispenserId" IsAscending="true" />
-		</Index>
 		<SuperClassRelation Name="SuperClass"
 				DbName="idgdbk160_super"
 				Label="SuperClass"
@@ -12286,12 +12249,6 @@ limitations under the License.
 		<TableCol Name="Id"
 				IsNullable="false"
 				DataType="ValueIdGen" />
-		<TableCol Name="DispenserTenantId"
-				IsNullable="true"
-				DataType="TenantIdGen" />
-		<TableCol Name="DispenserId"
-				IsNullable="true"
-				DataType="ScopeIdGen" />
 		<Int16Col Name="Slice"
 				IsNullable="false"
 				MinValue="0"
@@ -12312,15 +12269,6 @@ limitations under the License.
 			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="Id" IsAscending="true" />
 		</PrimaryIndex>
-		<Index Name="DbKeyHash224GenDispIdx"
-				IsDbMapped="true"
-				IsUnique="false"
-				DbName="idgdbk224_xdisp"
-				Suffix="DispIdx"
-				Label="DispIdx" >
-			<IndexCol Name="DispenserTenantId" IsAscending="true" />
-			<IndexCol Name="DispenserId" IsAscending="true" />
-		</Index>
 		<SuperClassRelation Name="SuperClass"
 				DbName="idgdbk224_super"
 				Label="SuperClass"
@@ -12490,12 +12438,6 @@ limitations under the License.
 		<TableCol Name="Id"
 				IsNullable="false"
 				DataType="ValueIdGen" />
-		<TableCol Name="DispenserTenantId"
-				IsNullable="true"
-				DataType="TenantIdGen" />
-		<TableCol Name="DispenserId"
-				IsNullable="true"
-				DataType="ScopeIdGen" />
 		<Int16Col Name="Slice"
 				IsNullable="false"
 				MinValue="0"
@@ -12516,15 +12458,6 @@ limitations under the License.
 			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="Id" IsAscending="true" />
 		</PrimaryIndex>
-		<Index Name="DbKeyHash256GenDispIdx"
-				IsDbMapped="true"
-				IsUnique="false"
-				DbName="idgdbk256_xdisp"
-				Suffix="DispIdx"
-				Label="DispIdx" >
-			<IndexCol Name="DispenserTenantId" IsAscending="true" />
-			<IndexCol Name="DispenserId" IsAscending="true" />
-		</Index>
 		<SuperClassRelation Name="SuperClass"
 				DbName="idgdbk256_super"
 				Label="SuperClass"
@@ -12694,12 +12627,6 @@ limitations under the License.
 		<TableCol Name="Id"
 				IsNullable="false"
 				DataType="ValueIdGen" />
-		<TableCol Name="DispenserTenantId"
-				IsNullable="true"
-				DataType="TenantIdGen" />
-		<TableCol Name="DispenserId"
-				IsNullable="true"
-				DataType="ScopeIdGen" />
 		<Int16Col Name="Slice"
 				IsNullable="false"
 				MinValue="0"
@@ -12720,15 +12647,6 @@ limitations under the License.
 			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="Id" IsAscending="true" />
 		</PrimaryIndex>
-		<Index Name="DbKeyHash384GenDispIdx"
-				IsDbMapped="true"
-				IsUnique="false"
-				DbName="idgdbk384_xdisp"
-				Suffix="DispIdx"
-				Label="DispIdx" >
-			<IndexCol Name="DispenserTenantId" IsAscending="true" />
-			<IndexCol Name="DispenserId" IsAscending="true" />
-		</Index>
 		<SuperClassRelation Name="SuperClass"
 				DbName="idgdbk384_super"
 				Label="SuperClass"
@@ -12898,12 +12816,6 @@ limitations under the License.
 		<TableCol Name="Id"
 				IsNullable="false"
 				DataType="ValueIdGen" />
-		<TableCol Name="DispenserTenantId"
-				IsNullable="true"
-				DataType="TenantIdGen" />
-		<TableCol Name="DispenserId"
-				IsNullable="true"
-				DataType="ScopeIdGen" />
 		<Int16Col Name="Slice"
 				IsNullable="false"
 				MinValue="0"
@@ -12924,15 +12836,6 @@ limitations under the License.
 			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="Id" IsAscending="true" />
 		</PrimaryIndex>
-		<Index Name="DbKeyHash512GenDispIdx"
-				IsDbMapped="true"
-				IsUnique="false"
-				DbName="idgdbk512_xdisp"
-				Suffix="DispIdx"
-				Label="DispIdx" >
-			<IndexCol Name="DispenserTenantId" IsAscending="true" />
-			<IndexCol Name="DispenserId" IsAscending="true" />
-		</Index>
 		<SuperClassRelation Name="SuperClass"
 				DbName="idgdbk512_super"
 				Label="SuperClass"
@@ -14620,12 +14523,6 @@ limitations under the License.
 		<TableCol Name="Id"
 				IsNullable="false"
 				DataType="ValueIdGen" />
-		<TableCol Name="DispenserTenantId"
-				IsNullable="true"
-				DataType="TenantIdGen" />
-		<TableCol Name="DispenserId"
-				IsNullable="true"
-				DataType="ScopeIdGen" />
 		<Int16Col Name="Slice"
 				IsNullable="false"
 				MinValue="0"
@@ -14646,15 +14543,6 @@ limitations under the License.
 			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="Id" IsAscending="true" />
 		</PrimaryIndex>
-		<Index Name="Id16GenDispIdx"
-				IsDbMapped="true"
-				IsUnique="false"
-				DbName="idg16_dpk_def"
-				Suffix="DispIdx"
-				Label="DispIdx" >
-			<IndexCol Name="DispenserTenantId" IsAscending="true" />
-			<IndexCol Name="DispenserId" IsAscending="true" />
-		</Index>
 		<SuperClassRelation Name="SuperClass"
 				DbName="idg16_super"
 				Label="SuperClass"
@@ -14682,12 +14570,6 @@ limitations under the License.
 		<TableCol Name="Id"
 				IsNullable="false"
 				DataType="ValueIdGen" />
-		<TableCol Name="DispenserTenantId"
-				IsNullable="true"
-				DataType="TenantIdGen" />
-		<TableCol Name="DispenserId"
-				IsNullable="true"
-				DataType="ScopeIdGen" />
 		<Int16Col Name="Slice"
 				IsNullable="false"
 				MinValue="0"
@@ -14708,15 +14590,6 @@ limitations under the License.
 			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="Id" IsAscending="true" />
 		</PrimaryIndex>
-		<Index Name="Id32GenDispIdx"
-				IsDbMapped="true"
-				IsUnique="false"
-				DbName="idg32_dpk_def"
-				Suffix="DispIdx"
-				Label="DispIdx" >
-			<IndexCol Name="DispenserTenantId" IsAscending="true" />
-			<IndexCol Name="DispenserId" IsAscending="true" />
-		</Index>
 		<SuperClassRelation Name="SuperClass"
 				DbName="idg32_super"
 				Label="SuperClass"
@@ -14744,12 +14617,6 @@ limitations under the License.
 		<TableCol Name="Id"
 				IsNullable="false"
 				DataType="ValueIdGen" />
-		<TableCol Name="DispenserTenantId"
-				IsNullable="true"
-				DataType="TenantIdGen" />
-		<TableCol Name="DispenserId"
-				IsNullable="true"
-				DataType="ScopeIdGen" />
 		<Int16Col Name="Slice"
 				IsNullable="false"
 				MinValue="0"
@@ -14770,15 +14637,6 @@ limitations under the License.
 			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="Id" IsAscending="true" />
 		</PrimaryIndex>
-		<Index Name="Id64GenDispIdx"
-				IsDbMapped="true"
-				IsUnique="false"
-				DbName="idg64_dpk_def"
-				Suffix="DispIdx"
-				Label="DispIdx" >
-			<IndexCol Name="DispenserTenantId" IsAscending="true" />
-			<IndexCol Name="DispenserId" IsAscending="true" />
-		</Index>
 		<SuperClassRelation Name="SuperClass"
 				DbName="idg64_super"
 				Label="SuperClass"
@@ -15756,12 +15614,6 @@ limitations under the License.
 		<TableCol Name="Id"
 				IsNullable="false"
 				DataType="ValueIdGen" />
-		<TableCol Name="DispenserTenantId"
-				IsNullable="true"
-				DataType="TenantIdGen" />
-		<TableCol Name="DispenserId"
-				IsNullable="true"
-				DataType="ScopeIdGen" />
 		<Int16Col Name="Slice"
 				IsNullable="false"
 				MinValue="0"
@@ -15782,15 +15634,6 @@ limitations under the License.
 			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="Id" IsAscending="true" />
 		</PrimaryIndex>
-		<Index Name="UuidGenDispIdx"
-				IsDbMapped="true"
-				IsUnique="false"
-				DbName="idguuid_xdisp"
-				Suffix="DispIdx"
-				Label="DispIdx" >
-			<IndexCol Name="DispenserTenantId" IsAscending="true" />
-			<IndexCol Name="DispenserId" IsAscending="true" />
-		</Index>
 		<SuperClassRelation Name="SuperClass"
 				DbName="idguuid_super"
 				Label="SuperClass"
@@ -15818,12 +15661,6 @@ limitations under the License.
 		<TableCol Name="Id"
 				IsNullable="false"
 				DataType="ValueIdGen" />
-		<TableCol Name="DispenserTenantId"
-				IsNullable="true"
-				DataType="TenantIdGen" />
-		<TableCol Name="DispenserId"
-				IsNullable="true"
-				DataType="ScopeIdGen" />
 		<Int16Col Name="Slice"
 				IsNullable="false"
 				MinValue="0"
@@ -15844,15 +15681,6 @@ limitations under the License.
 			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="Id" IsAscending="true" />
 		</PrimaryIndex>
-		<Index Name="Uuid6GenDispIdx"
-				IsDbMapped="true"
-				IsUnique="false"
-				DbName="idguuid6_xdisp"
-				Suffix="DispIdx"
-				Label="DispIdx" >
-			<IndexCol Name="DispenserTenantId" IsAscending="true" />
-			<IndexCol Name="DispenserId" IsAscending="true" />
-		</Index>
 		<SuperClassRelation Name="SuperClass"
 				DbName="idguuid6_super"
 				Label="SuperClass"
@@ -16057,118 +15885,6 @@ limitations under the License.
 				IsRequired="false" >
 			<RelationCol Name="NextTenantId" ToCol="TenantId" />
 			<RelationCol Name="NextId" ToCol="Id" />
-		</Relation>
-	</TableAddendum>
-
-	<TableAddendum FromTable="DbKeyHash128Gen">
-		<Relation Name="Dispenser"
-				RelationType="Lookup"
-				DbName="idgdbk128_dispenser"
-				Label="Dispensing Table"
-				Suffix="Dispenser"
-				FromIndex="DbKeyHash128GenDispIdx"
-				ToIndex="Table.TableIdIdx"
-				IsRequired="false" >
-			<RelationCol Name="DispenserTenantId" ToCol="TenantId" />
-			<RelationCol Name="DispenserId" ToCol="Id" />
-		</Relation>
-	</TableAddendum>
-
-	<TableAddendum FromTable="DbKeyHash160Gen">
-		<Relation Name="Dispenser"
-				RelationType="Lookup"
-				DbName="idgdbk160_dispenser"
-				Label="Dispensing Table"
-				Suffix="Dispenser"
-				FromIndex="DbKeyHash160GenDispIdx"
-				ToIndex="Table.TableIdIdx"
-				IsRequired="false" >
-			<RelationCol Name="DispenserTenantId" ToCol="TenantId" />
-			<RelationCol Name="DispenserId" ToCol="Id" />
-		</Relation>
-	</TableAddendum>
-
-	<TableAddendum FromTable="DbKeyHash224Gen">
-		<Relation Name="Dispenser"
-				RelationType="Lookup"
-				DbName="idgdbk224_dispenser"
-				Label="Dispensing Table"
-				Suffix="Dispenser"
-				FromIndex="DbKeyHash224GenDispIdx"
-				ToIndex="Table.TableIdIdx"
-				IsRequired="false" >
-			<RelationCol Name="DispenserTenantId" ToCol="TenantId" />
-			<RelationCol Name="DispenserId" ToCol="Id" />
-		</Relation>
-	</TableAddendum>
-
-	<TableAddendum FromTable="DbKeyHash256Gen">
-		<Relation Name="Dispenser"
-				RelationType="Lookup"
-				DbName="idgdbk256_dispenser"
-				Label="Dispensing Table"
-				Suffix="Dispenser"
-				FromIndex="DbKeyHash256GenDispIdx"
-				ToIndex="Table.TableIdIdx"
-				IsRequired="false" >
-			<RelationCol Name="DispenserTenantId" ToCol="TenantId" />
-			<RelationCol Name="DispenserId" ToCol="Id" />
-		</Relation>
-	</TableAddendum>
-
-	<TableAddendum FromTable="DbKeyHash384Gen">
-		<Relation Name="Dispenser"
-				RelationType="Lookup"
-				DbName="idgdbk384_dispenser"
-				Label="Dispensing Table"
-				Suffix="Dispenser"
-				FromIndex="DbKeyHash384GenDispIdx"
-				ToIndex="Table.TableIdIdx"
-				IsRequired="false" >
-			<RelationCol Name="DispenserTenantId" ToCol="TenantId" />
-			<RelationCol Name="DispenserId" ToCol="Id" />
-		</Relation>
-	</TableAddendum>
-
-	<TableAddendum FromTable="DbKeyHash512Gen">
-		<Relation Name="Dispenser"
-				RelationType="Lookup"
-				DbName="idgdbk512_dispenser"
-				Label="Dispensing Table"
-				Suffix="Dispenser"
-				FromIndex="DbKeyHash512GenDispIdx"
-				ToIndex="Table.TableIdIdx"
-				IsRequired="false" >
-			<RelationCol Name="DispenserTenantId" ToCol="TenantId" />
-			<RelationCol Name="DispenserId" ToCol="Id" />
-		</Relation>
-	</TableAddendum>
-
-	<TableAddendum FromTable="UuidGen">
-		<Relation Name="Dispenser"
-				RelationType="Lookup"
-				DbName="idguuid_dispenser"
-				Label="Dispensing Table"
-				Suffix="Dispenser"
-				FromIndex="UuidGenDispIdx"
-				ToIndex="Table.TableIdIdx"
-				IsRequired="false" >
-			<RelationCol Name="DispenserTenantId" ToCol="TenantId" />
-			<RelationCol Name="DispenserId" ToCol="Id" />
-		</Relation>
-	</TableAddendum>
-
-	<TableAddendum FromTable="Uuid6Gen">
-		<Relation Name="Dispenser"
-				RelationType="Lookup"
-				DbName="idguuid6_dispenser"
-				Label="Dispensing Table"
-				Suffix="Dispenser"
-				FromIndex="Uuid6GenDispIdx"
-				ToIndex="Table.TableIdIdx"
-				IsRequired="false" >
-			<RelationCol Name="DispenserTenantId" ToCol="TenantId" />
-			<RelationCol Name="DispenserId" ToCol="Id" />
 		</Relation>
 	</TableAddendum>
 
@@ -16380,48 +16096,6 @@ limitations under the License.
 				IsRequired="false" >
 			<RelationCol Name="NextTenantId" ToCol="TenantId" />
 			<RelationCol Name="NextId" ToCol="Id" />
-		</Relation>
-	</TableAddendum>
-
-	<TableAddendum FromTable="Id16Gen">
-		<Relation Name="Dispenser"
-				RelationType="Lookup"
-				DbName="id16g_dispenser"
-				Label="Dispensing Table"
-				Suffix="Dispenser"
-				FromIndex="Id16GenDispIdx"
-				ToIndex="Table.TableIdIdx"
-				IsRequired="false" >
-			<RelationCol Name="DispenserTenantId" ToCol="TenantId" />
-			<RelationCol Name="DispenserId" ToCol="Id" />
-		</Relation>
-	</TableAddendum>
-
-	<TableAddendum FromTable="Id32Gen">
-		<Relation Name="Dispenser"
-				RelationType="Lookup"
-				DbName="id32g_dispenser"
-				Label="Dispensing Table"
-				Suffix="Dispenser"
-				FromIndex="Id32GenDispIdx"
-				ToIndex="Table.TableIdIdx"
-				IsRequired="false" >
-			<RelationCol Name="DispenserTenantId" ToCol="TenantId" />
-			<RelationCol Name="DispenserId" ToCol="Id" />
-		</Relation>
-	</TableAddendum>
-
-	<TableAddendum FromTable="Id64Gen">
-		<Relation Name="Dispenser"
-				RelationType="Lookup"
-				DbName="id64g_dispenser"
-				Label="Dispensing Table"
-				Suffix="Dispenser"
-				FromIndex="Id64GenDispIdx"
-				ToIndex="Table.TableIdIdx"
-				IsRequired="false" >
-			<RelationCol Name="DispenserTenantId" ToCol="TenantId" />
-			<RelationCol Name="DispenserId" ToCol="Id" />
 		</Relation>
 	</TableAddendum>
 
@@ -17164,39 +16838,6 @@ limitations under the License.
 				IsXsdContainer="true" >
 			<RelationCol Name="TenantId" ToCol="TableTenantId" />
 			<RelationCol Name="Id" ToCol="TableId" />
-		</Relation>
-		<Relation Name="DispensedId16Gen"
-				RelationType="Children"
-				DbName="table_dispid16g"
-				Label="Dispensed Id16 Generators"
-				Suffix="DispId16Gen"
-				FromIndex="TableIdIdx"
-				ToIndex="Id16Gen.Id16GenDispIdx"
-				IsRequired="false" >
-			<RelationCol Name="TenantId" ToCol="DispenserTenantId" />
-			<RelationCol Name="Id" ToCol="DispenserId" />
-		</Relation>
-		<Relation Name="DispensedId32Gen"
-				RelationType="Children"
-				DbName="table_dispid32g"
-				Label="Dispensed Id32 Generators"
-				Suffix="DispId32Gen"
-				FromIndex="TableIdIdx"
-				ToIndex="Id32Gen.Id32GenDispIdx"
-				IsRequired="false" >
-			<RelationCol Name="TenantId" ToCol="DispenserTenantId" />
-			<RelationCol Name="Id" ToCol="DispenserId" />
-		</Relation>
-		<Relation Name="DispensedId64Gen"
-				RelationType="Children"
-				DbName="table_dispid64g"
-				Label="Dispensed Id64 Generators"
-				Suffix="DispId64Gen"
-				FromIndex="TableIdIdx"
-				ToIndex="Id64Gen.Id64GenDispIdx"
-				IsRequired="false" >
-			<RelationCol Name="TenantId" ToCol="DispenserTenantId" />
-			<RelationCol Name="Id" ToCol="DispenserId" />
 		</Relation>
 		<Relation Name="ServerMethods"
 				RelationType="Components"
@@ -18502,9 +18143,6 @@ limitations under the License.
 		<DelDep Name="DelTypeDef" DelDepChain="Types" />
 		<DelDep Name="DelTypeRefs" DelDepChain="Types.ReferencingTableCols" />
 		<DelDep Name="DelTable" DelDepChain="Tables" />
-		<DelDep Name="DelTableDispensedId16Gen" DelDepChain="Tables.DispensedId16Gen" />
-		<DelDep Name="DelTableDispensedId32Gen" DelDepChain="Tables.DispensedId32Gen" />
-		<DelDep Name="DelTableDispensedId64Gen" DelDepChain="Tables.DispensedId64Gen" />
 		<DelDep Name="DelTableColumns" DelDepChain="Tables.Columns" />
 		<DelDep Name="DelTableRefIndexColumns" DelDepChain="Tables.Columns.ReferencingIndexCols" />
 		<DelDep Name="DelTableIndexes" DelDepChain="Tables.TableIndex" />
@@ -18525,9 +18163,6 @@ limitations under the License.
 	</TableAddendum>
 
 	<TableAddendum FromTable="Table">
-		<DelDep Name="DelDispensedId16Gen" DelDepChain="DispensedId16Gen" />
-		<DelDep Name="DelDispensedId32Gen" DelDepChain="DispensedId32Gen" />
-		<DelDep Name="DelDispensedId64Gen" DelDepChain="DispensedId64Gen" />
 		<DelDep Name="DelTableColumns" DelDepChain="Columns" />
 		<DelDep Name="DelTableRefIndexColumns" DelDepChain="Columns.ReferencingIndexCols" />
 		<DelDep Name="DelTableIndex" DelDepChain="TableIndex" />

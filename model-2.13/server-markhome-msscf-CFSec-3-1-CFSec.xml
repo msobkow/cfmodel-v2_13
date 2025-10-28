@@ -66,7 +66,7 @@ limitations under the License.
 		<EnumTag Name="Delete" EnumCode="2" />
 	</EnumType>
 
-	<DbKeyHash256Gen Name="ClusterIdGen"
+	<Id64Gen Name="ClusterIdGen"
 			IsNullable="false"
 			DbName="ClusterIdGenSeq"
 			Slice="105"
@@ -134,12 +134,6 @@ limitations under the License.
 			InitValue="0"
 			Slice="103"
 			BlockSize="1" />
-
-	<StringType Name="SHA512HexHash"
-			Label="SHA-2 512 Hash encoded in hexadecimal"
-			IsNullable="false"
-			MaxLen="256"
-			InitValue="" />
 
 	<DbKeyHash256Gen Name="SecSessionIdGen"
 			IsNullable="false"
@@ -343,56 +337,48 @@ limitations under the License.
 	<DbKeyHash256Gen Name="HostNodeIdGen"
 			IsNullable="false"
 			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
-			Dispenser="Cluster"
 			Slice="116"
 			BlockSize="1" />
 
 	<DbKeyHash256Gen Name="SecAppIdGen"
 			IsNullable="false"
 			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
-			Dispenser="Cluster"
 			Slice="107"
 			BlockSize="1" />
 
 	<DbKeyHash256Gen Name="SecFormIdGen"
 			IsNullable="false"
 			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
-			Dispenser="Cluster"
 			Slice="108"
 			BlockSize="1" />
 
 	<DbKeyHash256Gen Name="SecGroupFormIdGen"
 			IsNullable="false"
 			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
-			Dispenser="Cluster"
 			Slice="112"
 			BlockSize="1" />
 
 	<DbKeyHash256Gen Name="SecGroupIdGen"
 			IsNullable="false"
 			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
-			Dispenser="Cluster"
 			Slice="109"
 			BlockSize="1" />
 
 	<DbKeyHash256Gen Name="SecGrpIncIdGen"
 			IsNullable="false"
 			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
-			Dispenser="Cluster"
 			Slice="111"
 			BlockSize="1" />
 
 	<DbKeyHash256Gen Name="SecGrpMembIdGen"
 			IsNullable="false"
 			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
-			Dispenser="Cluster"
 			Slice="110"
 			BlockSize="1" />
 
 	<DbKeyHash256Gen Name="ServiceIdGen"
 			IsNullable="false"
 			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
-			Dispenser="Cluster"
 			Slice="115"
 			BlockSize="1" />
 
@@ -1584,11 +1570,11 @@ limitations under the License.
 				IsNullable="true"
 				DbName="DefDevName"
 				DataType="DeviceName" />
-		<TableCol Name="PasswordHash"
+		<StringCol Name="PasswordHash"
 				Label="Password Hash"
 				IsNullable="false"
 				DbName="pwd_hash"
-				DataType="SHA512HexHash" />
+				MaxLen="256" />
 		<UuidCol Name="PasswordResetUuid"
 				Label="Password Reset UUID"
 				IsNullable="true"
@@ -2100,21 +2086,18 @@ limitations under the License.
 	<DbKeyHash256Gen Name="TSecGroupIdGen"
 			IsNullable="false"
 			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
-			Dispenser="Tenant"
 			Slice="117"
 			BlockSize="1" />
 
 	<DbKeyHash256Gen Name="TSecGrpIncIdGen"
 			IsNullable="false"
 			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
-			Dispenser="Tenant"
 			Slice="119"
 			BlockSize="1" />
 
 	<DbKeyHash256Gen Name="TSecGrpMembIdGen"
 			IsNullable="false"
 			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
-			Dispenser="Tenant"
 			Slice="118"
 			BlockSize="1" />
 

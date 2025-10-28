@@ -74,7 +74,6 @@ limitations under the License.
 	<DbKeyHash256Gen Name="MajorVersionIdGen"
 			IsNullable="false"
 			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
-			Dispenser="Tenant"
 			Slice="205"
 			BlockSize="1" />
 
@@ -89,35 +88,30 @@ limitations under the License.
 	<DbKeyHash256Gen Name="MinorVersionIdGen"
 			IsNullable="false"
 			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
-			Dispenser="Tenant"
 			Slice="206"
 			BlockSize="1" />
 
 	<DbKeyHash256Gen Name="SubProjectIdGen"
 			IsNullable="false"
 			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
-			Dispenser="Tenant"
 			Slice="204"
 			BlockSize="1" />
 
 	<DbKeyHash256Gen Name="TldIdGen"
 			IsNullable="false"
 			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
-			Dispenser="Tenant"
 			Slice="200"
 			BlockSize="1" />
 
 	<DbKeyHash256Gen Name="TopDomainIdGen"
 			IsNullable="false"
 			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
-			Dispenser="Tenant"
 			Slice="201"
 			BlockSize="1" />
 
 	<DbKeyHash256Gen Name="TopProjectIdGen"
 			IsNullable="false"
 			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
-			Dispenser="Tenant"
 			Slice="203"
 			BlockSize="1" />
 
