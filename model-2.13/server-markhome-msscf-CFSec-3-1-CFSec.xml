@@ -70,6 +70,7 @@ limitations under the License.
 			IsNullable="false"
 			DbName="ClusterIdGenSeq"
 			Slice="105"
+			InitValue="0"
 			BlockSize="1" />
 
 	<StringType Name="DeviceName"
