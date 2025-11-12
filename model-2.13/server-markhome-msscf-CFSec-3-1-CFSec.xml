@@ -395,15 +395,15 @@ limitations under the License.
 			LookupIndex="HostNodeUHostNameIdx"
 			LoaderBehaviour="Update"
 			SecScope="Cluster" >
-		<TableCol Name="ClusterId"
-				Label="Cluster Id"
-				IsNullable="false"
-				DataType="ClusterIdGen" />
 		<TableCol Name="HostNodeId"
 				Label="Host Node Id"
 				IsNullable="false"
 				GenerateId="true"
 				DataType="HostNodeIdGen" />
+		<TableCol Name="ClusterId"
+				Label="Cluster Id"
+				IsNullable="false"
+				DataType="ClusterIdGen" />
 		<StringCol Name="Description"
 				Label="Description"
 				IsNullable="false"
@@ -420,7 +420,6 @@ limitations under the License.
 				DbName="HostNode_pidx"
 				ShortName="PIdx"
 				Suffix="IdIdx" >
-			<IndexCol Name="ClusterId" IsAscending="true" />
 			<IndexCol Name="HostNodeId" IsAscending="true" />
 		</PrimaryIndex>
 		<Index Name="HostNodeClusterIdx"
@@ -807,15 +806,15 @@ limitations under the License.
 			LookupIndex="SecAppUJEEMountIdx"
 			LoaderBehaviour="Update"
 			SecScope="Cluster" >
-		<TableCol Name="ClusterId"
-				Label="Cluster Id"
-				IsNullable="false"
-				DataType="ClusterIdGen" />
 		<TableCol Name="SecAppId"
 				Label="Security Application Id"
 				IsNullable="false"
 				GenerateId="true"
 				DataType="SecAppIdGen" />
+		<TableCol Name="ClusterId"
+				Label="Cluster Id"
+				IsNullable="false"
+				DataType="ClusterIdGen" />
 		<StringCol Name="JEEMountName"
 				Label="JEE Mount Name"
 				IsNullable="false"
@@ -827,7 +826,6 @@ limitations under the License.
 				DbName="SecApp_pidx"
 				ShortName="PIdx"
 				Suffix="IdIdx" >
-			<IndexCol Name="ClusterId" IsAscending="true" />
 			<IndexCol Name="SecAppId" IsAscending="true" />
 		</PrimaryIndex>
 		<Index Name="SecAppClusterIdx"
@@ -937,7 +935,6 @@ limitations under the License.
 				DbName="SecForm_pidx"
 				ShortName="PIdx"
 				Suffix="IdIdx" >
-			<IndexCol Name="ClusterId" IsAscending="true" />
 			<IndexCol Name="SecFormId" IsAscending="true" />
 		</PrimaryIndex>
 		<Index Name="SecFormClusterIdx"
@@ -954,7 +951,6 @@ limitations under the License.
 				DbName="SecForm_xsecapp"
 				ShortName="SecApp"
 				Suffix="SecAppIdx" >
-			<IndexCol Name="ClusterId" IsAscending="true" />
 			<IndexCol Name="SecAppId" IsAscending="true" />
 		</Index>
 		<Index Name="SecFormUJEEServletIdx"
@@ -1005,7 +1001,6 @@ limitations under the License.
 				DbName="SecGroup_pidx"
 				ShortName="PIdx"
 				Suffix="IdIdx" >
-			<IndexCol Name="ClusterId" IsAscending="true" />
 			<IndexCol Name="SecGroupId" IsAscending="true" />
 		</PrimaryIndex>
 		<Index Name="SecGroupClusterIdx"
@@ -1049,17 +1044,17 @@ limitations under the License.
 			AltIndex="SecGroupFormUFormIdx"
 			LoaderBehaviour="Insert"
 			SecScope="Cluster" >
-		<TableCol Name="ClusterId"
-				Label="Cluster Id"
-				IsNullable="false"
-				DbName="ClusId"
-				DataType="ClusterIdGen" />
 		<TableCol Name="SecGroupFormId"
 				Label="Security Group Form Id"
 				IsNullable="false"
 				GenerateId="true"
 				DbName="SecGrpFrmId"
 				DataType="SecGroupFormIdGen" />
+		<TableCol Name="ClusterId"
+				Label="Cluster Id"
+				IsNullable="false"
+				DbName="ClusId"
+				DataType="ClusterIdGen" />
 		<TableCol Name="SecGroupId"
 				Label="Security Group Id"
 				IsNullable="false"
@@ -1080,7 +1075,6 @@ limitations under the License.
 				DbName="SecGroupForm_pidx"
 				ShortName="PIdx"
 				Suffix="IdIdx" >
-			<IndexCol Name="ClusterId" IsAscending="true" />
 			<IndexCol Name="SecGroupFormId" IsAscending="true" />
 		</PrimaryIndex>
 		<Index Name="SecGroupFormClusterIdx"
@@ -1097,7 +1091,6 @@ limitations under the License.
 				DbName="SecGroupForm_xgroup"
 				ShortName="Group"
 				Suffix="GroupIdx" >
-			<IndexCol Name="ClusterId" IsAscending="true" />
 			<IndexCol Name="SecGroupId" IsAscending="true" />
 		</Index>
 		<Index Name="SecGroupFormAppIdx"
@@ -1106,7 +1099,6 @@ limitations under the License.
 				DbName="SecGroupForm_xapp"
 				ShortName="App"
 				Suffix="AppIdx" >
-			<IndexCol Name="ClusterId" IsAscending="true" />
 			<IndexCol Name="SecAppId" IsAscending="true" />
 		</Index>
 		<Index Name="SecGroupFormFormIdx"
@@ -1115,7 +1107,6 @@ limitations under the License.
 				DbName="SecGroupForm_xform"
 				ShortName="Form"
 				Suffix="FormIdx" >
-			<IndexCol Name="ClusterId" IsAscending="true" />
 			<IndexCol Name="SecFormId" IsAscending="true" />
 		</Index>
 		<Index Name="SecGroupFormUFormIdx"
@@ -1143,17 +1134,17 @@ limitations under the License.
 			AltIndex="SecGrpIncUIncludeIdx"
 			LoaderBehaviour="Insert"
 			SecScope="Cluster" >
-		<TableCol Name="ClusterId"
-				Label="Cluster Id"
-				IsNullable="false"
-				DbName="ClusId"
-				DataType="ClusterIdGen" />
 		<TableCol Name="SecGrpIncId"
 				Label="Security Group Include Id"
 				IsNullable="false"
 				GenerateId="true"
 				DbName="SecGrpIncId"
 				DataType="SecGrpIncIdGen" />
+		<TableCol Name="ClusterId"
+				Label="Cluster Id"
+				IsNullable="false"
+				DbName="ClusId"
+				DataType="ClusterIdGen" />
 		<TableCol Name="SecGroupId"
 				Label="Security Group Id"
 				IsNullable="false"
@@ -1170,7 +1161,6 @@ limitations under the License.
 				DbName="SecInclude_pidx"
 				ShortName="PIdx"
 				Suffix="IdIdx" >
-			<IndexCol Name="ClusterId" IsAscending="true" />
 			<IndexCol Name="SecGrpIncId" IsAscending="true" />
 		</PrimaryIndex>
 		<Index Name="SecGrpIncClusterIdx"
@@ -1187,7 +1177,6 @@ limitations under the License.
 				DbName="SecInclude_xgroup"
 				ShortName="Group"
 				Suffix="GroupIdx" >
-			<IndexCol Name="ClusterId" IsAscending="true" />
 			<IndexCol Name="SecGroupId" IsAscending="true" />
 		</Index>
 		<Index Name="SecGrpIncIncludeIdx"
@@ -1196,7 +1185,6 @@ limitations under the License.
 				DbName="SecInclude_xinc"
 				ShortName="Include"
 				Suffix="IncludeIdx" >
-			<IndexCol Name="ClusterId" IsAscending="true" />
 			<IndexCol Name="IncludeGroupId" IsAscending="true" />
 		</Index>
 		<Index Name="SecGrpIncUIncludeIdx"
@@ -1224,15 +1212,15 @@ limitations under the License.
 			AltIndex="SecGrpMembUUserIdx"
 			LoaderBehaviour="Insert"
 			SecScope="Cluster" >
-		<TableCol Name="ClusterId"
-				Label="Cluster Id"
-				IsNullable="false"
-				DataType="ClusterIdGen" />
 		<TableCol Name="SecGrpMembId"
 				Label="Security Group Member Id"
 				IsNullable="false"
 				GenerateId="true"
 				DataType="SecGrpMembIdGen" />
+		<TableCol Name="ClusterId"
+				Label="Cluster Id"
+				IsNullable="false"
+				DataType="ClusterIdGen" />
 		<TableCol Name="SecGroupId"
 				Label="Security Group Id"
 				IsNullable="false"
@@ -1247,7 +1235,6 @@ limitations under the License.
 				DbName="SecMember_pidx"
 				ShortName="PIdx"
 				Suffix="IdIdx" >
-			<IndexCol Name="ClusterId" IsAscending="true" />
 			<IndexCol Name="SecGrpMembId" IsAscending="true" />
 		</PrimaryIndex>
 		<Index Name="SecGrpMembClusterIdx"
@@ -1264,7 +1251,6 @@ limitations under the License.
 				DbName="SecMember_xgroup"
 				ShortName="Group"
 				Suffix="GroupIdx" >
-			<IndexCol Name="ClusterId" IsAscending="true" />
 			<IndexCol Name="SecGroupId" IsAscending="true" />
 		</Index>
 		<Index Name="SecGrpMembUserIdx"
@@ -1555,12 +1541,12 @@ limitations under the License.
 				Label="EMail Address"
 				IsNullable="false"
 				DbName="email_addr"
-				MaxLen="192"
+				MaxLen="512"
 				InitValue="" />
-		<UuidCol Name="EMailConfirmUuid"
-				Label="EMail Confirm UUID"
+		<Uuid6Col Name="EMailConfirmUuid6"
+				Label="EMail Confirm UUID6"
 				IsNullable="true"
-				DbName="em_confuuid" />
+				DbName="em_confuuid6" />
 		<TableCol Name="DfltDevUserId"
 				Label="Default Device Security User Id"
 				IsNullable="true"
@@ -1576,10 +1562,10 @@ limitations under the License.
 				IsNullable="false"
 				DbName="pwd_hash"
 				MaxLen="256" />
-		<UuidCol Name="PasswordResetUuid"
-				Label="Password Reset UUID"
+		<Uuid6Col Name="PasswordResetUuid6"
+				Label="Password Reset UUID6"
 				IsNullable="true"
-				DbName="pwdrstuuid" />
+				DbName="pwdrstuuid6" />
 		<PrimaryIndex Name="SecUserIdIdx"
 				IsDbMapped="true"
 				IsUnique="true"
@@ -1602,7 +1588,7 @@ limitations under the License.
 				DbName="SecUser_xemconf"
 				ShortName="EMailConf"
 				Suffix="EMConfIdx" >
-			<IndexCol Name="EMailConfirmUuid" IsAscending="true" />
+			<IndexCol Name="EMailConfirmUuid6" IsAscending="true" />
 		</Index>
 		<Index Name="SecUserPasswordResetIdx"
 				IsDbMapped="true"
@@ -1610,7 +1596,7 @@ limitations under the License.
 				DbName="SecUser_xpwdrst"
 				ShortName="PwdReset"
 				Suffix="PwdResetIdx" >
-			<IndexCol Name="PasswordResetUuid" IsAscending="true" />
+			<IndexCol Name="PasswordResetUuid6" IsAscending="true" />
 		</Index>
 		<Index Name="SecUserDefDevIdx"
 				IsDbMapped="true"
@@ -1750,15 +1736,15 @@ limitations under the License.
 			AltIndex="ServiceUTypeIdx"
 			LoaderBehaviour="Update"
 			SecScope="Cluster" >
-		<TableCol Name="ClusterId"
-				Label="Cluster Id"
-				IsNullable="false"
-				DataType="ClusterIdGen" />
 		<TableCol Name="ServiceId"
 				Label="Service Id"
 				IsNullable="false"
 				GenerateId="true"
 				DataType="ServiceIdGen" />
+		<TableCol Name="ClusterId"
+				Label="Cluster Id"
+				IsNullable="false"
+				DataType="ClusterIdGen" />
 		<TableCol Name="HostNodeId"
 				Label="Host Node Id"
 				IsNullable="false"
@@ -1778,7 +1764,6 @@ limitations under the License.
 				DbName="Service_pidx"
 				ShortName="PIdx"
 				Suffix="IdIdx" >
-			<IndexCol Name="ClusterId" IsAscending="true" />
 			<IndexCol Name="ServiceId" IsAscending="true" />
 		</PrimaryIndex>
 		<Index Name="ServiceClusterIdx"
@@ -1795,7 +1780,6 @@ limitations under the License.
 				DbName="Service_xhost"
 				ShortName="XHost"
 				Suffix="HostIdx" >
-			<IndexCol Name="ClusterId" IsAscending="true" />
 			<IndexCol Name="HostNodeId" IsAscending="true" />
 		</Index>
 		<Index Name="ServiceTypeIdx"
@@ -1922,13 +1906,13 @@ limitations under the License.
 			LookupIndex="TenantUNameIdx"
 			LoaderBehaviour="Insert"
 			SecScope="System" >
-		<TableCol Name="ClusterId"
-				IsNullable="false"
-				DataType="ClusterIdGen" />
 		<TableCol Name="Id"
 				IsNullable="false"
 				GenerateId="true"
 				DataType="TenantIdGen" />
+		<TableCol Name="ClusterId"
+				IsNullable="false"
+				DataType="ClusterIdGen" />
 		<StringCol Name="TenantName"
 				IsNullable="false"
 				MaxLen="192"
@@ -2114,15 +2098,15 @@ limitations under the License.
 			LookupIndex="TSecGroupUNameIdx"
 			LoaderBehaviour="Insert"
 			SecScope="Tenant" >
-		<TableCol Name="TenantId"
-				Label="Tenant Id"
-				IsNullable="false"
-				DataType="TenantIdGen" />
 		<TableCol Name="TSecGroupId"
 				Label="TSecurity Group Id"
 				IsNullable="false"
 				GenerateId="true"
 				DataType="TSecGroupIdGen" />
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
 		<StringCol Name="Name"
 				Label="Name"
 				IsNullable="false"
@@ -2138,7 +2122,6 @@ limitations under the License.
 				DbName="TSecGroup_pidx"
 				ShortName="PIdx"
 				Suffix="IdIdx" >
-			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="TSecGroupId" IsAscending="true" />
 		</PrimaryIndex>
 		<Index Name="TSecGroupTenantIdx"
@@ -2182,16 +2165,16 @@ limitations under the License.
 			AltIndex="TSecGrpIncUIncludeIdx"
 			LoaderBehaviour="Insert"
 			SecScope="Tenant" >
-		<TableCol Name="TenantId"
-				Label="Tenant Id"
-				IsNullable="false"
-				DataType="TenantIdGen" />
 		<TableCol Name="TSecGrpIncId"
 				Label="TSecurity Group Include Id"
 				IsNullable="false"
 				GenerateId="true"
 				DbName="TSecGrpIncId"
 				DataType="TSecGrpIncIdGen" />
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
 		<TableCol Name="TSecGroupId"
 				Label="Tenant Security Group Id"
 				IsNullable="false"
@@ -2208,7 +2191,6 @@ limitations under the License.
 				DbName="TSecInclude_pidx"
 				ShortName="PIdx"
 				Suffix="IdIdx" >
-			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="TSecGrpIncId" IsAscending="true" />
 		</PrimaryIndex>
 		<Index Name="TSecGrpIncTenantIdx"
@@ -2225,7 +2207,6 @@ limitations under the License.
 				DbName="TSecInclude_xgroup"
 				ShortName="Group"
 				Suffix="GroupIdx" >
-			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="TSecGroupId" IsAscending="true" />
 		</Index>
 		<Index Name="TSecGrpIncIncludeIdx"
@@ -2234,7 +2215,6 @@ limitations under the License.
 				DbName="TSecInclude_xinc"
 				ShortName="Include"
 				Suffix="IncludeIdx" >
-			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="IncludeGroupId" IsAscending="true" />
 		</Index>
 		<Index Name="TSecGrpIncUIncludeIdx"
@@ -2262,15 +2242,15 @@ limitations under the License.
 			AltIndex="TSecGrpMembUUserIdx"
 			LoaderBehaviour="Insert"
 			SecScope="Tenant" >
-		<TableCol Name="TenantId"
-				Label="Tenant Id"
-				IsNullable="false"
-				DataType="TenantIdGen" />
 		<TableCol Name="TSecGrpMembId"
 				Label="TSecurity Group Member Id"
 				IsNullable="false"
 				GenerateId="true"
 				DataType="TSecGrpMembIdGen" />
+		<TableCol Name="TenantId"
+				Label="Tenant Id"
+				IsNullable="false"
+				DataType="TenantIdGen" />
 		<TableCol Name="TSecGroupId"
 				Label="TSecurity Group Id"
 				IsNullable="false"
@@ -2285,7 +2265,6 @@ limitations under the License.
 				DbName="TSecMember_pidx"
 				ShortName="PIdx"
 				Suffix="IdIdx" >
-			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="TSecGrpMembId" IsAscending="true" />
 		</PrimaryIndex>
 		<Index Name="TSecGrpMembTenantIdx"
@@ -2302,7 +2281,6 @@ limitations under the License.
 				DbName="TSecMember_xgroup"
 				ShortName="Group"
 				Suffix="GroupIdx" >
-			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="TSecGroupId" IsAscending="true" />
 		</Index>
 		<Index Name="TSecGrpMembUserIdx"
@@ -2403,7 +2381,6 @@ limitations under the License.
 				ToIndex="Service.ServiceHostNodeIdx"
 				IsRequired="false"
 				IsXsdContainer="true" >
-			<RelationCol Name="ClusterId" ToCol="ClusterId" />
 			<RelationCol Name="HostNodeId" ToCol="HostNodeId" />
 		</Relation>
 	</TableAddendum>
@@ -2525,7 +2502,6 @@ limitations under the License.
 				ToIndex="SecForm.SecFormSecAppIdx"
 				IsRequired="false"
 				IsXsdContainer="true" >
-			<RelationCol Name="ClusterId" ToCol="ClusterId" />
 			<RelationCol Name="SecAppId" ToCol="SecAppId" />
 		</Relation>
 	</TableAddendum>
@@ -2562,7 +2538,6 @@ limitations under the License.
 				FromIndex="SecFormSecAppIdx"
 				ToIndex="SecApp.SecAppIdIdx"
 				IsRequired="true" >
-			<RelationCol Name="ClusterId" ToCol="ClusterId" />
 			<RelationCol Name="SecAppId" ToCol="SecAppId" />
 		</Relation>
 	</TableAddendum>
@@ -2587,7 +2562,6 @@ limitations under the License.
 				ToIndex="SecGrpInc.SecGrpIncGroupIdx"
 				IsRequired="false"
 				IsXsdContainer="true" >
-			<RelationCol Name="ClusterId" ToCol="ClusterId" />
 			<RelationCol Name="SecGroupId" ToCol="SecGroupId" />
 		</Relation>
 		<Relation Name="SecGrpMemb"
@@ -2599,7 +2573,6 @@ limitations under the License.
 				ToIndex="SecGrpMemb.SecGrpMembGroupIdx"
 				IsRequired="false"
 				IsXsdContainer="true" >
-			<RelationCol Name="ClusterId" ToCol="ClusterId" />
 			<RelationCol Name="SecGroupId" ToCol="SecGroupId" />
 		</Relation>
 		<Relation Name="SecGrpIncByGroup"
@@ -2610,7 +2583,6 @@ limitations under the License.
 				FromIndex="SecGroupIdIdx"
 				ToIndex="SecGrpInc.SecGrpIncIncludeIdx"
 				IsRequired="true" >
-			<RelationCol Name="ClusterId" ToCol="ClusterId" />
 			<RelationCol Name="SecGroupId" ToCol="IncludeGroupId" />
 		</Relation>
 		<Relation Name="SecGroupForm"
@@ -2622,7 +2594,6 @@ limitations under the License.
 				ToIndex="SecGroupForm.SecGroupFormGroupIdx"
 				IsRequired="false"
 				IsXsdContainer="true" >
-			<RelationCol Name="ClusterId" ToCol="ClusterId" />
 			<RelationCol Name="SecGroupId" ToCol="SecGroupId" />
 		</Relation>
 	</TableAddendum>
@@ -2646,7 +2617,6 @@ limitations under the License.
 				FromIndex="SecGroupFormGroupIdx"
 				ToIndex="SecGroup.SecGroupIdIdx"
 				IsRequired="true" >
-			<RelationCol Name="ClusterId" ToCol="ClusterId" />
 			<RelationCol Name="SecGroupId" ToCol="SecGroupId" />
 		</Relation>
 		<Relation Name="SecGroupFormApp"
@@ -2657,7 +2627,6 @@ limitations under the License.
 				FromIndex="SecGroupFormAppIdx"
 				ToIndex="SecApp.SecAppIdIdx"
 				IsRequired="true" >
-			<RelationCol Name="ClusterId" ToCol="ClusterId" />
 			<RelationCol Name="SecAppId" ToCol="SecAppId" />
 		</Relation>
 		<Relation Name="SecGroupFormForm"
@@ -2668,7 +2637,6 @@ limitations under the License.
 				FromIndex="SecGroupFormFormIdx"
 				ToIndex="SecForm.SecFormIdIdx"
 				IsRequired="true" >
-			<RelationCol Name="ClusterId" ToCol="ClusterId" />
 			<RelationCol Name="SecFormId" ToCol="SecFormId" />
 		</Relation>
 	</TableAddendum>
@@ -2692,7 +2660,6 @@ limitations under the License.
 				FromIndex="SecGrpIncGroupIdx"
 				ToIndex="SecGroup.SecGroupIdIdx"
 				IsRequired="true" >
-			<RelationCol Name="ClusterId" ToCol="ClusterId" />
 			<RelationCol Name="SecGroupId" ToCol="SecGroupId" />
 		</Relation>
 		<Relation Name="SecGrpIncSubGroup"
@@ -2703,7 +2670,6 @@ limitations under the License.
 				FromIndex="SecGrpIncIncludeIdx"
 				ToIndex="SecGroup.SecGroupIdIdx"
 				IsRequired="true" >
-			<RelationCol Name="ClusterId" ToCol="ClusterId" />
 			<RelationCol Name="IncludeGroupId" ToCol="SecGroupId" />
 		</Relation>
 	</TableAddendum>
@@ -2727,7 +2693,6 @@ limitations under the License.
 				FromIndex="SecGrpMembGroupIdx"
 				ToIndex="SecGroup.SecGroupIdIdx"
 				IsRequired="true" >
-			<RelationCol Name="ClusterId" ToCol="ClusterId" />
 			<RelationCol Name="SecGroupId" ToCol="SecGroupId" />
 		</Relation>
 		<Relation Name="SecGrpMembUser"
@@ -2850,7 +2815,6 @@ limitations under the License.
 				FromIndex="ServiceHostNodeIdx"
 				ToIndex="HostNode.HostNodeIdIdx"
 				IsRequired="false" >
-			<RelationCol Name="ClusterId" ToCol="ClusterId" />
 			<RelationCol Name="HostNodeId" ToCol="HostNodeId" />
 		</Relation>
 		<Relation Name="ServiceSvcType"
@@ -2911,7 +2875,6 @@ limitations under the License.
 				ToIndex="TSecGrpInc.TSecGrpIncGroupIdx"
 				IsRequired="false"
 				IsXsdContainer="true" >
-			<RelationCol Name="TenantId" ToCol="TenantId" />
 			<RelationCol Name="TSecGroupId" ToCol="TSecGroupId" />
 		</Relation>
 		<Relation Name="TSecGrpMemb"
@@ -2923,7 +2886,6 @@ limitations under the License.
 				ToIndex="TSecGrpMemb.TSecGrpMembGroupIdx"
 				IsRequired="false"
 				IsXsdContainer="true" >
-			<RelationCol Name="TenantId" ToCol="TenantId" />
 			<RelationCol Name="TSecGroupId" ToCol="TSecGroupId" />
 		</Relation>
 		<Relation Name="TSecGrpIncByGroup"
@@ -2934,7 +2896,6 @@ limitations under the License.
 				FromIndex="TSecGroupIdIdx"
 				ToIndex="TSecGrpInc.TSecGrpIncIncludeIdx"
 				IsRequired="true" >
-			<RelationCol Name="TenantId" ToCol="TenantId" />
 			<RelationCol Name="TSecGroupId" ToCol="IncludeGroupId" />
 		</Relation>
 	</TableAddendum>
@@ -2958,7 +2919,6 @@ limitations under the License.
 				FromIndex="TSecGrpIncGroupIdx"
 				ToIndex="TSecGroup.TSecGroupIdIdx"
 				IsRequired="true" >
-			<RelationCol Name="TenantId" ToCol="TenantId" />
 			<RelationCol Name="TSecGroupId" ToCol="TSecGroupId" />
 		</Relation>
 		<Relation Name="TSecGrpIncSubGroup"
@@ -2969,7 +2929,6 @@ limitations under the License.
 				FromIndex="TSecGrpIncIncludeIdx"
 				ToIndex="TSecGroup.TSecGroupIdIdx"
 				IsRequired="true" >
-			<RelationCol Name="TenantId" ToCol="TenantId" />
 			<RelationCol Name="IncludeGroupId" ToCol="TSecGroupId" />
 		</Relation>
 	</TableAddendum>
@@ -2993,7 +2952,6 @@ limitations under the License.
 				FromIndex="TSecGrpMembGroupIdx"
 				ToIndex="TSecGroup.TSecGroupIdIdx"
 				IsRequired="true" >
-			<RelationCol Name="TenantId" ToCol="TenantId" />
 			<RelationCol Name="TSecGroupId" ToCol="TSecGroupId" />
 		</Relation>
 		<Relation Name="TSecGrpMembUser"
