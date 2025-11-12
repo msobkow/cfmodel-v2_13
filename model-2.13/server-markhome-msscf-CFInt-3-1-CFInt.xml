@@ -133,13 +133,13 @@ limitations under the License.
 			QualTable="Tenant"
 			LoaderBehaviour="Update"
 			SecScope="Tenant" >
-		<TableCol Name="TenantId"
-				IsNullable="false"
-				DataType="TenantIdGen" />
 		<TableCol Name="Id"
 				IsNullable="false"
 				GenerateId="true"
 				DataType="MajorVersionIdGen" />
+		<TableCol Name="TenantId"
+				IsNullable="false"
+				DataType="TenantIdGen" />
 		<TableCol Name="SubProjectId"
 				IsNullable="false"
 				DataType="SubProjectIdGen" />
@@ -159,7 +159,6 @@ limitations under the License.
 				ShortName="PIdx"
 				Suffix="IdIdx"
 				Label="IdIdx" >
-			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="Id" IsAscending="true" />
 		</PrimaryIndex>
 		<Index Name="MajorVersionTenantIdx"
@@ -178,7 +177,6 @@ limitations under the License.
 				ShortName="SubProjectIdx"
 				Suffix="SubProjectIdx"
 				Label="SubProjectIdx" >
-			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="SubProjectId" IsAscending="true" />
 		</Index>
 		<Index Name="MajorVersionNameIdx"
@@ -248,13 +246,13 @@ limitations under the License.
 			QualTable="Tenant"
 			LoaderBehaviour="Update"
 			SecScope="Tenant" >
-		<TableCol Name="TenantId"
-				IsNullable="false"
-				DataType="TenantIdGen" />
 		<TableCol Name="Id"
 				IsNullable="false"
 				GenerateId="true"
 				DataType="MinorVersionIdGen" />
+		<TableCol Name="TenantId"
+				IsNullable="false"
+				DataType="TenantIdGen" />
 		<TableCol Name="MajorVersionId"
 				IsNullable="false"
 				DataType="MajorVersionIdGen" />
@@ -274,7 +272,6 @@ limitations under the License.
 				ShortName="PIdx"
 				Suffix="IdIdx"
 				Label="IdIdx" >
-			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="Id" IsAscending="true" />
 		</PrimaryIndex>
 		<Index Name="MinorVersionTenantIdx"
@@ -293,7 +290,6 @@ limitations under the License.
 				ShortName="MajorVerIdx"
 				Suffix="MajorVerIdx"
 				Label="MajorVerIdx" >
-			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="MajorVersionId" IsAscending="true" />
 		</Index>
 		<Index Name="MinorVersionNameIdx"
@@ -319,13 +315,13 @@ limitations under the License.
 			QualTable="Tenant"
 			LoaderBehaviour="Update"
 			SecScope="Tenant" >
-		<TableCol Name="TenantId"
-				IsNullable="false"
-				DataType="TenantIdGen" />
 		<TableCol Name="Id"
 				IsNullable="false"
 				GenerateId="true"
 				DataType="SubProjectIdGen" />
+		<TableCol Name="TenantId"
+				IsNullable="false"
+				DataType="TenantIdGen" />
 		<TableCol Name="TopProjectId"
 				IsNullable="false"
 				DataType="TopProjectIdGen" />
@@ -345,7 +341,6 @@ limitations under the License.
 				ShortName="PIdx"
 				Suffix="IdIdx"
 				Label="IdIdx" >
-			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="Id" IsAscending="true" />
 		</PrimaryIndex>
 		<Index Name="SubProjectTenantIdx"
@@ -364,7 +359,6 @@ limitations under the License.
 				ShortName="TopProjectIdx"
 				Suffix="TopProjectIdx"
 				Label="TopProjectIdx" >
-			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="TopProjectId" IsAscending="true" />
 		</Index>
 		<Index Name="SubProjectNameIdx"
@@ -391,13 +385,13 @@ limitations under the License.
 			QualTable="Tenant"
 			LoaderBehaviour="Update"
 			SecScope="Tenant" >
-		<TableCol Name="TenantId"
-				IsNullable="false"
-				DataType="TenantIdGen" />
 		<TableCol Name="Id"
 				IsNullable="false"
 				GenerateId="true"
 				DataType="TldIdGen" />
+		<TableCol Name="TenantId"
+				IsNullable="false"
+				DataType="TenantIdGen" />
 		<TableCol Name="Name"
 				IsNullable="false"
 				DbName="safe_name"
@@ -414,7 +408,6 @@ limitations under the License.
 				ShortName="PIdx"
 				Suffix="IdIdx"
 				Label="IdIdx" >
-			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="Id" IsAscending="true" />
 		</PrimaryIndex>
 		<Index Name="TldTenantIdx"
@@ -433,7 +426,6 @@ limitations under the License.
 				ShortName="NameIdx"
 				Suffix="NameIdx"
 				Label="Unique Name Index" >
-			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="Name" IsAscending="true" />
 		</Index>
 	</Table>
@@ -448,13 +440,13 @@ limitations under the License.
 			QualTable="Tenant"
 			LoaderBehaviour="Update"
 			SecScope="Tenant" >
-		<TableCol Name="TenantId"
-				IsNullable="false"
-				DataType="TenantIdGen" />
 		<TableCol Name="Id"
 				IsNullable="false"
 				GenerateId="true"
 				DataType="TopDomainIdGen" />
+		<TableCol Name="TenantId"
+				IsNullable="false"
+				DataType="TenantIdGen" />
 		<TableCol Name="TldId"
 				IsNullable="false"
 				DataType="TldIdGen" />
@@ -474,7 +466,6 @@ limitations under the License.
 				ShortName="PIdx"
 				Suffix="IdIdx"
 				Label="IdIdx" >
-			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="Id" IsAscending="true" />
 		</PrimaryIndex>
 		<Index Name="TopDomainTenantIdx"
@@ -493,7 +484,6 @@ limitations under the License.
 				ShortName="TldIdx"
 				Suffix="TldIdx"
 				Label="TldIdx" >
-			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="TldId" IsAscending="true" />
 		</Index>
 		<Index Name="TopDomNameIdx"
@@ -519,13 +509,13 @@ limitations under the License.
 			QualTable="Tenant"
 			LoaderBehaviour="Update"
 			SecScope="Tenant" >
-		<TableCol Name="TenantId"
-				IsNullable="false"
-				DataType="TenantIdGen" />
 		<TableCol Name="Id"
 				IsNullable="false"
 				GenerateId="true"
 				DataType="TopProjectIdGen" />
+		<TableCol Name="TenantId"
+				IsNullable="false"
+				DataType="TenantIdGen" />
 		<TableCol Name="TopDomainId"
 				IsNullable="false"
 				DataType="TopDomainIdGen" />
@@ -545,7 +535,6 @@ limitations under the License.
 				ShortName="PIdx"
 				Suffix="IdIdx"
 				Label="IdIdx" >
-			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="Id" IsAscending="true" />
 		</PrimaryIndex>
 		<Index Name="TopProjectTenantIdx"
@@ -564,7 +553,6 @@ limitations under the License.
 				ShortName="TopDomainIdx"
 				Suffix="TopDomainIdx"
 				Label="TopDomainIdx" >
-			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="TopDomainId" IsAscending="true" />
 		</Index>
 		<Index Name="TopProjectNameIdx"
@@ -654,7 +642,6 @@ limitations under the License.
 				FromIndex="MajorVersionSubProjectIdx"
 				ToIndex="SubProject.SubProjectIdIdx"
 				IsRequired="true" >
-			<RelationCol Name="TenantId" ToCol="TenantId" />
 			<RelationCol Name="SubProjectId" ToCol="Id" />
 		</Relation>
 		<Relation Name="MinorVersion"
@@ -666,7 +653,6 @@ limitations under the License.
 				ToIndex="MinorVersion.MinorVersionMajorVersionIdx"
 				IsRequired="false"
 				IsXsdContainer="true" >
-			<RelationCol Name="TenantId" ToCol="TenantId" />
 			<RelationCol Name="Id" ToCol="MajorVersionId" />
 		</Relation>
 	</TableAddendum>
@@ -690,7 +676,6 @@ limitations under the License.
 				FromIndex="MinorVersionMajorVersionIdx"
 				ToIndex="MajorVersion.MajorVersionIdIdx"
 				IsRequired="true" >
-			<RelationCol Name="TenantId" ToCol="TenantId" />
 			<RelationCol Name="MajorVersionId" ToCol="Id" />
 		</Relation>
 	</TableAddendum>
@@ -714,7 +699,6 @@ limitations under the License.
 				FromIndex="SubProjectTopProjectIdx"
 				ToIndex="TopProject.TopProjectIdIdx"
 				IsRequired="true" >
-			<RelationCol Name="TenantId" ToCol="TenantId" />
 			<RelationCol Name="TopProjectId" ToCol="Id" />
 		</Relation>
 		<Relation Name="MajorVersion"
@@ -726,7 +710,6 @@ limitations under the License.
 				ToIndex="MajorVersion.MajorVersionSubProjectIdx"
 				IsRequired="false"
 				IsXsdContainer="true" >
-			<RelationCol Name="TenantId" ToCol="TenantId" />
 			<RelationCol Name="Id" ToCol="SubProjectId" />
 		</Relation>
 	</TableAddendum>
@@ -765,7 +748,6 @@ limitations under the License.
 				ToIndex="TopDomain.TopDomainTldIdx"
 				IsRequired="false"
 				IsXsdContainer="true" >
-			<RelationCol Name="TenantId" ToCol="TenantId" />
 			<RelationCol Name="Id" ToCol="TldId" />
 		</Relation>
 	</TableAddendum>
@@ -789,7 +771,6 @@ limitations under the License.
 				FromIndex="TopDomainTldIdx"
 				ToIndex="Tld.TldIdIdx"
 				IsRequired="true" >
-			<RelationCol Name="TenantId" ToCol="TenantId" />
 			<RelationCol Name="TldId" ToCol="Id" />
 		</Relation>
 		<Relation Name="TopProject"
@@ -801,7 +782,6 @@ limitations under the License.
 				ToIndex="TopProject.TopProjectTopDomainIdx"
 				IsRequired="false"
 				IsXsdContainer="true" >
-			<RelationCol Name="TenantId" ToCol="TenantId" />
 			<RelationCol Name="Id" ToCol="TopDomainId" />
 		</Relation>
 	</TableAddendum>
@@ -825,7 +805,6 @@ limitations under the License.
 				FromIndex="TopProjectTopDomainIdx"
 				ToIndex="TopDomain.TopDomainIdIdx"
 				IsRequired="true" >
-			<RelationCol Name="TenantId" ToCol="TenantId" />
 			<RelationCol Name="TopDomainId" ToCol="Id" />
 		</Relation>
 		<Relation Name="SubProject"
@@ -837,7 +816,6 @@ limitations under the License.
 				ToIndex="SubProject.SubProjectTopProjectIdx"
 				IsRequired="false"
 				IsXsdContainer="true" >
-			<RelationCol Name="TenantId" ToCol="TenantId" />
 			<RelationCol Name="Id" ToCol="TopProjectId" />
 		</Relation>
 	</TableAddendum>
