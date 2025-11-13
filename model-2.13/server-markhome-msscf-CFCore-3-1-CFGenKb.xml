@@ -64,15 +64,13 @@
 		DbName="GenKb31"
 		Description="Code Factory Core"
 		CopyrightHolder="Mark Stephen Sobkow"
-		CopyrightPeriod="2020-2025"
+		CopyrightPeriod="2016-2025"
 		AuthorEMail="mark.sobkow@gmail.com"
 		ProjectURL="http://msobkow.github.com/"
 		PublishURI="https://msobkow.github.io/index.html#cfgenkb"
 		CommonLicenseName="Dual GPLv3/Commercial" CommonLicenseCode="DualGPLv3" >
 			<CommonLicense>
 MSS Code Factory 3.1 CFCore - Manufacturing Core Engine
-
-Copyright (C) 2016-2025 Mark Stephen Sobkow (mailto:mark.sobkow@gmail.com)
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
