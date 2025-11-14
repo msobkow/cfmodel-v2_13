@@ -49,15 +49,13 @@
 		ShortName="CFDbTst"
 		Description="Code Factory Database Test Suite"
 		CopyrightHolder="Mark Stephen Sobkow"
-		CopyrightPeriod="2020"
+		CopyrightPeriod="2016-2025"
 		AuthorEMail="mark.sobkow@gmail.com"
 		ProjectURL="http://msobkow.github.com/"
 		PublishURI="https://msscf.sourceforge.io/org-msscf-msscf-CFDbTst-3-1-CFDbTst.xml"
 		CommonLicenseName="Mark Stephen Sobkow's GPLv3 or Commercial License" CommonLicenseCode="MSSGplV3" >
 			<CommonLicense>
 MSS Code Factory 3.1 CFDbTst - Database Test Suite
-
-Copyright (c) 2020 Mark Stephen Sobkow (mark.sobkow@gmail.com)
 
 MSS Code Factory Database Test Suite is available under
 commercial license from Mark Stephen Sobkow via mark.sobkow@gmail.com,
