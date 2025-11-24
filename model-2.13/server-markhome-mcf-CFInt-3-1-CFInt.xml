@@ -1,21 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
- *	MSS Code Factory 3.1 CFInt - Internet Essentials
+ *	Mark's Code Fractal CFInt 3.1 Internet Essentials
  *
- *	Licensed under the Apache License, Version 2.0 (the "License");
- *	you may not use this file except in compliance with the License.
- *	You may obtain a copy of the License at
+ *	Copyright 2016-2025 Mark Stephen Sobkow
  *
- *	    http://www.apache.org/licenses/LICENSE-2.0
+ *	This file is part of Mark's Code Fractal CFInt.
  *
- *	Unless required by applicable law or agreed to in writing, software
- *	distributed under the License is distributed on an "AS IS" BASIS,
- *	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- *	See the License for the specific language governing permissions and
- *	limitations under the License.
+ *	Mark's Code Fractal CFInt is available under dual commercial license from
+ *	Mark Stephen Sobkow, or under the terms of the GNU Library General Public License,
+ *	Version 3 or later.
  *
- *	Donations to support MSS Code Factory can be made at
- *	https://www.paypal.com/paypalme2/MarkSobkow</CommonLicense>
+ *	Mark's Code Fractal CFInt is free software: you can redistribute it and/or
+ *	modify it under the terms of the GNU Library General Public License as published by
+ *	the Free Software Foundation, either version 3 of the License, or
+ *	(at your option) any later version.
+ *
+ *	Mark's Code Fractal CFInt is distributed in the hope that it will be useful,
+ *	but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *	GNU Library General Public License for more details.
+ *
+ *	You should have received a copy of the GNU Library General Public License
+ *	along with Mark's Code Fractal CFInt.  If not, see &lt;https://www.gnu.org/licenses/&gt;.
+ *
+ *	If you wish to modify and use this code without publishing your changes in order to
+ *	tie it to proprietary code, please contact Mark Stephen Sobkow
+ *	for a commercial license at mark.sobkow@gmail.com
  *-->
 <MSSBam
 		xmlns="http://msscf.org:8088/msscf/2.0.13/xsd/mssbam-2.13.xsd"
@@ -24,47 +34,53 @@
 		xsi:schemaLocation="http://msscf.org:8088/msscf/2.0.13/xsd/mssbam-2.13.xsd http://msscf.org:8088/msscf/2.0.13/xsd/mssbam-2.13.xsd"
 		Name="CFInt"
 		Revision="3.1"
-		Description="MSS Code Factory CFInt - Internet Essentials"
-		ProjectRoot="server.markhome.msscf.CFInt.3.1" >
+		Description="Mark's Code Fractal CFInt - Internet Essentials"
+		ProjectRoot="server.markhome.mcf.CFInt.3.1" >
 	<Tld Name="server" >
 		<TopDomain Name="markhome" >
-			<TopProject Name="msscf" >
+			<TopProject Name="mcf" >
 				<SubProject Name="CFInt" >
 					<MajorVersion Name="3" >
 						<MinorVersion Name="1" >
 <SchemaDef Name="CFInt"
-		DbName="CFINet31"
-		Description="Code Factory Internet Essentials"
+		DbName="CFInt31"
+		Description="Mark's Code Fractal Internet Essentials"
 		CopyrightHolder="Mark Stephen Sobkow"
 		CopyrightPeriod="2016-2025"
 		AuthorEMail="mark.sobkow@gmail.com"
-		ProjectURL="http://msobkow.github.com/"
-		PublishURI="https://msobkow.github.io/index.html#cfint"
-		CommonLicenseName="Dual LGPLv3/Commercial" CommonLicenseCode="DualLGPLv3" >
+		ProjectURL="http://mcf.markhome.server/"
+		PublishURI="https://mcf.markhome.server/index.html#cfint"
+		CommonLicenseName="Dual GPLv3/Commercial" CommonLicenseCode="DualGPLv3" >
 			<CommonLicense>
-MSS Code Factory 3.1 CFInt - Code Factory Internet Essentials
+Mark's Code Fractal 3.1 CFInt - Internet Essentials
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU Lesser General Public License as published by
+This file is part of Mark's Code Fractal CFInt.
+
+Mark's Code Fractal CFInt is available under dual commercial license from
+Mark Stephen Sobkow, or under the terms of the GNU Library General Public License,
+Version 3 or later.
+
+Mark's Code Fractal CFInt is free software: you can redistribute it and/or
+modify it under the terms of the GNU Library General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-This program is distributed in the hope that it will be useful,
+Mark's Code Fractal CFInt is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU Lesser General Public License for more details.
+GNU General Public License for more details.
 
-You should have received a copy of the GNU Lesser General Public License
-along with this program.  If not, see https://www.gnu.org/licenses/.
+You should have received a copy of the GNU Library General Public License
+along with Mark's Code Fractal CFInt.  If not, see &lt;https://www.gnu.org/licenses/&gt;.
 
-If you wish to modify and use this code without publishing your changes,
-or integrate such modifications with proprietary code, please contact
-Mark Stephen Sobkow for a commercial license at mark.sobkow@gmail.com
+If you wish to modify and use this code without publishing your changes in order to
+tie it to proprietary code, please contact Mark Stephen Sobkow
+for a commercial license at mark.sobkow@gmail.com
 </CommonLicense>
 
 	<SchemaRef Name="CFSec"
-			RefModelName="server-markhome-msscf-CFSec-3-1-CFSec"
-			IncludeRoot="server.markhome.msscf.CFSec.3.1.CFSec" />
+			RefModelName="server-markhome-mcf-CFSec-3-1-CFSec"
+			IncludeRoot="server.markhome.mcf.CFSec.3.1.CFSec" />
 
 	<StringType Name="DomNameType"
 			IsNullable="false"

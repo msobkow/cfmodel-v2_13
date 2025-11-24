@@ -1,32 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
- *	MSS Code Factory CFBam 2.13 Business Application Model
+ *	Mark's Code Fractal CFBam 3.1 Business Application Model
  *
- *	Copyright 2020 Mark Stephen Sobkow
+ *	Copyright 2016-2025 Mark Stephen Sobkow
  *
- *		This file is part of MSS Code Factory.
+ *	This file is part of Mark's Code Fractal CFBam.
  *
- *		MSS Code Factory is available under dual commercial license from Mark Stephen
- *		Sobkow, or under the terms of the GNU General Public License, Version 3
- *		or later.
+ *	Mark's Code Fractal CFBam is available under dual commercial license from
+ *	Mark Stephen Sobkow, or under the terms of the GNU General Public License,
+ *	Version 3 or later.
  *
- *	    MSS Code Factory is free software: you can redistribute it and/or modify
- *	    it under the terms of the GNU General Public License as published by
- *	    the Free Software Foundation, either version 3 of the License, or
- *	    (at your option) any later version.
+ *	Mark's Code Fractal CFBam is free software: you can redistribute it and/or
+ *	modify it under the terms of the GNU General Public License as published by
+ *	the Free Software Foundation, either version 3 of the License, or
+ *	(at your option) any later version.
  *
- *	    MSS Code Factory is distributed in the hope that it will be useful,
- *	    but WITHOUT ANY WARRANTY; without even the implied warranty of
- *	    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *	    GNU General Public License for more details.
+ *	Mark's Code Fractal CFBam is distributed in the hope that it will be useful,
+ *	but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *	GNU General Public License for more details.
  *
- *	    You should have received a copy of the GNU General Public License
- *	    along with MSS Code Factory.  If not, see &lt;https://www.gnu.org/licenses/&gt;.
+ *	You should have received a copy of the GNU General Public License
+ *	along with Mark's Code Fractal CFBam.  If not, see &lt;https://www.gnu.org/licenses/&gt;.
  *
- *	Donations to support MSS Code Factory can be made at
- *	https://www.paypal.com/paypalme2/MarkSobkow
- *
- *	Please contact Mark Stephen Sobkow at mark.sobkow@gmail.com for commercial licensing.
+ *	If you wish to modify and use this code without publishing your changes,
+ *	or integrate it with proprietary code, please contact Mark Stephen Sobkow
+ *	for a commercial license at mark.sobkow@gmail.com
  *-->
 <MSSBam
 		xmlns="http://msscf.org:8088/msscf/2.0.13/xsd/mssbam-2.13.xsd"
@@ -35,38 +34,44 @@
 		xsi:schemaLocation="http://msscf.org:8088/msscf/2.0.13/xsd/mssbam-2.13.xsd http://msscf.org:8088/msscf/2.0.13/xsd/mssbam-2.13.xsd"
 		Name="CFBam"
 		Revision="3.1"
-		Description="MSS Code Factory CFBam - Business Application Model"
-		ProjectRoot="server.markhome.msscf.CFBam.3.1" >
+		Description="Mark's Code Fractal CFBam - Business Application Model"
+		ProjectRoot="server.markhome.mcf.CFBam.3.1" >
 	<Tld Name="server" >
 		<TopDomain Name="markhome" >
-			<TopProject Name="msscf" >
+			<TopProject Name="mcf" >
 				<SubProject Name="CFBam" >
 					<MajorVersion Name="3" >
 						<MinorVersion Name="1" >
 <SchemaDef Name="CFBam"
 		DbName="CFBam31"
-		Description="Code Factory Business Application Model"
+		Description="Mark's Code Fractal Business Application Model"
 		CopyrightHolder="Mark Stephen Sobkow"
-		CopyrightPeriod="2020-2025"
+		CopyrightPeriod="2016-2025"
 		AuthorEMail="mark.sobkow@gmail.com"
-		ProjectURL="http://msobkow.github.com/"
-		PublishURI="https://msobkow.github.io/index.html#cfbam"
+		ProjectURL="http://mcf.markhome.server/"
+		PublishURI="https://mcf.markhome.server/index.html#cfbam"
 		CommonLicenseName="Dual GPLv3/Commercial" CommonLicenseCode="DualGPLv3" >
 			<CommonLicense>
-MSS Code Factory 3.1 CFBam - Business Application Model
+Mark's Code Fractal 3.1 CFBam - Business Application Model
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
+This file is part of Mark's Code Fractal CFBam.
+
+Mark's Code Fractal CFBam is available under dual commercial license from
+Mark Stephen Sobkow, or under the terms of the GNU General Public License,
+Version 3 or later.
+
+Mark's Code Fractal CFBam is free software: you can redistribute it and/or
+modify it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-This program is distributed in the hope that it will be useful,
+Mark's Code Fractal CFBam is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with this program.  If not, see https://www.gnu.org/licenses/.
+along with Mark's Code Fractal CFBam.  If not, see &lt;https://www.gnu.org/licenses/&gt;.
 
 If you wish to modify and use this code without publishing your changes,
 or integrate it with proprietary code, please contact Mark Stephen Sobkow
@@ -74,12 +79,12 @@ for a commercial license at mark.sobkow@gmail.com
 </CommonLicense>
 
 	<SchemaRef Name="CFSec"
-			RefModelName="server-markhome-msscf-CFSec-3-1-CFSec"
-			IncludeRoot="server.markhome.msscf.CFSec.3.1.CFSec" />
+			RefModelName="server-markhome-mcf-CFSec-3-1-CFSec"
+			IncludeRoot="server.markhome.mcf.CFSec.3.1.CFSec" />
 
 	<SchemaRef Name="CFInt"
-			RefModelName="server-markhome-msscf-CFInt-3-1-CFInt"
-			IncludeRoot="server.markhome.msscf.CFInt.3.1.CFInt" />
+			RefModelName="server-markhome-mcf-CFInt-3-1-CFInt"
+			IncludeRoot="server.markhome.mcf.CFInt.3.1.CFInt" />
 
 	<DbKeyHash256Gen Name="ChainIdGen"
 			IsNullable="false"

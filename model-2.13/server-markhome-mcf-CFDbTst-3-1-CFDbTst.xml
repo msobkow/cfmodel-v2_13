@@ -1,33 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
- *	MSS Code Factory 3.1 CFDbTst - Database Test Suite
+ *	Mark's Code Fractal CFDbTst 3.1 Database Test Framework
  *
- *	Copyright (c) 2020 Mark Stephen Sobkow (mark.sobkow@gmail.com)
+ *	Copyright 2016-2025 Mark Stephen Sobkow
  *
- *	MSS Code Factory Database Test Suite is available under
- *	commercial license from Mark Stephen Sobkow via mark.sobkow@gmail.com,
- *	or under the GNU General Public License, Version 3 or later.
+ *	This file is part of Mark's Code Fractal CFDbTst.
  *
- *	MSS Code Factory Database Test Suite is free software: you can
- *	redistribute it and/or modify it under the terms of the
- *	GNU General Public License as published by the Free Software
- *	Foundation, either version 3 of the License, or (at your option)
- *	any later version.
+ *	Mark's Code Fractal CFDbTst is available under dual commercial license from
+ *	Mark Stephen Sobkow, or under the terms of the GNU Library General Public License,
+ *	Version 3 or later.
  *
- *	MSS Code Factory Database Test Suite is distributed in the hope
- *	that it will be useful, but WITHOUT ANY WARRANTY; without even
- *	the implied warranty of MERCHANTABILITY or FITNESS FOR A
- *	PARTICULAR PURPOSE.  See the GNU General Public License for
- *	more details.
+ *	Mark's Code Fractal CFDbTst is free software: you can redistribute it and/or
+ *	modify it under the terms of the GNU Library General Public License as published by
+ *	the Free Software Foundation, either version 3 of the License, or
+ *	(at your option) any later version.
  *
- *	You should have received a copy of the GNU General Public License
- *	along with MSS Code Factory Database Test Suite.  If not, see
- *	https://www.gnu.org/licenses/.
+ *	Mark's Code Fractal CFDbTst is distributed in the hope that it will be useful,
+ *	but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *	GNU Library General Public License for more details.
  *
- *	Donations to support MSS Code Factory can be made at
- *	https://www.paypal.com/paypalme2/MarkSobkow
+ *	You should have received a copy of the GNU Library General Public License
+ *	along with Mark's Code Fractal CFDbTst.  If not, see &lt;https://www.gnu.org/licenses/&gt;.
  *
- *	Please contact Mark Stephen Sobkow at mark.sobkow@gmail.com for commercial licensing.
+ *	If you wish to modify and use this code without publishing your changes in order to
+ *	tie it to proprietary code, please contact Mark Stephen Sobkow
+ *	for a commercial license at mark.sobkow@gmail.com
  *-->
 <MSSBam
 		xmlns="http://msscf.org:8088/msscf/2.0.13/xsd/mssbam-2.13.xsd"
@@ -36,59 +34,57 @@
 		xsi:schemaLocation="http://msscf.org:8088/msscf/2.0.13/xsd/mssbam-2.13.xsd http://msscf.org:8088/msscf/2.0.13/xsd/mssbam-2.13.xsd"
 		Name="CFDbTst"
 		Revision="3.1"
-		Description="MSS Code Factory CFDbTst - Database Test Suite"
-		ProjectRoot="org.msscf.msscf.CFDbTst.3.1" >
-	<Tld Name="org" >
-		<TopDomain Name="msscf" >
-			<TopProject Name="msscf" >
+		Description="Mark's Code Fractal CFDbTst - Database Test Framework"
+		ProjectRoot="server.markhome.mcf.CFDbTst.3.1" >
+	<Tld Name="server" >
+		<TopDomain Name="markhome" >
+			<TopProject Name="mcf" >
 				<SubProject Name="CFDbTst" >
 					<MajorVersion Name="3" >
 						<MinorVersion Name="1" >
 <SchemaDef Name="CFDbTst"
 		DbName="CFDbTst31"
-		ShortName="CFDbTst"
-		Description="Code Factory Database Test Suite"
+		Description="Mark's Code Fractal Database Test Framework"
 		CopyrightHolder="Mark Stephen Sobkow"
 		CopyrightPeriod="2016-2025"
 		AuthorEMail="mark.sobkow@gmail.com"
-		ProjectURL="http://msobkow.github.com/"
-		PublishURI="https://msscf.sourceforge.io/org-msscf-msscf-CFDbTst-3-1-CFDbTst.xml"
-		CommonLicenseName="Mark Stephen Sobkow's GPLv3 or Commercial License" CommonLicenseCode="MSSGplV3" >
+		ProjectURL="http://mcf.markhome.server/"
+		PublishURI="https://mcf.markhome.server/index.html#cfdbtst"
+		CommonLicenseName="Dual GPLv3/Commercial" CommonLicenseCode="DualGPLv3" >
 			<CommonLicense>
-MSS Code Factory 3.1 CFDbTst - Database Test Suite
+Mark's Code Fractal 3.1 CFDbTst - Database Test Framework
 
-MSS Code Factory Database Test Suite is available under
-commercial license from Mark Stephen Sobkow via mark.sobkow@gmail.com,
-or under the GNU General Public License, Version 3 or later.
+This file is part of Mark's Code Fractal CFDbTst.
 
-MSS Code Factory Database Test Suite is free software: you can
-redistribute it and/or modify it under the terms of the
-GNU General Public License as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.
+Mark's Code Fractal CFDbTst is available under dual commercial license from
+Mark Stephen Sobkow, or under the terms of the GNU Library General Public License,
+Version 3 or later.
 
-MSS Code Factory Database Test Suite is distributed in the hope
-that it will be useful, but WITHOUT ANY WARRANTY; without even
-the implied warranty of MERCHANTABILITY or FITNESS FOR A
-PARTICULAR PURPOSE.  See the GNU General Public License for
-more details.
+Mark's Code Fractal CFDbTst is free software: you can redistribute it and/or
+modify it under the terms of the GNU Library General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-You should have received a copy of the GNU General Public License
-along with MSS Code Factory Database Test Suite.  If not, see
-https://www.gnu.org/licenses/.
+Mark's Code Fractal CFDbTst is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
-Donations to support MSS Code Factory can be made at
-https://www.paypal.com/paypalme2/MarkSobkow
+You should have received a copy of the GNU Library General Public License
+along with Mark's Code Fractal CFDbTst.  If not, see &lt;https://www.gnu.org/licenses/&gt;.
 
-Please contact Mark Stephen Sobkow at mark.sobkow@gmail.com for commercial licensing.</CommonLicense>
+If you wish to modify and use this code without publishing your changes in order to
+tie it to proprietary code, please contact Mark Stephen Sobkow
+for a commercial license at mark.sobkow@gmail.com
+</CommonLicense>
 
 	<SchemaRef Name="CFSec"
-			RefModelName="org-msscf-msscf-CFSec-3-1-CFSec"
-			IncludeRoot="org.msscf.msscf.CFSec.3.1.CFSec" />
+			RefModelName="server-markhome-mcf-CFSec-3-1-CFSec"
+			IncludeRoot="server.markhome.mcf.CFSec.3.1.CFSec" />
 
 	<SchemaRef Name="CFInt"
-			RefModelName="org-msscf-msscf-CFInt-3-1-CFInt"
-			IncludeRoot="org.msscf.msscf.CFInt.3.1.CFInt" />
+			RefModelName="server-markhome-mcf-CFInt-3-1-CFInt"
+			IncludeRoot="server.markhome.mcf.CFInt.3.1.CFInt" />
 
 	<StringType Name="DescriptionType"
 			IsNullable="false"

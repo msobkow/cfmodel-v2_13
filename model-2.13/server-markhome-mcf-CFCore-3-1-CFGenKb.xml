@@ -1,89 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
- *	MSS Code Factory 3.1 CFCore - Code Factory Core
+ *	Mark's Code Fractal CFCore 3.1 Sythesis Core
  *
- *	Copyright (c) 2020 Mark Stephen Sobkow (mark.sobkow@gmail.com)
+ *	Copyright 2016-2025 Mark Stephen Sobkow
  *
- *	MSS Code Factory Code Factory Core is distributed under
- *	Mark Stephen Sobkow's Proprietary Core License, Version 1.0.
+ *	This file is part of Mark's Code Fractal CFCore.
  *
- *	MSS Code Factory Code Factory Core is proprietary code
- *	which may not be modified in any way without a commercial license,
- *	not even if you are an educational institution.
+ *	Mark's Code Fractal CFCore is available under dual commercial license from
+ *	Mark Stephen Sobkow, or under the terms of the GNU General Public License,
+ *	Version 3 or later.
  *
- *	The binaries may be used by the public to execute the MSS Code
- *	Factory tool itself, but they may not link their own applications
- *	to those binaries without a commercial use license.  A commercial
- *	use license will allow you to link to the binaries, and to extend
- *	the unmodified binaries and interfaces in your own application code.
+ *	Mark's Code Fractal CFCore is free software: you can redistribute it and/or
+ *	modify it under the terms of the GNU General Public License as published by
+ *	the Free Software Foundation, either version 3 of the License, or
+ *	(at your option) any later version.
  *
- *	MSS Code Factory Code Factory Core source is published so
- *	that you may study it for academic purposes, to perform security
- *	verification reviews, and for commercial use licensers to debug
- *	their applications.
+ *	Mark's Code Fractal CFCore is distributed in the hope that it will be useful,
+ *	but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *	GNU General Public License for more details.
  *
- *	Registered .edu educational institutions are permitted to install
- *	and link the binaries as if they had a commercial use license
- *	for research and courseware projects.  Such projects may not be
- *	used to produce commercial or business code, and may not be deployed
- *	to commercial or business interests, including the educational
- *	institution's own departments outside that performing the research
- *	or teaching the course.
+ *	You should have received a copy of the GNU General Public License
+ *	along with Mark's Code Fractal CFCore.  If not, see &lt;https://www.gnu.org/licenses/&gt;.
  *
- *	Any use of MSS Code Factory Code Factory Core binaries or
- *	source in a production environment under any other circumstances
- *	without a commercial license from Mark Stephen Sobkow is strictly
- *	forbidden.
- *
- *	MSS Code Factory Code Factory Core is distributed in the
- *	hope that it will be useful, but WITHOUT ANY WARRANTY; without
- *	even the implied warranty of MERCHANTABILITY or FITNESS FOR A
- *	PARTICULAR PURPOSE.
- *
- *	Donations to support MSS Code Factory Code Factory Core
- *	can be made at https://www.paypal.com/paypalme2/MarkSobkow
- *
- *	Please contact Mark Stephen Sobkow at mark.sobkow@gmail.com for commercial licensing.
+ *	If you wish to modify and use this code without publishing your changes,
+ *	or integrate it with proprietary code, please contact Mark Stephen Sobkow
+ *	for a commercial license at mark.sobkow@gmail.com
  *-->
 <MSSBam
 		xmlns="http://msscf.org:8088/msscf/2.0.13/xsd/mssbam-2.13.xsd"
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		xmlns:xs="http://www.w3.org/2001/XMLSchema"
 		xsi:schemaLocation="http://msscf.org:8088/msscf/2.0.13/xsd/mssbam-2.13.xsd http://msscf.org:8088/msscf/2.0.13/xsd/mssbam-2.13.xsd"
-		Name="CFGenKb"
+		Name="CFBam"
 		Revision="3.1"
-		Description="MSS Code Factory CFGenKb - Code Factory Core"
-		ProjectRoot="server.markhome.msscf.CFCore.3.1">
+		Description="Mark's Code Fractal CFCore - Synthesis Core"
+		ProjectRoot="server.markhome.mcf.CFCore.3.1" >
 	<Tld Name="server" >
 		<TopDomain Name="markhome" >
-			<TopProject Name="msscf" >
+			<TopProject Name="mcf" >
 				<SubProject Name="CFCore" >
 					<MajorVersion Name="3" >
 						<MinorVersion Name="1" >
 <SchemaDef Name="CFGenKb"
-		DbName="GenKb31"
-		Description="Code Factory Core"
+		DbName="CFGenKb31"
+		Description="Mark's Code Fractal Generation Knowledge Base"
 		CopyrightHolder="Mark Stephen Sobkow"
 		CopyrightPeriod="2016-2025"
 		AuthorEMail="mark.sobkow@gmail.com"
-		ProjectURL="http://msobkow.github.com/"
-		PublishURI="https://msobkow.github.io/index.html#cfgenkb"
+		ProjectURL="http://mcf.markhome.server/"
+		PublishURI="https://mcf.markhome.server/index.html#cfcore"
 		CommonLicenseName="Dual GPLv3/Commercial" CommonLicenseCode="DualGPLv3" >
 			<CommonLicense>
-MSS Code Factory 3.1 CFCore - Manufacturing Core Engine
+Mark's Code Fractal 3.1 CFCore - Synthesis Core
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
+This file is part of Mark's Code Fractal CFCore.
+
+Mark's Code Fractal CFCore is available under dual commercial license from
+Mark Stephen Sobkow, or under the terms of the GNU General Public License,
+Version 3 or later.
+
+Mark's Code Fractal CFCore is free software: you can redistribute it and/or
+modify it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-This program is distributed in the hope that it will be useful,
+Mark's Code Fractal CFCore is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.
+along with Mark's Code Fractal CFCore.  If not, see &lt;https://www.gnu.org/licenses/&gt;.
 
 If you wish to modify and use this code without publishing your changes,
 or integrate it with proprietary code, please contact Mark Stephen Sobkow
@@ -144,7 +132,7 @@ for a commercial license at mark.sobkow@gmail.com
 			DbName="clus"
 			ShortName="Clus"
 			Label="Cluster"
-			Description="A Cluster is an MSS Code Factory installation"
+			Description="A Cluster is an Marks Code Fractal installation"
 			IsInstantiable="true"
 			HasHistory="false"
 			HasAuditColumns="true"
@@ -1386,7 +1374,7 @@ for a commercial license at mark.sobkow@gmail.com
 			DbName="sysclus"
 			ShortName="SysClus"
 			Label="Cluster"
-			Description="A Cluster is an MSS Code Factory installation"
+			Description="A Cluster is an Marks Code Fractal installation"
 			IsInstantiable="true"
 			HasHistory="false"
 			HasAuditColumns="false"
