@@ -244,30 +244,14 @@ for a commercial license at mark.sobkow@gmail.com
 
 		<CafeTableObjImplementation>
 	public I$SecSchemaName$ClusterObj getSystemCluster() {
-		boolean transactionStarted = schema.beginTransaction();
 		I$SecSchemaName$ClusterObj clusterObj;
-		try {
-			clusterObj = readClusterByUDomNameIdx( &quot;system&quot; );
-			if( clusterObj == null ) {
-				clusterObj = newInstance();
-				I$SecSchemaName$ClusterEditObj clusterEdit = clusterObj.beginEdit();
-				clusterEdit.setRequiredFullDomName( &quot;system&quot; );
-				clusterObj = clusterEdit.create();
-				clusterEdit = null;
-			}
-			if( transactionStarted ) {
-				schema.commit();
-			}
-		}
-		catch( RuntimeException e ) {
-			if( transactionStarted ) {
-				try {
-					schema.rollback();
-				}
-				catch( Exception e2 ) {
-				}
-			}
-			throw e;
+		clusterObj = readClusterByUDomNameIdx( &quot;system&quot; );
+		if( clusterObj == null ) {
+			clusterObj = newInstance();
+			I$SecSchemaName$ClusterEditObj clusterEdit = clusterObj.beginEdit();
+			clusterEdit.setRequiredFullDomName( &quot;system&quot; );
+			clusterObj = clusterEdit.create();
+			clusterEdit = null;
 		}
 		return( clusterObj );
 	}
@@ -1388,35 +1372,19 @@ for a commercial license at mark.sobkow@gmail.com
 
 		<CafeTableObjImplementation>
 	public I$SecSchemaName$SecSessionObj getSystemSession() {
-		boolean transactionStarted = schema.beginTransaction();
 		I$SecSchemaName$SecUserObj userObj;
 		I$SecSchemaName$SecSessionObj sessionObj;
-		try {
-			userObj = schema.getSecUserTableObj().getSystemUser();
-			sessionObj = readSecSessionByStartIdx( userObj.getRequiredSecUserId(),
-				Calendar.getInstance() );
-			if( sessionObj == null ) {
-				sessionObj = newInstance();
-				I$SecSchemaName$SecSessionEditObj sessionEdit = sessionObj.beginEdit();
-				sessionEdit.setRequiredContainerSecUser( userObj );
-				sessionEdit.setRequiredStart( Calendar.getInstance() );
-				sessionEdit.setOptionalFinish( null );
-				sessionObj = sessionEdit.create();
-				sessionEdit = null;
-			}
-			if( transactionStarted ) {
-				schema.commit();
-			}
-		}
-		catch( RuntimeException e ) {
-			if( transactionStarted ) {
-				try {
-					schema.rollback();
-				}
-				catch( Exception e2 ) {
-				}
-			}
-			throw e;
+		userObj = schema.getSecUserTableObj().getSystemUser();
+		sessionObj = readSecSessionByStartIdx( userObj.getRequiredSecUserId(),
+			Calendar.getInstance() );
+		if( sessionObj == null ) {
+			sessionObj = newInstance();
+			I$SecSchemaName$SecSessionEditObj sessionEdit = sessionObj.beginEdit();
+			sessionEdit.setRequiredContainerSecUser( userObj );
+			sessionEdit.setRequiredStart( Calendar.getInstance() );
+			sessionEdit.setOptionalFinish( null );
+			sessionObj = sessionEdit.create();
+			sessionEdit = null;
 		}
 		return( sessionObj );
 	}
@@ -1635,30 +1603,14 @@ for a commercial license at mark.sobkow@gmail.com
 
 		<CafeTableObjImplementation>
 	public I$SecSchemaName$SecUserObj getSystemUser() {
-		boolean transactionStarted = schema.beginTransaction();
 		I$SecSchemaName$SecUserObj secUserObj;
-		try {
-			secUserObj = schema.getSecUserTableObj().readSecUserByULoginIdx( &quot;system&quot; );
-			if( secUserObj == null ) {
-				secUserObj = newInstance();
-				I$SecSchemaName$SecUserEditObj secUserEdit = secUserObj.beginEdit();
-				secUserEdit.setRequiredEMailAddress( &quot;system&quot; );
-				secUserObj = secUserEdit.create();
-				secUserEdit = null;
-			}
-			if( transactionStarted ) {
-				schema.commit();
-			}
-		}
-		catch( RuntimeException e ) {
-			if( transactionStarted ) {
-				try {
-					schema.rollback();
-				}
-				catch( Exception e2 ) {
-				}
-			}
-			throw e;
+		secUserObj = schema.getSecUserTableObj().readSecUserByULoginIdx( &quot;system&quot; );
+		if( secUserObj == null ) {
+			secUserObj = newInstance();
+			I$SecSchemaName$SecUserEditObj secUserEdit = secUserObj.beginEdit();
+			secUserEdit.setRequiredEMailAddress( &quot;system&quot; );
+			secUserObj = secUserEdit.create();
+			secUserEdit = null;
 		}
 		return( secUserObj );
 	}
@@ -1973,32 +1925,16 @@ for a commercial license at mark.sobkow@gmail.com
 
 		<CafeTableObjImplementation>
 	public I$SecSchemaName$TenantObj getSystemTenant() {
-		boolean transactionStarted = schema.beginTransaction();
 		I$SecSchemaName$TenantObj tenantObj;
-		try {
-			I$SecSchemaName$ClusterObj clusterObj = schema.getClusterTableObj().getSystemCluster();
-			tenantObj = readTenantByUNameIdx( clusterObj.getRequiredId(), &quot;system&quot; );
-			if( tenantObj == null ) {
-				tenantObj = newInstance();
-				I$SecSchemaName$TenantEditObj tenantEdit = tenantObj.beginEdit();
-				tenantEdit.setRequiredContainerCluster( clusterObj );
-				tenantEdit.setRequiredTenantName( &quot;system&quot; );
-				tenantObj = tenantEdit.create();
-				tenantEdit = null;
-			}
-			if( transactionStarted ) {
-				schema.commit();
-			}
-		}
-		catch( RuntimeException e ) {
-			if( transactionStarted ) {
-				try {
-					schema.rollback();
-				}
-				catch( Exception e2 ) {
-				}
-			}
-			throw e;
+		I$SecSchemaName$ClusterObj clusterObj = schema.getClusterTableObj().getSystemCluster();
+		tenantObj = readTenantByUNameIdx( clusterObj.getRequiredId(), &quot;system&quot; );
+		if( tenantObj == null ) {
+			tenantObj = newInstance();
+			I$SecSchemaName$TenantEditObj tenantEdit = tenantObj.beginEdit();
+			tenantEdit.setRequiredContainerCluster( clusterObj );
+			tenantEdit.setRequiredTenantName( &quot;system&quot; );
+			tenantObj = tenantEdit.create();
+			tenantEdit = null;
 		}
 		return( tenantObj );
 	}
