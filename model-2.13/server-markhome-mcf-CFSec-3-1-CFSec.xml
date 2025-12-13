@@ -1376,12 +1376,12 @@ for a commercial license at mark.sobkow@gmail.com
 		I$SecSchemaName$SecSessionObj sessionObj;
 		userObj = schema.getSecUserTableObj().getSystemUser();
 		sessionObj = readSecSessionByStartIdx( userObj.getRequiredSecUserId(),
-			Calendar.getInstance() );
+			LocalDateTime.now() );
 		if( sessionObj == null ) {
 			sessionObj = newInstance();
 			I$SecSchemaName$SecSessionEditObj sessionEdit = sessionObj.beginEdit();
 			sessionEdit.setRequiredContainerSecUser( userObj );
-			sessionEdit.setRequiredStart( Calendar.getInstance() );
+			sessionEdit.setRequiredStart( LocalDateTime.now() );
 			sessionEdit.setOptionalFinish( null );
 			sessionObj = sessionEdit.create();
 			sessionEdit = null;
