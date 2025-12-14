@@ -44,7 +44,7 @@
 						<MinorVersion Name="1" >
 <SchemaDef Name="CFSec"
 		DbName="CFSec31"
-		Description="Mark's Code Fractal Business Application Model"
+		Description="Mark's Code Fractal Security Services"
 		CopyrightHolder="Mark Stephen Sobkow"
 		CopyrightPeriod="2016-2025"
 		AuthorEMail="mark.sobkow@gmail.com"
@@ -344,24 +344,6 @@ for a commercial license at mark.sobkow@gmail.com
 			IsNullable="false"
 			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Slice="116"
-			BlockSize="1" />
-
-	<DbKeyHash256Gen Name="SecAppIdGen"
-			IsNullable="false"
-			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
-			Slice="107"
-			BlockSize="1" />
-
-	<DbKeyHash256Gen Name="SecFormIdGen"
-			IsNullable="false"
-			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
-			Slice="108"
-			BlockSize="1" />
-
-	<DbKeyHash256Gen Name="SecGroupFormIdGen"
-			IsNullable="false"
-			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
-			Slice="112"
 			BlockSize="1" />
 
 	<DbKeyHash256Gen Name="SecGroupIdGen"
@@ -799,59 +781,6 @@ for a commercial license at mark.sobkow@gmail.com
 		</Index>
 	</Table>
 
-	<Table Name="SecApp"
-			TableClassCode="a009"
-			DbName="SecApp"
-			Label="Security Application"
-			Description="Each application has a particular JEE mount point on each node providing service"
-			IsInstantiable="true"
-			HasHistory="true"
-			HasAuditColumns="true"
-			PageData="true"
-			LookupIndex="SecAppUJEEMountIdx"
-			LoaderBehaviour="Update"
-			SecScope="Cluster" >
-		<TableCol Name="SecAppId"
-				Label="Security Application Id"
-				IsNullable="false"
-				GenerateId="true"
-				DataType="SecAppIdGen" />
-		<TableCol Name="ClusterId"
-				Label="Cluster Id"
-				IsNullable="false"
-				DataType="ClusterIdGen" />
-		<StringCol Name="JEEMountName"
-				Label="JEE Mount Name"
-				IsNullable="false"
-				MaxLen="192"
-				InitValue="" />
-		<PrimaryIndex Name="SecAppIdIdx"
-				IsDbMapped="true"
-				IsUnique="true"
-				DbName="SecApp_pidx"
-				ShortName="PIdx"
-				Suffix="IdIdx" >
-			<IndexCol Name="SecAppId" IsAscending="true" />
-		</PrimaryIndex>
-		<Index Name="SecAppClusterIdx"
-				IsDbMapped="true"
-				IsUnique="false"
-				DbName="SecApp_xcluster"
-				ShortName="Clus"
-				Suffix="ClusterIdx" >
-			<IndexCol Name="ClusterId" IsAscending="true" />
-		</Index>
-		<Index Name="SecAppUJEEMountIdx"
-				IsDbMapped="true"
-				IsUnique="true"
-				DbName="SecApp_xujeemnt"
-				ShortName="JEEMnt"
-				Suffix="UJEEMountIdx" >
-			<IndexCol Name="ClusterId" IsAscending="true" />
-			<IndexCol Name="JEEMountName" IsAscending="true" />
-		</Index>
-	</Table>
-
 	<Table Name="SecDevice"
 			TableClassCode="a00a"
 			DbName="SecDev"
@@ -901,72 +830,6 @@ for a commercial license at mark.sobkow@gmail.com
 				ShortName="UserIdx"
 				Suffix="UserIdx" >
 			<IndexCol Name="SecUserId" IsAscending="true" />
-		</Index>
-	</Table>
-
-	<Table Name="SecForm"
-			TableClassCode="a00b"
-			DbName="SecForm"
-			Label="Security Form"
-			Description="Each form has a JEE servlet mapping name under the application mount point"
-			IsInstantiable="true"
-			HasHistory="true"
-			HasAuditColumns="true"
-			PageData="true"
-			LookupIndex="SecFormUJEEServletIdx"
-			LoaderBehaviour="Update"
-			SecScope="Cluster" >
-		<TableCol Name="ClusterId"
-				Label="Cluster Id"
-				IsNullable="false"
-				DataType="ClusterIdGen" />
-		<TableCol Name="SecFormId"
-				Label="Security Form Id"
-				IsNullable="false"
-				GenerateId="true"
-				DataType="SecFormIdGen" />
-		<TableCol Name="SecAppId"
-				Label="Security Application Id"
-				IsNullable="false"
-				DataType="SecAppIdGen" />
-		<StringCol Name="JEEServletMapName"
-				Label="JEE Servlet Map Name"
-				IsNullable="false"
-				MaxLen="192"
-				InitValue="" />
-		<PrimaryIndex Name="SecFormIdIdx"
-				IsDbMapped="true"
-				IsUnique="true"
-				DbName="SecForm_pidx"
-				ShortName="PIdx"
-				Suffix="IdIdx" >
-			<IndexCol Name="SecFormId" IsAscending="true" />
-		</PrimaryIndex>
-		<Index Name="SecFormClusterIdx"
-				IsDbMapped="true"
-				IsUnique="false"
-				DbName="SecForm_xcluster"
-				ShortName="Clus"
-				Suffix="ClusterIdx" >
-			<IndexCol Name="ClusterId" IsAscending="true" />
-		</Index>
-		<Index Name="SecFormSecAppIdx"
-				IsDbMapped="true"
-				IsUnique="false"
-				DbName="SecForm_xsecapp"
-				ShortName="SecApp"
-				Suffix="SecAppIdx" >
-			<IndexCol Name="SecAppId" IsAscending="true" />
-		</Index>
-		<Index Name="SecFormUJEEServletIdx"
-				IsDbMapped="true"
-				IsUnique="true"
-				DbName="SecForm_xujeesvlt"
-				ShortName="JEEServlet"
-				Suffix="UJEEServletIdx" >
-			<IndexCol Name="ClusterId" IsAscending="true" />
-			<IndexCol Name="SecAppId" IsAscending="true" />
-			<IndexCol Name="JEEServletMapName" IsAscending="true" />
 		</Index>
 	</Table>
 
@@ -1033,96 +896,6 @@ for a commercial license at mark.sobkow@gmail.com
 				Suffix="UNameIdx" >
 			<IndexCol Name="ClusterId" IsAscending="true" />
 			<IndexCol Name="Name" IsAscending="true" />
-		</Index>
-	</Table>
-
-	<Table Name="SecGroupForm"
-			TableClassCode="a00d"
-			DbName="SecGrpFrm"
-			ShortName="GroupForm"
-			Label="Security Group Form"
-			Description="Security group form existence grants members of the group access to the specified form"
-			IsInstantiable="true"
-			HasHistory="true"
-			HasAuditColumns="true"
-			PageData="true"
-			AltIndex="SecGroupFormUFormIdx"
-			LoaderBehaviour="Insert"
-			SecScope="Cluster" >
-		<TableCol Name="SecGroupFormId"
-				Label="Security Group Form Id"
-				IsNullable="false"
-				GenerateId="true"
-				DbName="SecGrpFrmId"
-				DataType="SecGroupFormIdGen" />
-		<TableCol Name="ClusterId"
-				Label="Cluster Id"
-				IsNullable="false"
-				DbName="ClusId"
-				DataType="ClusterIdGen" />
-		<TableCol Name="SecGroupId"
-				Label="Security Group Id"
-				IsNullable="false"
-				DbName="SecGrpId"
-				DataType="SecGroupIdGen" />
-		<TableCol Name="SecAppId"
-				Label="Security Application Id"
-				IsNullable="false"
-				DataType="SecAppIdGen" />
-		<TableCol Name="SecFormId"
-				Label="Security Form Id"
-				IsNullable="false"
-				DbName="SecFrmId"
-				DataType="SecFormIdGen" />
-		<PrimaryIndex Name="SecGroupFormIdIdx"
-				IsDbMapped="true"
-				IsUnique="true"
-				DbName="SecGroupForm_pidx"
-				ShortName="PIdx"
-				Suffix="IdIdx" >
-			<IndexCol Name="SecGroupFormId" IsAscending="true" />
-		</PrimaryIndex>
-		<Index Name="SecGroupFormClusterIdx"
-				IsDbMapped="true"
-				IsUnique="false"
-				DbName="SecGroupForm_xcluster"
-				ShortName="Clus"
-				Suffix="ClusterIdx" >
-			<IndexCol Name="ClusterId" IsAscending="true" />
-		</Index>
-		<Index Name="SecGroupFormGroupIdx"
-				IsDbMapped="true"
-				IsUnique="false"
-				DbName="SecGroupForm_xgroup"
-				ShortName="Group"
-				Suffix="GroupIdx" >
-			<IndexCol Name="SecGroupId" IsAscending="true" />
-		</Index>
-		<Index Name="SecGroupFormAppIdx"
-				IsDbMapped="true"
-				IsUnique="false"
-				DbName="SecGroupForm_xapp"
-				ShortName="App"
-				Suffix="AppIdx" >
-			<IndexCol Name="SecAppId" IsAscending="true" />
-		</Index>
-		<Index Name="SecGroupFormFormIdx"
-				IsDbMapped="true"
-				IsUnique="false"
-				DbName="SecGroupForm_xform"
-				ShortName="Form"
-				Suffix="FormIdx" >
-			<IndexCol Name="SecFormId" IsAscending="true" />
-		</Index>
-		<Index Name="SecGroupFormUFormIdx"
-				IsDbMapped="true"
-				IsUnique="true"
-				DbName="SecGroupForm_xuform"
-				ShortName="UForm"
-				Suffix="UFormIdx" >
-			<IndexCol Name="ClusterId" IsAscending="true" />
-			<IndexCol Name="SecGroupId" IsAscending="true" />
-			<IndexCol Name="SecFormId" IsAscending="true" />
 		</Index>
 	</Table>
 
@@ -2283,17 +2056,6 @@ for a commercial license at mark.sobkow@gmail.com
 				IsXsdContainer="true" >
 			<RelationCol Name="Id" ToCol="ClusterId" />
 		</Relation>
-		<Relation Name="ClusterSecApp"
-				RelationType="Components"
-				DbName="clus_secapp"
-				Label="Security Application"
-				Suffix="SecApp"
-				FromIndex="ClusterIdIdx"
-				ToIndex="SecApp.SecAppClusterIdx"
-				IsRequired="false"
-				IsXsdContainer="true" >
-			<RelationCol Name="Id" ToCol="ClusterId" />
-		</Relation>
 		<Relation Name="ClusterSecGroup"
 				RelationType="Components"
 				DbName="clus_secgrp"
@@ -2439,30 +2201,6 @@ for a commercial license at mark.sobkow@gmail.com
 		</Relation>
 	</TableAddendum>
 
-	<TableAddendum FromTable="SecApp">
-		<Relation Name="SecAppCluster"
-				RelationType="Container"
-				DbName="secapp_clus"
-				Label="Cluster"
-				Suffix="Cluster"
-				FromIndex="SecAppClusterIdx"
-				ToIndex="Cluster.ClusterIdIdx"
-				IsRequired="true" >
-			<RelationCol Name="ClusterId" ToCol="Id" />
-		</Relation>
-		<Relation Name="SecAppForm"
-				RelationType="Components"
-				DbName="secapp_form"
-				Label="Security Form"
-				Suffix="Form"
-				FromIndex="SecAppIdIdx"
-				ToIndex="SecForm.SecFormSecAppIdx"
-				IsRequired="false"
-				IsXsdContainer="true" >
-			<RelationCol Name="SecAppId" ToCol="SecAppId" />
-		</Relation>
-	</TableAddendum>
-
 	<TableAddendum FromTable="SecDevice">
 		<Relation Name="SecDeviceSecUser"
 				RelationType="Container"
@@ -2473,29 +2211,6 @@ for a commercial license at mark.sobkow@gmail.com
 				ToIndex="SecUser.SecUserIdIdx"
 				IsRequired="true" >
 			<RelationCol Name="SecUserId" ToCol="SecUserId" />
-		</Relation>
-	</TableAddendum>
-
-	<TableAddendum FromTable="SecForm">
-		<Relation Name="SecFormCluster"
-				RelationType="Owner"
-				DbName="secform_clus"
-				Label="Cluster"
-				Suffix="Cluster"
-				FromIndex="SecFormClusterIdx"
-				ToIndex="Cluster.ClusterIdIdx"
-				IsRequired="true" >
-			<RelationCol Name="ClusterId" ToCol="Id" />
-		</Relation>
-		<Relation Name="SecFormApplication"
-				RelationType="Container"
-				DbName="secform_app"
-				Label="Application"
-				Suffix="Application"
-				FromIndex="SecFormSecAppIdx"
-				ToIndex="SecApp.SecAppIdIdx"
-				IsRequired="true" >
-			<RelationCol Name="SecAppId" ToCol="SecAppId" />
 		</Relation>
 	</TableAddendum>
 
@@ -2541,60 +2256,6 @@ for a commercial license at mark.sobkow@gmail.com
 				ToIndex="SecGrpInc.SecGrpIncIncludeIdx"
 				IsRequired="true" >
 			<RelationCol Name="SecGroupId" ToCol="IncludeGroupId" />
-		</Relation>
-		<Relation Name="SecGroupForm"
-				RelationType="Components"
-				DbName="secgrp_form"
-				Label="Group Form Permission"
-				Suffix="Form"
-				FromIndex="SecGroupIdIdx"
-				ToIndex="SecGroupForm.SecGroupFormGroupIdx"
-				IsRequired="false"
-				IsXsdContainer="true" >
-			<RelationCol Name="SecGroupId" ToCol="SecGroupId" />
-		</Relation>
-	</TableAddendum>
-
-	<TableAddendum FromTable="SecGroupForm">
-		<Relation Name="SecGroupFormCluster"
-				RelationType="Owner"
-				DbName="secgrpfrm_clus"
-				Label="Cluster"
-				Suffix="Cluster"
-				FromIndex="SecGroupFormClusterIdx"
-				ToIndex="Cluster.ClusterIdIdx"
-				IsRequired="true" >
-			<RelationCol Name="ClusterId" ToCol="Id" />
-		</Relation>
-		<Relation Name="SecGroupFormGroup"
-				RelationType="Container"
-				DbName="secgrpfrm_grp"
-				Label="Group"
-				Suffix="Group"
-				FromIndex="SecGroupFormGroupIdx"
-				ToIndex="SecGroup.SecGroupIdIdx"
-				IsRequired="true" >
-			<RelationCol Name="SecGroupId" ToCol="SecGroupId" />
-		</Relation>
-		<Relation Name="SecGroupFormApp"
-				RelationType="Parent"
-				DbName="secgrpfrm_app"
-				Label="App"
-				Suffix="App"
-				FromIndex="SecGroupFormAppIdx"
-				ToIndex="SecApp.SecAppIdIdx"
-				IsRequired="true" >
-			<RelationCol Name="SecAppId" ToCol="SecAppId" />
-		</Relation>
-		<Relation Name="SecGroupFormForm"
-				RelationType="Parent"
-				DbName="secgrpfrm_frm"
-				Label="Form"
-				Suffix="Form"
-				FromIndex="SecGroupFormFormIdx"
-				ToIndex="SecForm.SecFormIdIdx"
-				IsRequired="true" >
-			<RelationCol Name="SecFormId" ToCol="SecFormId" />
 		</Relation>
 	</TableAddendum>
 
@@ -2954,13 +2615,10 @@ for a commercial license at mark.sobkow@gmail.com
 	<TableAddendum FromTable="Cluster">
 		<DelDep Name="DelHostNodes" DelDepChain="ClusterHostNode" />
 		<DelDep Name="DelTenants" DelDepChain="ClusterTenant" />
-		<DelDep Name="DelSecApps" DelDepChain="ClusterSecApp" />
-		<DelDep Name="DelSecAppForms" DelDepChain="ClusterSecApp.SecAppForm" />
 		<DelDep Name="DelSecGroups" DelDepChain="ClusterSecGroup" />
 		<DelDep Name="DelSecGrpIncs" DelDepChain="ClusterSecGroup.SecGrpInc" />
 		<DelDep Name="DelSecGrpMembs" DelDepChain="ClusterSecGroup.SecGrpMemb" />
 		<DelDep Name="DelSecGrpIncByGroup" DelDepChain="ClusterSecGroup.SecGrpIncByGroup" />
-		<DelDep Name="DelSecGroupForms" DelDepChain="ClusterSecGroup.SecGroupForm" />
 	</TableAddendum>
 
 	<TableAddendum FromTable="HostNode">
@@ -2972,15 +2630,10 @@ for a commercial license at mark.sobkow@gmail.com
 		<DelDep Name="DelCtryLangs" DelDepChain="ISOCtryLangs" />
 	</TableAddendum>
 
-	<TableAddendum FromTable="SecApp">
-		<DelDep Name="DelSecAppForms" DelDepChain="SecAppForm" />
-	</TableAddendum>
-
 	<TableAddendum FromTable="SecGroup">
 		<DelDep Name="DelSecGrpIncs" DelDepChain="SecGrpInc" />
 		<DelDep Name="DelSecGrpMembs" DelDepChain="SecGrpMemb" />
 		<DelDep Name="DelSecGrpIncByGroup" DelDepChain="SecGrpIncByGroup" />
-		<DelDep Name="DelSecGroupForms" DelDepChain="SecGroupForm" />
 	</TableAddendum>
 
 	<TableAddendum FromTable="SecUser">
