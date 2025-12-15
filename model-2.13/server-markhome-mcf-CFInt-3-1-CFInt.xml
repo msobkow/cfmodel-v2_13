@@ -207,7 +207,6 @@ for a commercial license at mark.sobkow@gmail.com
 				ShortName="NameIdx"
 				Suffix="NameIdx"
 				Label="Unique Name Index" >
-			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="SubProjectId" IsAscending="true" />
 			<IndexCol Name="Name" IsAscending="true" />
 		</Index>
@@ -320,7 +319,6 @@ for a commercial license at mark.sobkow@gmail.com
 				ShortName="NameIdx"
 				Suffix="NameIdx"
 				Label="Unique Name Index" >
-			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="MajorVersionId" IsAscending="true" />
 			<IndexCol Name="Name" IsAscending="true" />
 		</Index>
@@ -389,7 +387,6 @@ for a commercial license at mark.sobkow@gmail.com
 				ShortName="NameIdx"
 				Suffix="NameIdx"
 				Label="Unique Name Index" >
-			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="TopProjectId" IsAscending="true" />
 			<IndexCol Name="Name" IsAscending="true" />
 		</Index>
@@ -514,7 +511,6 @@ for a commercial license at mark.sobkow@gmail.com
 				ShortName="NameIdx"
 				Suffix="NameIdx"
 				Label="Unique Name Index" >
-			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="TldId" IsAscending="true" />
 			<IndexCol Name="Name" IsAscending="true" />
 		</Index>
@@ -583,7 +579,6 @@ for a commercial license at mark.sobkow@gmail.com
 				ShortName="NameIdx"
 				Suffix="NameIdx"
 				Label="Unique Name Index" >
-			<IndexCol Name="TenantId" IsAscending="true" />
 			<IndexCol Name="TopDomainId" IsAscending="true" />
 			<IndexCol Name="Name" IsAscending="true" />
 		</Index>
