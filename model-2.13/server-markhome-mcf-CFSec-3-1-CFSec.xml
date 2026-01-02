@@ -2326,14 +2326,14 @@ for a commercial license at mark.sobkow@gmail.com
 	</TableAddendum>
 
 	<TableAddendum FromTable="SecSession">
-		<Relation Name="SecSessionUser"
+		<Relation Name="SecSessionSecUser"
 				RelationType="Container"
-				DbName="secsess_user"
+				DbName="secsess_secuser"
 				Label="Security User"
 				Suffix="SecUser"
 				FromIndex="SessionSecUserIdx"
 				ToIndex="SecUser.SecUserIdIdx"
-				IsRequired="true" >
+				IsRequired="true">
 			<RelationCol Name="SecUserId" ToCol="SecUserId" />
 		</Relation>
 		<Relation Name="SecSessionProxy"
