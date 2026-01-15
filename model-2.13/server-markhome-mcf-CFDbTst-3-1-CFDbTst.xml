@@ -2,7 +2,7 @@
 <!--
  *	Mark's Code Fractal CFDbTst 3.1 Database Test Framework
  *
- *	Copyright 2016-2025 Mark Stephen Sobkow
+ *	Copyright 2016-2026 Mark Stephen Sobkow
  *
  *	This file is part of Mark's Code Fractal CFDbTst.
  *
@@ -46,7 +46,7 @@
 		DbName="CFDbTst31"
 		Description="Mark's Code Fractal Database Test Framework"
 		CopyrightHolder="Mark Stephen Sobkow"
-		CopyrightPeriod="2016-2025"
+		CopyrightPeriod="2016-2026"
 		AuthorEMail="mark.sobkow@gmail.com"
 		ProjectURL="http://mcf.markhome.server/"
 		PublishURI="https://mcf.markhome.server/index.html#cfdbtst"

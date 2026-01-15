@@ -2,7 +2,7 @@
 <!--
  *	Mark's Code Fractal CFBam 3.1 Business Application Model
  *
- *	Copyright 2016-2025 Mark Stephen Sobkow
+ *	Copyright 2016-2026 Mark Stephen Sobkow
  *
  *	This file is part of Mark's Code Fractal CFBam.
  *
@@ -46,7 +46,7 @@
 		DbName="CFBam31"
 		Description="Mark's Code Fractal Business Application Model"
 		CopyrightHolder="Mark Stephen Sobkow"
-		CopyrightPeriod="2016-2025"
+		CopyrightPeriod="2016-2026"
 		AuthorEMail="mark.sobkow@gmail.com"
 		ProjectURL="http://mcf.markhome.server/"
 		PublishURI="https://mcf.markhome.server/index.html#cfbam"
