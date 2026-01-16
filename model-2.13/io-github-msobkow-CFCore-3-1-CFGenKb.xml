@@ -35,10 +35,10 @@
 		Name="CFBam"
 		Revision="3.1"
 		Description="Mark's Code Fractal CFCore - Synthesis Core"
-		ProjectRoot="server.markhome.mcf.CFCore.3.1" >
-	<Tld Name="server" >
-		<TopDomain Name="markhome" >
-			<TopProject Name="mcf" >
+		ProjectRoot="io.github.msobkow.CFCore.3.1" >
+	<Tld Name="io" >
+		<TopDomain Name="github" >
+			<TopProject Name="msobkow" >
 				<SubProject Name="CFCore" >
 					<MajorVersion Name="3" >
 						<MinorVersion Name="1" >
@@ -48,8 +48,8 @@
 		CopyrightHolder="Mark Stephen Sobkow"
 		CopyrightPeriod="2016-2026"
 		AuthorEMail="mark.sobkow@gmail.com"
-		ProjectURL="http://mcf.markhome.server/"
-		PublishURI="https://mcf.markhome.server/index.html#cfcore"
+		ProjectURL="https://msobkow.github.io/"
+		PublishURI="https://msobkow.github.io/index.html#cfcore31"
 		CommonLicenseName="Dual GPLv3/Commercial" CommonLicenseCode="DualGPLv3" >
 			<CommonLicense>
 Mark's Code Fractal 3.1 CFCore - Synthesis Core
