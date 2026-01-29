@@ -801,10 +801,6 @@ for a commercial license at mark.sobkow@gmail.com
 				Label="Device Name"
 				IsNullable="false"
 				DataType="DeviceName" />
-		<TextCol Name="PubKey"
-				Label="Device Public Key"
-				IsNullable="true"
-				MaxLen="10000" />
 		<PrimaryIndex Name="SecDeviceIdIdx"
 				IsDbMapped="true"
 				IsUnique="true"
