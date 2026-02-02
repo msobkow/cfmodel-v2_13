@@ -87,11 +87,10 @@ for a commercial license at mark.sobkow@gmail.com
 		<EnumTag Name="Delete" EnumCode="2" />
 	</EnumType>
 
-	<Id64Gen Name="ClusterIdGen"
+	<DbKeyHash256Gen Name="ClusterIdGen"
 			IsNullable="false"
-			DbName="ClusterIdGenSeq"
+			InitValue="0000000000000000000000000000000000000000000000000000000000000000"
 			Slice="105"
-			InitValue="0"
 			BlockSize="1" />
 
 	<StringType Name="DeviceName"
