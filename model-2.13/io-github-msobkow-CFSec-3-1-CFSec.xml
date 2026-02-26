@@ -1148,7 +1148,7 @@ for a commercial license at mark.sobkow@gmail.com
 		if( sessionObj == null ) {
 			sessionObj = newInstance();
 			I$SecSchemaName$SecSessionEditObj sessionEdit = sessionObj.beginEdit();
-			sessionEdit.setRequiredContainerSecUser( userObj );
+			sessionEdit.setRequiredSecUserId( userObj.getPKey() );
 			sessionEdit.setRequiredStart( LocalDateTime.now() );
 			sessionEdit.setOptionalFinish( null );
 			sessionObj = sessionEdit.create();
@@ -2321,7 +2321,7 @@ for a commercial license at mark.sobkow@gmail.com
 	</TableAddendum>
 
 	<TableAddendum FromTable="SecSession">
-		<Relation Name="SecSessionSecUser"
+		<!--Relation Name="SecSessionSecUser"
 				RelationType="Container"
 				DbName="secsess_secuser"
 				Label="Security User"
@@ -2330,8 +2330,8 @@ for a commercial license at mark.sobkow@gmail.com
 				ToIndex="SecUser.SecUserIdIdx"
 				IsRequired="true">
 			<RelationCol Name="SecUserId" ToCol="SecUserId" />
-		</Relation>
-		<Relation Name="SecSessionProxy"
+		</Relation-->
+		<!--Relation Name="SecSessionProxy"
 				RelationType="Parent"
 				DbName="secsess_proxy"
 				Label="Security Proxy User"
@@ -2340,7 +2340,7 @@ for a commercial license at mark.sobkow@gmail.com
 				ToIndex="SecUser.SecUserIdIdx"
 				IsRequired="true" >
 			<RelationCol Name="SecProxyId" ToCol="SecUserId" />
-		</Relation>
+		</Relation-->
 	</TableAddendum>
 
 	<TableAddendum FromTable="SecUser">
@@ -2366,7 +2366,7 @@ for a commercial license at mark.sobkow@gmail.com
 			<RelationCol Name="DfltDevUserId" ToCol="SecUserId" />
 			<RelationCol Name="DfltDevName" ToCol="DevName" />
 		</Relation>
-		<Relation Name="SecUserSecSession"
+		<!--Relation Name="SecUserSecSession"
 				RelationType="Components"
 				DbName="secuser_secsess"
 				Label="Security Session"
@@ -2376,8 +2376,8 @@ for a commercial license at mark.sobkow@gmail.com
 				IsRequired="false"
 				IsXsdContainer="true" >
 			<RelationCol Name="SecUserId" ToCol="SecUserId" />
-		</Relation>
-		<Relation Name="SecUserSecProxySession"
+		</Relation-->
+		<!--Relation Name="SecUserSecProxySession"
 				RelationType="Children"
 				DbName="secuser_secproxysess"
 				Label="Security Proxy Session"
@@ -2386,7 +2386,7 @@ for a commercial license at mark.sobkow@gmail.com
 				ToIndex="SecSession.SessionSecProxyIdx"
 				IsRequired="false" >
 			<RelationCol Name="SecUserId" ToCol="SecProxyId" />
-		</Relation>
+		</Relation -->
 		<Relation Name="SecUserSecGrpMemb"
 				RelationType="Children"
 				DbName="secuser_secgrpmemb"
@@ -2633,8 +2633,8 @@ for a commercial license at mark.sobkow@gmail.com
 
 	<TableAddendum FromTable="SecUser">
 		<DelDep Name="DelSecDevices" DelDepChain="SecUserSecDev" />
-		<DelDep Name="DelSecProxySessions" DelDepChain="SecUserSecProxySession" />
-		<DelDep Name="DelSecSessions" DelDepChain="SecUserSecSession" />
+		<!--DelDep Name="DelSecProxySessions" DelDepChain="SecUserSecProxySession" /-->
+		<!--DelDep Name="DelSecSessions" DelDepChain="SecUserSecSession" /-->
 		<DelDep Name="DelSecGrpMembs" DelDepChain="SecUserSecGrpMemb" />
 		<DelDep Name="DelTSecGrpMembs" DelDepChain="SecUserTSecGrpMemb" />
 	</TableAddendum>
